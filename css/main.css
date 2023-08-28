@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* 전체 글자크기 적용 */
+html{
+    font-size: 10px;
+    /* rem 단위를 위한 계산 편의성 셋팅 + 전체글자크기 제어 */
+    background-color: #000;
+}
+
+/* 공사중표시 */
+body *{
+    outline-color : #444;
+}
+
+/* 기본 초기화 */
+html, body, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, p, figure, figcaption
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 전체 공통 글자체 적용 */
+body{
+    
+}
+
+/* ul, ol 순번, 블릿 없앰 */
+ul, ol {
+    list-style: none;
+}
+
+
+
+/* 공통레이아웃 클래스 */
+/* 속박스 */
+.inbox{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.partbox{
+    /* 옆으로흐르게 */
+    float: left;
+    /* 보더/패딩 포함박스 */
+    box-sizing: border-box;
+    /* 임시보이게 보더 */
+    border: 2px dotted blue;
+    /* 높이값이 속박스에 있을 경우 채우기 셋팅 - 높이값이 파티션 박스에 있으면 안씀! */
+    height: 100%;
+}
+
+/* 헤더 배경 */
+.hdwrap{
+    
+}
+
+/* 1-1.로고박스 */
+.inbox img{
+    width: 50%;
+    padding-top: 53px;
+}
+
+/* 1-2-1. 탑메뉴 */
+.top-menu ul{
+    /* 플렉스 박스 */
+    display: flex;
+    /* 진행방향 : 오른쪽 끝 */
+    justify-content: flex-end;
+    /* 폰트사이즈 */
+    font-size: 1.6rem;
+    padding: 14px 16px 7px 0;
+}
+
+/* 1-2-2. gnb메뉴 */
+.gnb ul{
+    /* 플렉스 박스 */
+    display: flex;
+    /* 진행방향 : 오른쪽 끝 */
+    justify-content: flex-end;
+    /* 폰트사이즈 */
+    font-size: 1.8rem;
+    padding: 14px 16px 7px 0;
+}
+
+/* 2. 메인배너영역 */
+#banner{
+    background: url(../images/main_01.jpg) no-repeat center/auto 100%;
+    height: 930px;
+}
+
+/* 2-1. 예매하기 버튼 */
+.banner button{
+
+}
+/* 3. 현재상영작 영역 */
+#main_section_nowmv{
+    position: relative;
+    width: 1380px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 160px 0 20px 0;
+}
+
+/* 3-1. 현재상영작 타이틀 */
+.tit{
+    display: flex;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+/* 3-2. 더보기 */
+.wrap span{
+    display: flex;
+    font-size: 2rem;
+    color: #999;
+}
+
+.wrap span::after{
+    content: '>';
+}
+
+/* 12 그리드 클래스 : 
+        한줄에 합이 12컬럼이 되도록 셋팅 */
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+/* 참고: https://www.w3schools.com/css/css_rwd_grid.asp */
