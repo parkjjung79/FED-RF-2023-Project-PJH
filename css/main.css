@@ -37,6 +37,9 @@ ul, ol {
 .inbox{
     max-width: 1380px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 a{
@@ -47,7 +50,7 @@ a{
 
 .partbox{
     /* 옆으로흐르게 */
-    float: left;
+    /* float: left; */
     /* 보더/패딩 포함박스 */
     box-sizing: border-box;
     /* 임시보이게 보더 */
@@ -57,8 +60,11 @@ a{
 }
 
 /* 헤더 배경 */
-.hdwrap{
-    
+.header__wrap{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #00000078;
 }
 
 /* 1-1.로고박스 */
@@ -66,6 +72,7 @@ a{
     width: 50%;
     padding-top: 53px;
 }
+
 
 /* 1-2-1. 탑메뉴 */
 .top-menu ul{
