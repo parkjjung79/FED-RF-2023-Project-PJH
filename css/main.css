@@ -150,6 +150,13 @@ a{
     display: flex;
 }
 
+.nowmv img{
+    border-radius: 0px;
+    padding: 0 20px;
+    max-width: 260px;
+}
+
+
 
 /* 12 그리드 클래스 : 
         한줄에 합이 12컬럼이 되도록 셋팅 */
