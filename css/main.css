@@ -200,7 +200,7 @@ h1,h2,h3,h4,h5,h6{
 /* 5.스페셜관 소개 */
 #spr{
     min-height: 930px;
-    background-image: url();
+    background-image: url(../images/);
 }
 /* 6.이벤트 */
 #event{
