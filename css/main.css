@@ -6,7 +6,7 @@
 
 /* 공사중표시 */
 body *{
-    outline-color : #444;
+    outline : 2px dashed #444;
 }
 
 
@@ -198,13 +198,22 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* 5.스페셜관 소개 */
-.spr{
-    width: 100%;
-    height: 100px;
+#spr{
+    min-height: 930px;
+    background-image: url();
 }
 /* 6.이벤트 */
+#event{
+    min-height: 800px;
+}
 /* 7.바로가기 아이콘 */
+#dri{
+    min-height: 800px;
+}
 /* 8.하단영역 - 푸터 */
+#footer{
+    min-height: 400px;
+}
 
 
 /* 12 그리드 클래스 : 
