@@ -200,8 +200,15 @@ h1,h2,h3,h4,h5,h6{
 /* 5.스페셜관 소개 */
 #spr{
     min-height: 930px;
-    background-image: url(../images/);
+    background: url(../images/cinema1.png) no-repeat center/auto 100%;
+    aspect-ratio: 16/9;
+    opacity: 40%;
 }
+
+.spr{
+    display: flex;
+}
+
 /* 6.이벤트 */
 #event{
     min-height: 800px;
