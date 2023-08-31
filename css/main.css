@@ -68,6 +68,12 @@ h1,h2,h3,h4,h5,h6{
     height: 100%;
 }
 
+/* 공통 flex 박스 클래스 */
+/* .flex-box{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
 /* 헤더 배경 */
 .header__wrap{
     position: fixed;
@@ -200,13 +206,23 @@ h1,h2,h3,h4,h5,h6{
 /* 5.스페셜관 소개 */
 #spr{
     min-height: 930px;
-    background: url(../images/cinema1.png) no-repeat center/auto 100%;
+    background: url(../images/cinema_01.png) no-repeat center/auto 100%;
     aspect-ratio: 16/9;
     opacity: 40%;
 }
 
-.spr{
+.flex-box{
     display: flex;
+}
+.spr.inbox {
+    /* display: flex; */
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.spr .partbox{
+    height: 40vh;
+    
 }
 
 /* 6.이벤트 */
