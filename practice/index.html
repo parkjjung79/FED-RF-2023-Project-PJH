@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레이아웃연습 - flex 레이아웃 확장</title>
+    <link rel="stylesheet" href="../practice/css/main.css">
 </head>
 <style>
 
@@ -13,29 +14,48 @@
     <!-- 1. 상단영역 -->
     <div id="header">
         <header class="header inbox">
-            <!-- 파트박스 2개 -->
-            <div class="flex-box"></div>
+            <!-- 파트박스 2개 - 로고 / member,gnb -->
+            <div class="flex-box">
+                <div class="partbox col-2"></div>
+                <div class="partbox col-10"></div>
+            </div>
         </header>
     </div>
 
     <!-- 2. 배너영역 -->
     <div id="banner">
         <section class="banner inbox">
-            <!-- 파트박스 1개 -->
+            <!-- 파트박스 1개 - 메인배너-->
+            <div class="flex-box">
+                <div class="partbox col-12"></div>
         </section>
     </div>
     <!-- 3. 메인영역 -->
-    <!-- 3-1. 현재상영작 -->
-    <div id="now_mv"></div>
-    <!-- 4. 상영예정작 -->
-    <div id="cs_mv"></div>
-    <!-- 5. 스페셜관 -->
-    <div id="sp_cinema"></div>
-    <!-- 6. 이벤트 -->
-    <div id="event"></div>
-    <!-- 7. 바로가기 아이콘 -->
+    <div id="mian">
+        <div class="main inbox">
+            <!-- 3-1. 현재상영작 -->
+            <div id="now_mv">
+                <section class="now_mv inbox">
+                    <!-- 파트박스 2개 - 타이틀 / 더보기-->
+                    <div class="flex-box">
+                        <div class="partbox col-8"></div>
+                        <div class="partbox col-4"></div>
+                    </div>
+                </section>
+            </div>
+            <!-- 3-2. 상영예정작 -->
+            <div id="cs_mv"></div>
+            <!-- 3-3. 스페셜관 -->
+            <div id="sp_cinema"></div>
+            <!-- 3-4. 이벤트 -->
+            <div id="event"></div>
+        </div>
+    </div>
+
+
+    <!-- 4. 바로가기 아이콘 -->
     <div id="dr_icon"></div>
-    <!-- 8. 푸터 -->
+    <!-- 5. 푸터 -->
     <footer id="footer"></footer>
 
     
