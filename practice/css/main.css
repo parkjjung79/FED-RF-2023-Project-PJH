@@ -7,7 +7,7 @@
 
 /* 공사중표시 */
 body *{
-    outline: 1px dashed #ccc;
+    /* outline: 1px dashed #ccc; */
 }
 body>div>*{
     outline-color: red;
@@ -81,7 +81,7 @@ a{
     /* 내부패딩
     padding: 10px; */
     /* 임시 보이게 보더 */
-    border: 2px dotted blue;
+    /* border: 2px dotted blue; */
     /* 높이값이 속박스에 있을 경우 채우기 셋팅 - 높이값이 파티션 박스에 있으면 안씀! */
     height: 100%;
 }
@@ -229,7 +229,7 @@ span a{
 /*************** 4. 스페셜관 **************/
 .sp_cinema{
     min-height: 930px;
-    background: url(/images/.png) no-repeat center/auto 100%;
+    background: url(/images/cinema.jpg) no-repeat center/auto 100%;
     aspect-ratio: 16/9;
     opacity: 100%;
 }
@@ -237,19 +237,46 @@ span a{
     height: 930px;
 }
 
-
-
-
-.spr.inbox {
-    /* display: flex; */
-    max-width: 1380px;
-    margin: 0 auto;
+.sp_menu a{
+    font-weight: normal;
+    color: #fff;
+    padding: 0;
+    font-size: 1.8rem;
+}
+.sp_menu a:hover{
+    color: #5ABEC8;
 }
 
-.spr .partbox{
-    height: 40vh;
-    
+.sp_menu .col-3 {
+    padding-right: 10px;
 }
+
+.txt_box {
+    width: 50%;
+    padding-top: 20vh;
+}
+
+.txt_box h1 {
+    font-size: 4.2rem;
+    color: #fff;
+}
+.txt_box h1 span {
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+.txt_box h3 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 100;
+}
+.txt_box p {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: -0.1rem;
+}
+
+
 /*************** 5. 이벤트 **************/
 .event{
     background-color: violet;
