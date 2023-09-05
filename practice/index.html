@@ -13,13 +13,52 @@
     <!-- 확장형 레이아웃 -->
     <!-- 1. 상단영역 -->
     <div id="header">
-        <header class="header inbox">
-            <!-- 파트박스 2개 - 로고 / member,gnb -->
-            <div class="flex-box">
-                <div class="partbox col-2"></div>
-                <div class="partbox col-10"></div>
-            </div>
-        </header>
+        <!-- 헤더배경 -->
+        <div class="header__wrap">
+            <header class="header inbox">
+                <!-- 파트박스 2개 - 로고 / member,gnb -->
+                <div class="flex-box">
+                    <!-- 1-1.로고박스영역 -->
+                    <div class="partbox col-3">
+                        <img src="../images/mega_logo_w.png" alt="메가박스로고">
+                    </div>
+                    <!-- 1-2.member,gnb 영역 -->
+                    <div class="partbox col-9">
+                        <!-- 1-2-1. member영역 - top -->
+                        <nav class="top-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">로그인</a>
+                                </li>
+                                <li>
+                                    <a href="#">회원가입</a>
+                                </li>
+                                <li>
+                                    <a href="#">고객센터</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- 1-2-2. gnb영역 - bottom -->
+                        <nav class="gnb">
+                            <ul>
+                                <li>
+                                    <a href="#">예매</a>
+                                </li>
+                                <li>
+                                    <a href="#">영화</a>
+                                </li>
+                                <li>
+                                    <a href="#">영화관</a>
+                                </li>
+                                <li>
+                                    <a href="#">이벤트</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
     </div>
 
     <!-- 2. 배너영역 -->
@@ -30,37 +69,48 @@
                 <div class="partbox col-12"></div>
         </section>
     </div>
-    <!-- 3. 메인영역 -->
+    <!-- 3. 상영작 영역 -->
     <div id="main">
         <div class="main inbox">
             <!-- 3-1. 현재상영작 -->
-            <div id="now_mv">
+            <div class="group-part now_mv">
                 <section class="now_mv inbox">
                     <!-- 파트박스 2개 - 타이틀 / 더보기 -->
                     <div class="flex-box">
                         <div class="partbox col-8">
-                            <h2>현재상영작</h2>
+                            <h2 class="tit">현재상영작</h2>
                         </div>
                         <div class="partbox col-4">
                             <span><a href="#">더보기&gt;</a></span>
+                        </div>
                     </div>
                     <!-- 파트박스 5개 - 영화작품 -->
                     <div class="flex-box">
-                        <div class="partbox col-2"></div>
-                        <div class="partbox col-2"></div>
-                        <div class="partbox col-2"></div>
-                        <div class="partbox col-2"></div>
-                        <div class="partbox col-2"></div>
+                        <div class="partbox col-2">
+                            <img src="../images/mv_01.jpg" alt="조커">
+                        </div>
+                        <div class="partbox col-2">
+                            <img src="../images/mv_01.jpg" alt="조커">
+                        </div>
+                        <div class="partbox col-2">
+                            <img src="../images/mv_01.jpg" alt="조커">
+                        </div>
+                        <div class="partbox col-2">
+                            <img src="../images/mv_01.jpg" alt="조커">
+                        </div>
+                        <div class="partbox col-2">
+                            <img src="../images/mv_01.jpg" alt="조커">
+                        </div>
                     </div>
                 </section>
             </div>
             <!-- 3-2. 상영예정작 -->
-            <div id="cs_mv">
+            <div class="group-part cs_mv">
                 <section class="cs_mv inbox">
                     <!-- 파트박스 2개 - 타이틀 / 더보기 -->
                     <div class="flex-box">
                         <div class="partbox col-8">
-                            <h2>상영예정작</h2>
+                            <h2 class="tit">상영예정작</h2>
                         </div>
                         <div class="partbox col-4">
                             <span><a href="#">더보기&gt;</a></span>
@@ -77,49 +127,50 @@
                 </section>
                 
             </div>
-            <!-- 3-3. 스페셜관 -->
-            <div id="sp_cinema">
-                <div class="flex-box">
-                    <div class="partbox col-3"></div>
-                    <div class="partbox col-3"></div>
-                    <div class="partbox col-3"></div>
-                    <div class="partbox col-3"></div>
+            <!-- 4. 스페셜관 -->
+            <div class="group-part sp_cinema">
+                <div class="sp_cinema inbox">
+                    <div class="flex-box">
+                        <div class="partbox col-3"></div>
+                        <div class="partbox col-3"></div>
+                        <div class="partbox col-3"></div>
+                        <div class="partbox col-3"></div>
+                    </div>
                 </div>
             </div>
-            <!-- 3-4. 이벤트 -->
-            <div id="event">
-                <div class="flex-box">
-                    <div class="partbox col-12"></div>
+            <!-- 5. 이벤트 -->
+            <div class="group-part event">
+                <div class="event inbox">
+                    <div class="flex-box">
+                        <div class="partbox col-12"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 4. 바로가기 아이콘 -->
+    <!-- 6. 바로가기 아이콘 -->
     <div id="dr_icon">
-        <div class="flex-box">
-            <div class="partbox col-2"></div>
-            <div class="partbox col-2"></div>
-            <div class="partbox col-2"></div>
-            <div class="partbox col-2"></div>
-            <div class="partbox col-2"></div>
-            <div class="partbox col-2"></div>
-        </div>
-
+        <div class="dr_icon inbox">
+            <div class="flex-box">
+                <div class="partbox col-2"></div>
+                <div class="partbox col-2"></div>
+                <div class="partbox col-2"></div>
+                <div class="partbox col-2"></div>
+                <div class="partbox col-2"></div>
+                <div class="partbox col-2"></div>
+            </div>
+        </div> 
     </div>
-    <!-- 5. 푸터 -->
+    
+    <!-- 7. 푸터 -->
     <div id="footer">
         <footer class="footer inbox">
-            <div class="flex-box">
-                <div class="line-1">
+                <div class="flex-box">
                     <!-- 하단링크 -->
                     <div class="partbox col-12"></div>
-                </div>
-                <div class="line-2">
                     <!-- 하단로고 -->
                     <div class="partbox col-12"></div>
-                </div>
-                <div class="line-3">
                     <!-- 회사정보 -->
                     <div class="partbox col-6"></div>
                     <!-- 고객센터번호 -->
@@ -127,9 +178,8 @@
                     <!-- sns메뉴 -->
                     <div class="partbox col-3"></div>
                 </div>
-
             </div>
-    </footer>
+        </footer>
     </div>
 
 
