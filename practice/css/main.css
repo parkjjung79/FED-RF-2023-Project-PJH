@@ -251,6 +251,7 @@ span a{
 }
 .sp_menu a:hover{
     color: #5ABEC8;
+    font-weight: bold;
 }
 
 .sp_menu .col-3 {
