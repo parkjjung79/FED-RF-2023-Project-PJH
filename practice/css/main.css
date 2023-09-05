@@ -7,7 +7,7 @@
 
 /* 공사중표시 */
 body *{
-    outline: 2px dashed #ccc;
+    outline: 1px dashed #ccc;
 }
 body>div>*{
     outline-color: red;
@@ -33,6 +33,7 @@ html{
 ul, ol {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 /* a요소 리셋 */
@@ -103,7 +104,7 @@ a{
     background-color: #00000078;
 }
 /* 1-1.로고박스 */
-.partbox img{
+.logo img{
     padding: 2.5vw 0 0 0;
     max-width: 90%;
 }
@@ -117,7 +118,7 @@ a{
     /* 폰트사이즈 */
     font-size: 1.6rem;
     /* 패딩 - 간격 */
-    padding: 14px 16px 7px 0;
+    padding: 24px 16px 7px 0;
     
 }
 
@@ -136,7 +137,7 @@ a{
 
 /*************** 2. 배너영역 ******************/
 #banner{
-    background: url(/images/main_01.jpg) no-repeat center/auto 100%;
+    background: url(/images/main_1200.jpg) no-repeat center/auto 100%;
     /* height: 930px; */
     /* 박스비율 - 4:3 */
     aspect-ratio: 16/9;
@@ -155,11 +156,19 @@ a{
     font-weight: normal;
 }
 /* 메인 더보기 공통 */
-.wrap span{
-    display: flex;
+span a{
+    float: right;
     font-size: 2rem;
     color: #999;
+    font-weight: normal;
 }
+
+.grmenu ul{
+    display: flex;
+    font-size: 1.6rem;
+}
+
+
 
 /*************** 3-1. 현재상영작 **************/
 .now_mv{
@@ -168,24 +177,78 @@ a{
     margin: 0 auto;
     padding: 0;
 }
-.main .now_mv .partbox{
-    height: 200px;
+
+/* 현재상영영화 */
+.nowmv{
+    display: flex;
+}
+
+.nowmv li{
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.nowmv img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* 컨텐츠간 간격 */
+.group-part.now_mv {
+    padding: 150px 0;
 }
 
 
 /*************** 3-2. 상영예정작 **************/
 .cs_mv{
-    background-color: rgb(206, 206, 206);
+    /* background-color: rgb(206, 206, 206); */
 }
 .main .cs_mv .partbox{
-    height: 200px;
+    /* height: 200px; */
+}
+/* 현재상영영화 */
+.csmv{
+    display: flex;
+}
+
+.csmv li{
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.csmv img{
+    width: 100%;
+    border-radius: 5px;
+}
+/* 컨텐츠간 간격 아래쪽만 */
+.group-part.cs_mv {
+    padding-bottom: 150px;
 }
 /*************** 4. 스페셜관 **************/
 .sp_cinema{
-    background-color: #222222;
+    min-height: 930px;
+    background: url(/images/cinema1.png) no-repeat center/auto 100%;
+    aspect-ratio: 16/9;
+    opacity: 100%;
 }
 .main .sp_cinema .partbox{
     height: 930px;
+}
+
+
+
+
+.spr.inbox {
+    /* display: flex; */
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.spr .partbox{
+    height: 40vh;
+    
 }
 /*************** 5. 이벤트 **************/
 .event{
