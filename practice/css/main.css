@@ -64,56 +64,44 @@ body>div>*{
 }
 
 /*************** 3-1. 현재상영작 **************/
-
+#now_mv{
+    background-color: beige;
+}
+.main .now_mv .partbox{
+    height: 200px;
+}
 /*************** 3-2. 상영예정작 **************/
+#cs_mv{
+    background-color: rgb(206, 206, 206);
+}
+.main .cs_mv .partbox{
+    height: 200px;
+}
 /*************** 3-3. 스페셜관 **************/
+#sp_cinema{
+    background-color: #222222;
+}
+.main .sp_cinema .partbox{
+    height: 930px;
+}
 /*************** 3-4. 이벤트 **************/
+#event{
+    background-color: violet;
+}
+.main .event .partbox{
+    height: 400px;
+}
 /*************** 4. 바로가기 아이콘 **************/
+#dr_icon{
+    background-color: coral;
+}
+.dr_icon .partbox{
+    height: 200px;
+}
 /*************** 5. 푸터 **************/
-
-
-/********************** 1. 상단영역 **********************/
-#header{
-    background-color: lightblue;
-}
-.header .partbox{
-    height: 100px;
-}
-/********************** 2. 배너영역 **********************/
-#banner{
-    background-color: lightcoral;
-}
-.banner .partbox{
-    height: 300px;
-}
-/********************** 3. 메인영역 **********************/
-#main{
-    background-color: lightseagreen;
-}
-.main .group-part-01 .partbox{
-    height: 360px;
-}
-
-.main .group-part-02 .partbox{
-    height: 120px;
-}
-
-.main .group-part-03 .partbox{
-    height: 220px;
-}
-
-.main .group-part-04 .partbox{
-    height: 280px;
-}
-
-.main .group-part-05 .partbox{
-    height: 240px;
-}
-
-/********************** 4. 하단영역 **********************/
 #footer{
-    background-color: lightslategray;
+    background-color:cornflowerblue;
 }
 .footer .partbox{
-    height: 100px;
+    height: 200px;
 }
