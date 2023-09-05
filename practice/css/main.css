@@ -105,8 +105,8 @@ a{
 }
 /* 1-1.로고박스 */
 .logo img{
-    padding: 2.5vw 0 0 0;
-    max-width: 90%;
+    padding: 2.5vw 0 1vw 0;
+    max-width: 80%;
 }
 
 /* 1-2-1. member영역 - top */
@@ -118,8 +118,12 @@ a{
     /* 폰트사이즈 */
     font-size: 1.6rem;
     /* 패딩 - 간격 */
-    padding: 24px 16px 7px 0;
+    padding: 30px 16px 0 0;
+    font-weight: normal;
     
+}
+.top-menu a {
+    font-weight: 400;
 }
 
 /* 1-2-2. gnb영역 - bottom */
@@ -129,7 +133,7 @@ a{
     /* 진행방향 : 오른쪽 끝 */
     justify-content: flex-end;
     /* 폰트사이즈 */
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     /* 패딩 - 간격 */
     padding: 14px 16px 7px 0;
 }
@@ -229,14 +233,16 @@ span a{
 /*************** 4. 스페셜관 **************/
 .sp_cinema{
     min-height: 930px;
-    background: url(/images/cinema.jpg) no-repeat center/auto 100%;
+    background: url(/images/cinema.png) no-repeat center/auto 100%;
     aspect-ratio: 16/9;
     opacity: 100%;
 }
 .main .sp_cinema .partbox{
     height: 930px;
 }
-
+.sp_menu{
+    padding-top: 30px;
+}
 .sp_menu a{
     font-weight: normal;
     color: #fff;
@@ -257,7 +263,7 @@ span a{
 }
 
 .txt_box h1 {
-    font-size: 4.2rem;
+    font-size: 6rem;
     color: #fff;
 }
 .txt_box h1 span {
