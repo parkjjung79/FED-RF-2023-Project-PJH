@@ -229,7 +229,7 @@ span a{
 /*************** 4. 스페셜관 **************/
 .sp_cinema{
     min-height: 930px;
-    background: url(/images/cinema1.png) no-repeat center/auto 100%;
+    background: url(/images/.png) no-repeat center/auto 100%;
     aspect-ratio: 16/9;
     opacity: 100%;
 }
