@@ -7,7 +7,7 @@
 
 /* 공사중표시 */
 body *{
-    /* outline: 1px dashed #ccc; */
+    outline: 1px dashed #ccc;
 }
 body>div>*{
     outline-color: red;
@@ -40,7 +40,6 @@ ul, ol {
 a{
     text-decoration: none;
     color: #fff;
-    padding: 0 8px;
 }
 
 /************* 공통 레이아웃 클래스 *************/
@@ -62,6 +61,8 @@ a{
 
 /* 속박스 */
 .inbox{
+    position: relative;
+    /* 부모자격 */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -137,7 +138,9 @@ a{
     /* 패딩 - 간격 */
     padding: 14px 16px 7px 0;
 }
-
+.gnb>ul>li>a{
+    padding: 10px 15px
+}
 
 /*************** 2. 배너영역 ******************/
 #banner{
