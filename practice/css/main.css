@@ -141,7 +141,16 @@ a{
 .gnb>ul>li>a{
     padding: 10px 15px
 }
-
+/* .gnb>ul>li:hover{
+    padding: 10px 15px
+} */
+.smenu{
+    display: none;
+}
+.smenu>ul>li>a{
+    font-size: 1.6rem;
+    justify-content: flex-end;
+}
 /*************** 2. 배너영역 ******************/
 #banner{
     background: url(/images/main_1200.jpg) no-repeat center/auto 100%;
