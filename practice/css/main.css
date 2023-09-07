@@ -348,11 +348,24 @@ span a{
 }
 /*************** 6. 바로가기 아이콘 **************/
 #dr_icon{
-    background-color: coral;
+    
 }
-.dr_icon .partbox{
-    height: 200px;
+
+i.dri1 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(/images/ico-main-customer.png) no-repeat;
 }
+
+.dr_icon span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 /*************** 7. 푸터 **************/
 #footer{
     background-color:cornflowerblue;
