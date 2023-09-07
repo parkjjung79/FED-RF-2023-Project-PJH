@@ -95,7 +95,7 @@ a{
 
 /*************** 1. 상단영역 ******************/
 #header{
-    background-color: lightblue;
+
 }
 /* 헤더 배경 */
 .header__wrap{
@@ -282,8 +282,8 @@ span a{
 }
 /*************** 4. 스페셜관 **************/
 .sp_cinema{
-    min-height: 930px;
-    background: url(/images/cinema.png) no-repeat center/auto 100%;
+    min-height: 800px;
+    background: url(/images/cinema_710.png) no-repeat center/auto 100%;
     opacity: 100%;
 }
 .main .sp_cinema .partbox{
@@ -351,18 +351,54 @@ span a{
     
 }
 
-i.dri1 {
+div#dr_icon {
+    position: relative;
+    top: -100px;
+}
+
+i{
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
-    background: url(/images/.png) no-repeat;
+    background: url(/images/ico-main4-100.png) no-repeat;
+}
+i.dri1 {
+    background: url(/images/ico-main4-100.png) no-repeat;
+}
+i.dri2 {
+    background: url(/images/ico-main3-100.png) no-repeat;
+}
+i.dri3 {
+    background: url(/images/ico-main5-100.png) no-repeat;
+}
+i.dri4 {
+    background: url(/images/ico-main1-100.png) no-repeat;
+}
+i.dri5 {
+    background: url(/images/ico-main2-100.png) no-repeat;
+}
+i.dri6 {
+    background: url(/images/ico-main6-100.png) no-repeat;
 }
 
 .dr_icon span {
     display: block;
     margin: 0 auto;
     text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 200;
+}
+.dr_icon span:hover{
+    color: #5ABEC8;
+    font-weight: bold;
+    
+}
+
+/* 컨텐츠간 간격 */
+.dr_icon {
+    padding:100px 0;
 }
 
 
@@ -371,5 +407,14 @@ i.dri1 {
     background-color:cornflowerblue;
 }
 .footer .partbox{
-    height: 200px;
+    height: 50px;
+}
+
+.footer .partbox>ul{
+    display: flex;
+    font-size: 1.3rem;
+}
+
+.footer .partbox>ul>li{
+    padding: 10px 15px;
 }
