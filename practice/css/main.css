@@ -7,7 +7,7 @@
 
 /* 공사중표시 */
 body *{
-    outline: 1px dashed #ccc;
+    /* outline: 1px dashed #ccc; */
 }
 body>div>*{
     outline-color: red;
@@ -403,7 +403,13 @@ i.dri6 {
 
 /*************** 7. 푸터 **************/
 #footer{
-    background-color:cornflowerblue;
+    /* background-color:cornflowerblue; */
+    color: #b7b7b7;
+    height: 250px;
+    padding-bottom: 150px;
+}
+.footer a{
+    color: #b7b7b7;
 }
 .footer .partbox{
     height: 50px;
@@ -416,4 +422,56 @@ i.dri6 {
 
 .footer .partbox>ul>li{
     padding: 10px 15px;
+}
+
+.footer span{
+    font-size: 5.1rem;
+}
+/* 푸터로고사이즈 */
+.logo_footer img{
+    height: 50px;
+    opacity: 60%;
+}
+/* 푸터하단정보 */
+.ft_info p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 0;
+}
+.ft_info address{
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* 푸터 맨 하단 섹션 타이틀 공통 */
+.ft_tit {
+    font-size: 1.8rem;
+    color: #b7b7b7;
+    padding: 10px 0;
+}
+/* 푸터 sns 아이콘 공통 */
+.footer i {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.ft_sns_icon {
+    display: flex;
+    font-size: 0;
+}
+
+i.ft_icon_youtube {
+    background: url(/images/ico-youtubeN.png) no-repeat center/cover;
+}
+
+i.ft_icon_insta {
+    background: url(/images/ico-instagramN.png) no-repeat center/cover;
+}
+i.ft_icon_face {
+    background: url(/images/ico-facebookN.png) no-repeat center/cover;
+}
+i.ft_icon_twit {
+    background: url(/images/ico-twitterN.png) no-repeat center/cover;
 }
