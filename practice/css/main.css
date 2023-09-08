@@ -353,7 +353,6 @@ span a{
 
 div#dr_icon {
     position: relative;
-    top: -100px;
 }
 
 i{
@@ -398,7 +397,7 @@ i.dri6 {
 
 /* 컨텐츠간 간격 */
 .dr_icon {
-    padding:100px 0;
+    padding-bottom:100px;
 }
 
 
