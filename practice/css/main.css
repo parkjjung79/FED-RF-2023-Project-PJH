@@ -245,7 +245,7 @@ a{
 /* 메인 더보기 공통 */
 span a{
     float: right;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #999;
     font-weight: normal;
 }
@@ -282,6 +282,12 @@ span a{
 }
 .grmenu ul>li:nth-child(4):hover a::after{
     content: 'horror';
+}
+.grmenu ul>li:nth-child(5):hover a::after{
+    content: 'Fantasy';
+}
+.grmenu ul>li:nth-child(6):hover a::after{
+    content: 'Animation';
 }
 
 
@@ -326,6 +332,10 @@ span a{
 /*************** 3-2. 상영예정작 **************/
 .cs_mv{
     /* background-color: rgb(206, 206, 206); */
+}
+
+.cs_mv .flex-box.line{
+    border-bottom: 2px solid #fff;
 }
 .main .cs_mv .partbox{
     /* height: 200px; */
