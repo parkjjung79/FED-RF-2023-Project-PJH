@@ -343,6 +343,7 @@ span a{
 /* 현재상영영화 */
 .csmv{
     display: flex;
+    padding-top: 25px;
 }
 
 .csmv li{
@@ -394,7 +395,7 @@ span a{
 
 .txt_box {
     width: 50%;
-    padding-top: 20vh;
+    padding-top: 12vh;
 }
 
 .txt_box h1 {
