@@ -118,10 +118,12 @@ a{
     height: 115px;
 }
 .logo img{
-    width: 100%;
+    display: block;
+    margin: 50px 0;
+    /* width: 100%;
     height: 100%;
-    object-fit: cover;
-}
+    object-fit: cover;*/
+} 
 
 /* 1-2-1. member영역 - top */
 .top-menu>ul{
@@ -130,7 +132,7 @@ a{
     /* 진행방향 : 오른쪽 끝 */
     justify-content: flex-end; 
     /* 패딩 - 간격 */
-    padding: 30px 0 15px 0;
+    padding: 20px 0 15px 0;
     font-weight: normal;
 }
 .top-menu>ul>li>a{
@@ -140,8 +142,7 @@ a{
     padding-left: 15px;
 
 }
-.top-menu>a {
-}
+
 
 
 /* 1-2-2. gnb영역 - bottom */
@@ -189,6 +190,37 @@ a{
     font-size: 1.8rem;
     font-weight: 300;
 }
+
+
+/* 가상요소로 밑줄만들기 -> 공통클래스로 독립! */
+.line-ani > li > a::after {
+    content: "";
+    display: block;
+
+    /* 변경요소 */
+    width: 0%;
+    margin-left: 100%;
+
+    /* 글자와의 간격 */
+    margin-top: 4px;
+
+    height: 2px;
+    background-color: #fff;
+
+    /* 트랜지션 : 속시이지 */
+    transition: all 0.3s;
+}
+/* 상위메뉴 li에 오버시 밑줄 */
+.line-ani > li:hover > a::after {
+    width: 100%;
+    margin-left: 0%;
+
+    /* 트랜지션 : 속시이지 : 오버시에 왼쪽마진값은 무애니!*/
+    transition: width 0.3s;
+}
+
+
+
 /*************** 2. 배너영역 ******************/
 #banner{
     background: url(/images/main_1200.jpg) no-repeat center/auto 100%;
@@ -205,9 +237,10 @@ a{
 /* 메인 타이틀 공통 */
 .tit{
     display: flex;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     color: #fff;
     font-weight: normal;
+    padding-bottom: 20px;
 }
 /* 메인 더보기 공통 */
 span a{
@@ -220,7 +253,37 @@ span a{
 .grmenu ul{
     display: flex;
     font-size: 1.6rem;
+    padding: 25px 0;
 }
+
+.grmenu ul>li>a{
+    padding: 1.6rem;
+    font-weight: 400;
+    
+}
+
+.grmenu ul>li>a:hover{
+    background-color: #5abec8;
+    color: #fff;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+/* 영화장르 메뉴 li 오버시 a 가상요소로 영어 넣기! */
+.grmenu ul>li:hover a::after{
+    content: 'All';
+
+}
+.grmenu ul>li:nth-child(2):hover a::after{
+    content: 'Drama';
+}
+.grmenu ul>li:nth-child(3):hover a::after{
+    content: 'Romance/Melo';
+}
+.grmenu ul>li:nth-child(4):hover a::after{
+    content: 'horror';
+}
+
 
 
 
@@ -236,6 +299,12 @@ span a{
 .nowmv{
     display: flex;
 }
+
+.now_mv .flex-box.line{
+    border-bottom: 2px solid #fff;
+}
+
+
 
 .nowmv li{
     flex: 1;
