@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레이아웃연습 - flex 레이아웃 확장</title>
     <link rel="shortcut icon" href="https://www.megabox.co.kr/static/pc/images/favicon.ico"/>
+    <!-- 링크 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- 외부css연결 -->
     <link rel="stylesheet" href="../practice/css/main.css">
-    <!-- 외부js연결 -->
-    <script src="../practice/js/smoothScroll23.js"></script>
+    <!-- 부드러운스크롤 js -->
+    <!-- <script src="../practice/js/smoothScroll23.js"></script> -->
     <!-- 따라다니는 원 -->
     <script src="./JS/fllowings.js"></script>
      <!-- 메인 JS -->
@@ -343,7 +345,7 @@
         <footer class="footer inbox">
                 <div class="flex-box">
                         <!-- 하단링크 -->
-                        <div class="partbox col-12">
+                        <div class="partbox col-12 first-line">
                             <ul>
                                 <li>
                                     <a href="#">회사소개</a>
@@ -371,46 +373,68 @@
                                 <img src="/images/mega_logo_bottom.png" alt="메가박스로고">
                             </div>
                         </div>
-                        <!-- 회사정보 -->
-                        <div class="partbox col-6">
-                            <div class="ft_tit">
-                                MEGABOX Crop.
-                            </div>
-                            <div class="ft_info">
-                                <address>
-                                주소 : 서울특별시 성동구 왕십리로 50, 6층 (성수동1가, 메가박스 스퀘어)
+                        <!-- 푸터의 세번째 섹션 -->
+                        <div class="footer-section03">
+                            <!-- 회사정보 -->
+                            <div class="partbox">
+                                <div class="ft_tit">
+                                    MEGABOX Crop.
+                                </div>
+                                <div class="ft_info">
+                                    <address>
+                                    주소 : 서울특별시 성동구 왕십리로 50, 6층 (성수동1가, 메가박스 스퀘어)<br>
+                                    대표자명 : 홍정인<br>
+                                    개인정보보호책임자 : 공성진<br>
+                                    사업자등록번호 : 211-86-59478<br>
+                                    COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
                                 </address>
-                                <p>대표자명 : 홍정인</p>
-                                <p>개인정보보호책임자 : 공성진</p>
-                                <p>사업자등록번호 : 211-86-59478</p>
-                                <p class="copy">COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved</p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- 고객센터번호 -->
-                        <div class="partbox col-3">
-                            <div class="ft_tit">
-                                CS Center
+                            <!-- 고객센터번호 -->
+                            <div class="partbox">
+                                <div class="ft_tit">
+                                    CS Center
+                                </div>
+                                <span>1544-0070</span>
                             </div>
-                            <span>1544-0070</span>
-                        </div>
-                        <!-- sns메뉴 -->
-                        <div class="partbox col-3 footer-sns">
-                            <div class="ft_tit">SNS</div>
-                            <div class="ft_sns_icon">
-                                <a href="https://www.youtube.com/onmegabox" target="_blank" title="MEGABOX 유튜브 페이지로 이동">
-                                    <i class="ft_icon_youtube">유튜브</i>
-                                </a>
-                                <a href="http://instagram.com/megaboxon" target="_blank" title="MEGABOX 인스타그램 페이지로 이동">
-                                    <i class="ft_icon_insta">인스타그램</i>
-                                </a>
-                                <a href="https://www.facebook.com/megaboxon" target="_blank" title="MEGABOX 페이스북 페이지로 이동">
-                                    <i class="ft_icon_face">페이스북</i>
-                                </a>
-                                <a href="https://twitter.com/megaboxon" target="_blank" title="MEGABOX 트위터 페이지로 이동">
-                                    <i class="ft_icon_twit">트위터</i>
-                                </a>
+                            <!-- sns메뉴 -->
+                            <div class="partbox footer-sns">
+                                <div class="ft_tit">SNS</div>
+                                    <div class="sns-box">
+                                        <ol>
+                                            <li>
+                                                <a href="https://www.youtube.com/onmegabox" class="fa-brands fa-youtube" target="_blank" title="MEGABOX 유튜브 페이지로 이동">
+                                                    <span class="ir">
+                                                        유튜브 바로가기
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://instagram.com/megaboxon" class="fa-brands fa-instagram" target="_blank" title="MEGABOX 인스타그램 페이지로 이동">
+                                                    <span class="ir">
+                                                        인스타그램 바로가기
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.facebook.com/megaboxon" class="fa-brands fa-facebook-f" target="_blank" title="MEGABOX 페이스북 페이지로 이동">
+                                                    <span class="ir">
+                                                        페이스북 바로가기
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://twitter.com/megaboxon" class="fa-brands fa-twitter" target="_blank" title="MEGABOX 트위터 페이지로 이동">
+                                                    <span class="ir">
+                                                        트위터 바로가기
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ol>
+                                        
+                                    </div>
                             </div>
-                        </div>
+                        </div>    
                     </div>
                 </div>
             </div>
