@@ -2,274 +2,295 @@
 /* 메가박스 레이아웃 - main.css */
 
 /* 웹폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400&display=swap");
 
 /* 공사중표시 */
-body *{
-    /* outline: 1px dashed #ccc; */
+body * {
+  /* outline: 1px dashed #ccc; */
 }
-body>div>*{
-    outline-color: red;
+body > div > * {
+  outline-color: red;
 }
 
 /************* 기본 초기화 셋팅 *************/
 
 /* 기본초기화 */
-html,body,h1,h2,h3,h4,h5,h6{
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans KR', sans-serif;
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 /* 전체 글자크기 적용 */
-html{
-    font-size: 10px;
-    /* rem 단위를 위한 계산 편의성 셋팅 + 전체글자크기 제어 */
-    background-color: #000;
+html {
+  font-size: 10px;
+  /* rem 단위를 위한 계산 편의성 셋팅 + 전체글자크기 제어 */
+  background-color: #000;
 }
 
 /* ul, ol 순번, 블릿 없앰 */
-ul, ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* a요소 리셋 */
-a{
-    text-decoration: none;
-    color: #fff;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /************* 공통 레이아웃 클래스 *************/
 
 /* col-숫자 : 숫자는 기둥의 수
 한줄에는 최대한이 12기둥이 되어야함! */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
 
 /* 속박스 */
-.inbox{
-    position: relative;
-    /* 부모자격 */
-    max-width: 1200px;
-    margin: 0 auto;
+.inbox {
+  position: relative;
+  /* 부모자격 */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* 클리어 설정 가상요소 - float에 의한 망가짐 방지! */
 .inbox::after,
-.group-part::after{
-    content: '';
-    display: block;
-    clear: both;
+.group-part::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /* 파티션박스 */
-.partbox{
-    /* 보더/패딩 포함박스 */
-    box-sizing: border-box;
-    /* 내부패딩
+.partbox {
+  /* 보더/패딩 포함박스 */
+  box-sizing: border-box;
+  /* 내부패딩
     padding: 10px; */
-    /* 임시 보이게 보더 */
-    /* border: 2px dotted blue; */
-    /* 높이값이 속박스에 있을 경우 채우기 셋팅 - 높이값이 파티션 박스에 있으면 안씀! */
-    height: auto;
+  /* 임시 보이게 보더 */
+  /* border: 2px dotted blue; */
+  /* 높이값이 속박스에 있을 경우 채우기 셋팅 - 높이값이 파티션 박스에 있으면 안씀! */
+  height: auto;
 }
 
 /* 공통 flex 박스 클래스 */
-.flex-box{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /*************** 1. 상단영역 ******************/
-#header{
-
+#header {
 }
 /* 헤더 배경 */
-.header__wrap{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
+.header__wrap {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
-.header__wrap::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #00000078;
-    backdrop-filter: blur(3px);
+.header__wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #00000078;
+  backdrop-filter: blur(3px);
 }
 /* 1-1.로고박스 */
-.logo{
-    height: 115px;
+.logo {
+  height: 115px;
 }
-.logo img{
-    display: block;
-    margin-top: 50px;
-    /* width: 100%;
+.logo img {
+  display: block;
+  margin-top: 50px;
+  /* width: 100%;
     height: 100%;
     object-fit: cover;*/
-} 
+}
 
 /* 1-2-1. member영역 - top */
-.top-menu>ul{
-    /* 플렉스 박스 */
-    display: flex;
-    /* 진행방향 : 오른쪽 끝 */
-    justify-content: flex-end; 
-    /* 패딩 - 간격 */
-    padding: 20px 0 15px 0;
-    font-weight: normal;
+.top-menu > ul {
+  /* 플렉스 박스 */
+  display: flex;
+  /* 진행방향 : 오른쪽 끝 */
+  justify-content: flex-end;
+  /* 패딩 - 간격 */
+  padding: 20px 0 15px 0;
+  font-weight: normal;
 }
-.top-menu>ul>li>a{
-    /* 폰트사이즈 */
-    font-size: 1.6rem;
-    font-weight: 400;
-    padding-left: 15px;
-
+.top-menu > ul > li > a {
+  /* 폰트사이즈 */
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-left: 15px;
 }
-
-
 
 /* 1-2-2. gnb영역 - bottom */
-.gnb{
-    /* padding-bottom: 15px; */
+.gnb {
+  /* padding-bottom: 15px; */
 }
-.gnb>ul{
-    /* 플렉스 박스 */
-    display: flex;
-    /* 진행방향 : 오른쪽 끝 */
-    justify-content: flex-end;
-    /* 폰트사이즈 */
-    font-size: 2.4rem;
-    gap: 0 10px;
+.gnb > ul {
+  /* 플렉스 박스 */
+  display: flex;
+  /* 진행방향 : 오른쪽 끝 */
+  justify-content: flex-end;
+  /* 폰트사이즈 */
+  font-size: 2.4rem;
+  gap: 0 10px;
 }
-.gnb>ul>li{
-    position: relative;
-    padding-left: 70px;
+.gnb > ul > li {
+  position: relative;
+  padding-left: 70px;
 }
 /* gnb메뉴오버시 하위메뉴 보이기 */
-.gnb>ul>li:hover .smenu{
-    display: block;
+.gnb > ul > li:hover .smenu {
+  display: block;
 }
 
-
-.smenu{
-    display: none;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    text-align: right;
+.smenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: right;
 }
-.smenu>ul{
-    background-color: rgb(0 0 0 / 49%);
-    border-radius: 15%;
-    margin-top: 15px;
-
+.smenu > ul {
+  background-color: rgb(0 0 0 / 49%);
+  border-radius: 15%;
+  margin-top: 15px;
 }
 
-.smenu>ul>li{
-    padding: 8px 10px
+.smenu > ul > li {
+  padding: 8px 10px;
 }
-.smenu>ul>li>a{
-    font-size: 1.8rem;
-    font-weight: 300;
+.smenu > ul > li > a {
+  font-size: 1.8rem;
+  font-weight: 300;
 }
-
 
 /* 가상요소로 밑줄만들기 -> 공통클래스로 독립! */
 .line-ani > li > a::after {
-    content: "";
-    display: block;
+  content: "";
+  display: block;
 
-    /* 변경요소 */
-    width: 0%;
-    margin-left: 100%;
+  /* 변경요소 */
+  width: 0%;
+  margin-left: 100%;
 
-    /* 글자와의 간격 */
-    margin-top: 4px;
+  /* 글자와의 간격 */
+  margin-top: 4px;
 
-    height: 2px;
-    background-color: #fff;
+  height: 2px;
+  background-color: #fff;
 
-    /* 트랜지션 : 속시이지 */
-    transition: all 0.3s;
+  /* 트랜지션 : 속시이지 */
+  transition: all 0.3s;
 }
 /* 상위메뉴 li에 오버시 밑줄 */
 .line-ani > li:hover > a::after {
-    width: 100%;
-    margin-left: 0%;
+  width: 100%;
+  margin-left: 0%;
 
-    /* 트랜지션 : 속시이지 : 오버시에 왼쪽마진값은 무애니!*/
-    transition: width 0.3s;
+  /* 트랜지션 : 속시이지 : 오버시에 왼쪽마진값은 무애니!*/
+  transition: width 0.3s;
 }
 
-
-
 /*************** 2. 배너영역 ******************/
-#banner{
-    background: url(/images/main_1200.jpg) no-repeat center/auto 100%;
-    /* height: 930px; */
-    /* 박스비율 - 4:3 */
-    aspect-ratio: 16/9;
+#banner {
+  background: url(/images/main_1200.jpg) no-repeat center/auto 100%;
+  /* height: 930px; */
+  /* 박스비율 - 4:3 */
+  aspect-ratio: 16/9;
 }
 
 /*************** 3. 상영작 영역 ******************/
-#main{
-    background-color: #000;
+#main {
+  background-color: #000;
 }
 
 /* 메인 타이틀 공통 */
-.tit{
-    display: flex;
-    font-size: 2.6rem;
-    color: #fff;
-    font-weight: normal;
-    padding-bottom: 15px;
+.tit {
+  display: flex;
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: normal;
+  padding-bottom: 15px;
 }
 /* 메인 더보기 공통 */
-span a{
-    float: right;
-    font-size: 1.8rem;
-    color: #999;
-    font-weight: normal;
+span a {
+  float: right;
+  font-size: 1.8rem;
+  color: #999;
+  font-weight: normal;
 }
 
-.grmenu ul{
-    display: flex;
-    font-size: 1.6rem;
-    padding: 25px 0;
-    gap: 10px;
+.grmenu ul {
+  display: flex;
+  font-size: 1.6rem;
+  padding: 25px 0;
+  gap: 10px;
 }
 
-.grmenu ul>li>a{
-    padding: 10px 20px;
-    font-weight: 400;
-    border: 1.5px solid #595959;
-    border-radius: 30px;
-        
+.grmenu ul > li > a {
+  padding: 10px 20px;
+  font-weight: 400;
+  border: 1.5px solid #595959;
+  border-radius: 30px;
 }
 
-.grmenu ul>li>a:hover{
-    border: 1.5px solid #5abec8;
-    color: #fff;
-    transition: .8s;
+.grmenu ul > li > a:hover {
+  border: 1.5px solid #5abec8;
+  color: #fff;
+  transition: 0.8s;
 }
 
 /* 영화장르 메뉴 li 오버시 a 가상요소로 영어 넣기! */
@@ -292,248 +313,258 @@ span a{
     content: 'Animation';
 } */
 
-
-
-
 /*************** 3-1. 현재상영작 **************/
-.now_mv{
-    position: relative;
-    max-width: 1380px;
-    margin: 0 auto;
-    padding: 0;
+.now_mv {
+  position: relative;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /* 현재상영영화 */
-.nowmv{
-    display: flex;
+.nowmv {
+  display: flex;
 }
 
-.now_mv .flex-box.line{
-    border-bottom: 2px solid #7b7b7b;
+.now_mv .flex-box.line {
+  border-bottom: 2px solid #7b7b7b;
 }
 
-
-
-.nowmv li{
-    flex: 1;
-    box-sizing: border-box;
-    padding: 10px;
+.nowmv li {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-.nowmv img{
-    width: 100%;
-    border-radius: 5px;
+.nowmv img {
+  width: 100%;
+  border-radius: 5px;
 }
 
 /* 컨텐츠간 간격 */
 .group-part.now_mv {
-    padding: 150px 0;
+  padding: 150px 0;
 }
-
-
 
 /*************** 3-2. 상영예정작 **************/
-.cs_mv{
-    /* background-color: rgb(206, 206, 206); */
+.cs_mv {
+  /* background-color: rgb(206, 206, 206); */
 }
 
-.cs_mv .flex-box.line{
-    border-bottom: 2px solid #7b7b7b;
+.cs_mv .flex-box.line {
+  border-bottom: 2px solid #7b7b7b;
 }
-.main .cs_mv .partbox{
-    /* height: 200px; */
+.main .cs_mv .partbox {
+  /* height: 200px; */
 }
 /* 현재상영영화 */
-.csmv{
-    display: flex;
-    padding-top: 25px;
+.csmv {
+  display: flex;
+  padding-top: 25px;
 }
 
-.csmv li{
-    flex: 1;
-    box-sizing: border-box;
-    padding: 10px;
+.csmv li {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-.csmv img{
-    width: 100%;
-    border-radius: 5px;
+.csmv img {
+  width: 100%;
+  border-radius: 5px;
 }
 /* 컨텐츠간 간격 아래쪽만 */
 .group-part.cs_mv {
-    padding-bottom: 150px;
+  padding-bottom: 150px;
 }
 /*************** 4. 스페셜관 **************/
-.sp_cinema{
-    min-height: 800px;
-    background: url(/images/cinema_710.png) no-repeat center/auto 100%;
-    opacity: 100%;
+.sp_cinema {
+  min-height: 800px;
+  background: url(/images/cinema_710.png) no-repeat center/auto 100%;
+  opacity: 100%;
 }
-.main .sp_cinema .partbox{
-    height: 930px;
+.main .sp_cinema .partbox {
+  height: 930px;
 }
-.sp_menu{
-    padding-top: 30px;
+.sp_menu {
+  padding-top: 30px;
 }
-.sp_menu a{
-    font-weight: normal;
-    color: #fff;
-    padding: 0;
-    font-size: 1.8rem;
+.sp_menu a {
+  font-weight: normal;
+  color: #fff;
+  padding: 0;
+  font-size: 1.8rem;
 }
-.sp_menu a:hover{
-    color: #5ABEC8;
-    font-weight: bold;
+.sp_menu a:hover {
+  color: #5abec8;
+  font-weight: 400;
 }
 
 .sp_menu .col-3 {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
-.sp_menu>.partbox>div>span{
-    display: block;
-    height: 2px;
-    background-color: #fff;
+.sp_menu > .partbox > div > span {
+  display: block;
+  height: 2px;
+  background-color: #fff;
 }
 
 .txt_box {
-    width: 50%;
-    padding-top: 12vh;
+  width: 50%;
+  padding-top: 12vh;
 }
 
 .txt_box h1 {
-    font-size: 6rem;
-    color: #fff;
+  font-size: 6rem;
+  color: #fff;
+  display: flex;
+  text-align: end;
+  align-items: baseline;
+  gap: 10px;
 }
+
 .txt_box h1 span {
-    font-size: 2.4rem;
-    font-weight: normal;
+  font-size: 2.4rem;
+  font-weight: normal;
 }
 .txt_box h3 {
-    font-size: 2rem;
-    color: #fff;
-    font-weight: 100;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 100;
 }
 .txt_box p {
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 300;
-    letter-spacing: -0.1rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: -0.1rem;
 }
 
+button {
+  border: 1.5px solid #7b7b7b;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 1.6rem;
+  letter-spacing: 0rem;
+}
+
+button:hover {
+  border: 1.5px solid #5abec8;
+  transition: 0.8s;
+}
 
 /*************** 5. 이벤트 **************/
-.event{
-    background-color: violet;
+.event {
+  background-color: violet;
 }
-.main .event .partbox{
-    height: auto;
+.main .event .partbox {
+  height: auto;
 }
 /*************** 6. 바로가기 아이콘 **************/
 
 div#dr_icon {
-    position: relative;
+  position: relative;
 }
 
-i{
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background: url(/images/ico-main4-100.png) no-repeat;
+i {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: url(/images/ico-main4-100.png) no-repeat;
 }
 i.dri1 {
-    background: url(/images/ico-main4-100.png) no-repeat;
+  background: url(/images/ico-main4-100.png) no-repeat;
 }
 i.dri2 {
-    background: url(/images/ico-main3-100.png) no-repeat;
+  background: url(/images/ico-main3-100.png) no-repeat;
 }
 i.dri3 {
-    background: url(/images/ico-main5-100.png) no-repeat;
+  background: url(/images/ico-main5-100.png) no-repeat;
 }
 i.dri4 {
-    background: url(/images/ico-main1-100.png) no-repeat;
+  background: url(/images/ico-main1-100.png) no-repeat;
 }
 i.dri5 {
-    background: url(/images/ico-main2-100.png) no-repeat;
+  background: url(/images/ico-main2-100.png) no-repeat;
 }
 i.dri6 {
-    background: url(/images/ico-main6-100.png) no-repeat;
+  background: url(/images/ico-main6-100.png) no-repeat;
 }
 
 .dr_icon span {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.8rem;
-    color: #fff;
-    font-weight: 200;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 200;
 }
-.dr_icon span:hover{
-    color: #5ABEC8;
-    font-weight: bold;
-    
+.dr_icon span:hover {
+  color: #5abec8;
+  font-weight: 400;
 }
 
 /* 컨텐츠간 간격 */
 .dr_icon {
-    padding-bottom:100px;
+  padding-bottom: 100px;
 }
-
 
 /*************** 7. 푸터 **************/
-#footer{
-    /* background-color:cornflowerblue; */
-    color: #b7b7b7;
-    height: auto;
-    padding-bottom: 150px;
+#footer {
+  /* background-color:cornflowerblue; */
+  color: #b7b7b7;
+  height: auto;
+  padding-bottom: 150px;
 }
 
-#footer .first-line{
-    padding-bottom: 20px;
+#footer .first-line {
+  padding-bottom: 20px;
 }
-.footer a{
-    color: #b7b7b7;
+.footer a {
+  color: #b7b7b7;
 }
-.footer .partbox{
-    height: auto;
-}
-
-.footer .partbox>ul{
-    display: flex;
-    font-size: 1.3rem;
-    gap: 0 25px;
+.footer .partbox {
+  height: auto;
 }
 
-.footer .partbox>ul>li{
-    /* padding: 10px 15px; */
+.footer .partbox > ul {
+  display: flex;
+  font-size: 1.3rem;
+  gap: 0 25px;
 }
 
-.footer span{
-    font-size: 5.1rem;
+.footer .partbox > ul > li {
+  /* padding: 10px 15px; */
+}
+
+.footer span {
+  font-size: 5.1rem;
 }
 /* 푸터로고사이즈 */
-.logo_footer img{
-    height: 50px;
-    opacity: 60%;
+.logo_footer img {
+  height: 50px;
+  opacity: 60%;
 }
 /* 푸터하단정보 */
-.ft_info p{
-    font-size: 1.2rem;
-    font-weight: 100;
-    margin: 0;
+.ft_info p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin: 0;
 }
-.ft_info address{
-    font-size: 1.3rem;
-    font-weight: 400;
-    font-style: normal;
+.ft_info address {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* 푸터 맨 하단 섹션 타이틀 공통 */
 .ft_tit {
-    font-size: 1.8rem;
-    color: #b7b7b7;
-    padding: 10px 0;
+  font-size: 1.8rem;
+  color: #b7b7b7;
+  padding: 10px 0;
 }
 /* 푸터 sns 아이콘 공통 */
 /* .footer .ft_sns_icon {
@@ -541,25 +572,25 @@ i.dri6 {
     height: 30px;
     margin-right: 5px;
 } */
-.footer-section03{
-    display: flex;
-    gap: 0 180px;
+.footer-section03 {
+  display: flex;
+  gap: 0 180px;
 }
 .sns-box {
-    margin-left: auto;
-    padding: 10px 0;
+  margin-left: auto;
+  padding: 10px 0;
 }
 
-.sns-box ol{
-    display: flex;
-    gap: 0 25px;
-    justify-content: space-between;
-  }
+.sns-box ol {
+  display: flex;
+  gap: 0 25px;
+  justify-content: space-between;
+}
 
-.sns-box a{
-    font-size: 3.5rem;
-  }
+.sns-box a {
+  font-size: 3.5rem;
+}
 
-.ir{
-    display: none;
+.ir {
+  display: none;
 }
