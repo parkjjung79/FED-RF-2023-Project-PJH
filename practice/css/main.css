@@ -125,6 +125,40 @@ a {
   align-items: center;
 }
 
+
+/* 따라다니는 원 */
+.mover{
+  position: absolute;
+  /* position: fixed; -> js에서 clientY사용 */
+  top: 0;
+  left: 0;
+  width: var(--mover-size);
+  height: var(--mover-size);
+  border-radius: 50%;
+  background-color: aquamarine;
+
+      /* 자기자신요소는 이벤트가 무시되게 셋팅해야 아래쪽 요소를 만질 수 있음 */
+      pointer-events: none;
+
+      mix-blend-mode: exclusion;
+      /* 
+          [ mix-blend-mode 속성 ]
+          - 겹치는 색상처리 블랜딩 모드 속성
+          - 겹치는 요소의 색상을 섞어서 디스플레이 처리함
+          - 밝은 색 섞기(screen계열)
+          - 어두운 색 섞기 ( darken계열)
+  
+      */
+  
+      /* 트랜지션 - 속시이지 : '이징'은 ease-out */
+      transition: 0.4s ease-out;
+  
+      /* 처음에 안보임 */
+      opacity: 0;
+  
+  }
+
+
 /*************** 1. 상단영역 ******************/
 #header {
 }
@@ -205,15 +239,16 @@ a {
 }
 .smenu > ul {
   background-color: rgb(0 0 0 / 49%);
-  border-radius: 15%;
+  border-radius: 5%;
   margin-top: 15px;
+  padding: 10px 0;
 }
 
 .smenu > ul > li {
   padding: 8px 10px;
 }
 .smenu > ul > li > a {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 300;
 }
 
@@ -453,6 +488,7 @@ button {
 button:hover {
   border: 1.5px solid #5abec8;
   transition: 0.8s;
+  cursor: pointer;
 }
 
 /*************** 5. 이벤트 **************/
