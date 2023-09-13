@@ -63,7 +63,7 @@ function loadFn() {
 
   // 2. 이벤트 대상에 마우스 무드 이벤트가 적용될때
   // 무버가 따라다니게 기능구현!
-  myBody.onmousemove = (e) => {
+  banner_box.onmousemove = (e) => {
     // e - 이벤트 전달변수
     // 1. 위치값 가져오기(박스중앙위치로 보정)
     let posx = e.pageX - gap;
@@ -76,14 +76,19 @@ function loadFn() {
     mover.style.top = posy + "px";
     mover.style.left = posx + "px";
   };
-
-  // 이벤트 구역을 들어올때만 보이기 / 나가면 숨기기
-  myBody.onmouseenter = () => {
-    mover.style.opacity = 1;
-  }; ////////////// mouseenter //////////////////
-  myBody.onmouseleave = () => {
-    mover.style.opacity = 0;
-  }; ////////////// mouseleave //////////////////
+  
+    // 이벤트 구역을 들어올때만 보이기 / 나가면 숨기기
+    banner_box.onmouseover = () => {
+      mover.style.opacity = 1;
+      console.log(33);
+      banner_box.style.cursor = 'none';
+    }; ////////////// mouseenter //////////////////
+    banner_box.onmouseout = () => {
+      mover.style.opacity = 0;
+      console.log(44);
+      
+      banner_box.style.cursor = 'auto';
+    }; ////////////// mouseleave //////////////////
 
   // [3] a요소에 오버시 원 크게 만들기! //////////
   // 대상: #banner

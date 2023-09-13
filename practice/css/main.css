@@ -3,7 +3,9 @@
 
 /* 웹폰트 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400&display=swap");
-
+:root{
+  --mover-size: 5vw;
+}
 /* 공사중표시 */
 body * {
   /* outline: 1px dashed #ccc; */
