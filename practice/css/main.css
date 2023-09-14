@@ -201,12 +201,12 @@ a {
   /* 패딩 - 간격 */
   padding: 20px 0 15px 0;
   font-weight: normal;
+  gap: 20px;
 }
 .top-menu > ul > li > a {
   /* 폰트사이즈 */
   font-size: 1.6rem;
   font-weight: 400;
-  padding-left: 15px;
 }
 
 .top-menu>ul>li>a::after{
@@ -230,8 +230,6 @@ a {
   display: flex;
   /* 진행방향 : 오른쪽 끝 */
   justify-content: flex-end;
-  /* 폰트사이즈 */
-  font-size: 2.4rem;
   gap: 0 10px;
 }
 .gnb > ul > li {
@@ -243,13 +241,52 @@ a {
   display: block;
 }
 
+
+/* 가상요소로 밑줄만들기 -> 공통클래스로 독립! */
+.bottom-menu > li > a::after {
+  content: "";
+  display: block;
+  
+  /* 변경요소 */
+  width: 0%;
+  margin-left: 100%;
+  
+  /* 글자와의 간격 */
+  margin-top: 4px;
+  
+  height: 2px;
+  background-color: #fff;
+  
+  /* 트랜지션 : 속시이지 */
+  transition: all 0.3s;
+}
+/* 상위메뉴 li에 오버시 밑줄 */
+.bottom-menu > li:hover > a::after {
+  width: 100%;
+  margin-left: 0%;
+  
+  /* 트랜지션 : 속시이지 : 오버시에 왼쪽마진값은 무애니!*/
+  transition: width 0.3s;
+}
+
+.bottom-menu a{
+  /* 폰트사이즈 */
+  font-size: 2.4rem;
+}
+
+.bottom-menu>ul>li:hover>a{
+  color: #5abec8;
+  font-weight: 400;
+  
+}
+/* 서브메뉴 */
 .smenu {
   position: absolute;
   left: 0;
   width: 100%;
   z-index: 1;
   text-align: right;
-  padding: 3px;
+  /* padding: 3px; */
   display: none;
 
 }
@@ -258,51 +295,23 @@ a {
   background-color: rgb(0 0 0 / 49%);
   border-radius: 5%;
   margin-top: 15px;
-  padding: 10px 0;
+  padding: 15px 10px;
   backdrop-filter: blur(3px);
 }
 
-.smenu > ul > li {
-  padding: 0 10px;
+.smenu ul {
+  
 }
-.smenu > ul > li > a {
+.smenu a {
   font-size: 1.7rem;
-  font-weight: 300;
+  line-height: 2.5;
+  font-weight: normal;
 }
 
-/* 가상요소로 밑줄만들기 -> 공통클래스로 독립! */
-.bottom-menu > li > a::after {
-  content: "";
-  display: block;
-
-  /* 변경요소 */
-  width: 0%;
-  margin-left: 100%;
-
-  /* 글자와의 간격 */
-  margin-top: 4px;
-
-  height: 2px;
-  background-color: #fff;
-
-  /* 트랜지션 : 속시이지 */
-  transition: all 0.3s;
-}
-/* 상위메뉴 li에 오버시 밑줄 */
-.bottom-menu > li:hover > a::after {
-  width: 100%;
-  margin-left: 0%;
-
-  /* 트랜지션 : 속시이지 : 오버시에 왼쪽마진값은 무애니!*/
-  transition: width 0.3s;
-}
-
-.bottom-menu>ul>li a:hover{
+.smenu li:hover a{
   color: #5abec8;
-  font-weight: 400;
-
+  font-weight: normal;
 }
-
 /*************** 2. 배너영역 ******************/
 #banner {
   background: url(/images/main_1200.jpg) no-repeat center/auto 100%;
@@ -465,8 +474,15 @@ span a {
 
 .sp_menu > .partbox > div > span {
   display: block;
-  height: 2px;
-  background-color: #fff;
+  height: 1px;
+  background-color: #5abec8;
+}
+.sp_menu > .partbox > div > span::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #333333;
 }
 
 .txt_box {
@@ -513,6 +529,11 @@ button:hover {
   border: 1.5px solid #5abec8;
   transition: 0.8s;
   cursor: pointer;
+}
+
+/* 시네마 line이랑 글씨 간격 */
+.partbox h2 a{
+  line-height: 2;
 }
 
 /*************** 5. 이벤트 **************/
