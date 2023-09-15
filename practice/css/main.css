@@ -142,13 +142,13 @@ a {
       /* 자기자신요소는 이벤트가 무시되게 셋팅해야 아래쪽 요소를 만질 수 있음 */
       pointer-events: none;
 
-      mix-blend-mode: exclusion;
+      mix-blend-mode: difference;
       /* 
           [ mix-blend-mode 속성 ]
           - 겹치는 색상처리 블랜딩 모드 속성
           - 겹치는 요소의 색상을 섞어서 디스플레이 처리함
           - 밝은 색 섞기(screen계열)
-          - 어두운 색 섞기 ( darken계열)
+          - 어두운 색 섞기 (darken계열)
   
       */
   
@@ -313,6 +313,40 @@ a {
   font-weight: normal;
 }
 /*************** 2. 배너영역 ******************/
+/* 모달창 시작 css */
+#modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 모달창 끝 css */
+
+
 #banner {
   background: url(/images/main_1200.jpg) no-repeat center/auto 100%;
   /* height: 930px; */
@@ -483,7 +517,16 @@ span a {
   width: 0%;
   height: 1px;
   background-color: #333333;
+  animation: 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+@keyframes line-ani {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+  }
 
 .txt_box {
   width: 50%;
