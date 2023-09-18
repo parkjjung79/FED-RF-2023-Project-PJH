@@ -517,35 +517,43 @@ span.plus1 {
   width: 20px;
   border: 1px solid #fff;
   transform: rotate(90deg);
+  margin: 0 auto;
 }
 span.plus2 {
   width: 20px;
   border: 1px solid #fff;
   transform: rotate(0deg);
+  margin: -1.5px auto;
 }
 
 /* 영화정보박스 제목 */
-/* .mv-info li:first-child {
-  font-size: 18px;
-  color: aqua;
-} */
+.mv-info .mv-tit {
+  padding: 115px 0 15px 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+.mv-info .more {
+  padding-bottom: 20px;
+}
 /* 상위li에 오버시 영화정보박스 보이기 */
 .nowmv > li:hover .mv-info {
   top: 0;
 }
 
+/****************** 영화정보박스  *********************/
 .mv-info ol {
   display: flex;
   /* gap: 7% 0; */
   justify-content: flex-end;
-  line-height: 20vh;
+  /* line-height: 1.2; */
   /* height: 100%; */
   flex-direction: column;
   align-content: space-around;
   flex-wrap: wrap;
   align-items: stretch;
  }
-/****************** 영화정보박스  *********************/
 
 
 /* 컨텐츠간 간격 */
