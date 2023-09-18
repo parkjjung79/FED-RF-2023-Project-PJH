@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400&display=swap");
 :root{
   --mover-size: 5vw;
+  --font-size: 1.6rem;
 }
 /* 공사중표시 */
 body * {
@@ -370,7 +371,7 @@ a {
 /* 메인 더보기 공통 */
 span a {
   float: right;
-  font-size: 1.8rem;
+  font-size: var(--font-size);
   color: #999;
   font-weight: normal;
 }
@@ -382,14 +383,19 @@ span a {
   gap: 10px;
 }
 
-.grmenu ul > li > a {
+.grmenu ul > li {
   padding: 10px 20px;
   font-weight: 400;
   border: 1.5px solid #595959;
   border-radius: 30px;
 }
 
-.grmenu ul > li > a:hover {
+nav.grmenu>ul>li:first-child {
+  background-color: #5abec8;
+  border: 1.5px solid #5abec8;
+}
+
+.grmenu ul > li:hover {
   border: 1.5px solid #5abec8;
   color: #fff;
   transition: 0.8s;
@@ -698,7 +704,7 @@ i.dri6 {
 } */
 .footer-section03 {
   display: flex;
-  gap: 0 180px;
+  gap: 0 9.1vw;
 }
 .sns-box {
   margin-left: auto;
