@@ -23,7 +23,11 @@
 
 <body>
     <!-- 따라다니는 원 -->
-    <div class="mover"></div>
+    <div class="mover">
+        <div class="mover-play">
+
+        </div>
+    </div>
     <!-- 확장형 레이아웃 -->
     <!-- 1. 상단영역 -->
     <div id="header">
@@ -130,23 +134,22 @@
             </header>
         </div>
     </div>
-    <!-- 모달창 -->
-    <div id="modal">
-        <div class="modal-content">
-          <h2>모달창 제목</h2>
-          <p>모달창 내용</p>
-          <button id="close-modal">닫기</button>
-        </div>
-      </div>
-
     <!-- 2. 배너영역 -->
     <div id="banner">
         <section class="banner inbox">
             <!-- 파트박스 1개 - 메인배너 -->
             <div class="flex-box">
-                <div class="partbox col-12"></div>
-        </section>
-    </div>
+                <div class="partbox col-12">
+                </div>
+            </section>
+        </div>
+        <div class="scroll-down">
+            <div class="scroll">
+                <div class="scroll-ball">
+                    <span>scroll<br>down</span>
+                </div>
+            </div>
+        </div>
     <!-- 3. 상영작 영역 -->
     <div id="main">
         <div class="main inbox">
@@ -196,6 +199,14 @@
                             <ul class="nowmv" >
                                 <li>
                                     <img src="../images/mv_01.jpg" alt="조커">
+                                    <div class="mv-info">
+                                        <ol>
+                                            <div class="ticket-btn">상세보기</div>
+                                            <span class="plus1"></span>
+                                            <span class="plus2"></span>
+                                            
+                                        </ol>
+                                    </div>
                                 </li>
                                 <li>
                                     <img src="../images/mv_02.jpg" alt="그린북">

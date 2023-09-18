@@ -138,12 +138,12 @@ a {
   width: var(--mover-size);
   height: var(--mover-size);
   border-radius: 50%;
-  background-color: aquamarine;
+  background-color: #fff;
 
       /* 자기자신요소는 이벤트가 무시되게 셋팅해야 아래쪽 요소를 만질 수 있음 */
       pointer-events: none;
 
-      mix-blend-mode: difference;
+      /* mix-blend-mode: difference; */
       /* 
           [ mix-blend-mode 속성 ]
           - 겹치는 색상처리 블랜딩 모드 속성
@@ -159,6 +159,16 @@ a {
       /* 처음에 안보임 */
       opacity: 0;
   
+  }
+
+  /* 원 안에 플레이삼각형 */
+  .mover .mover-play{
+    width: 22rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
   }
 
 
@@ -314,38 +324,6 @@ a {
   font-weight: normal;
 }
 /*************** 2. 배너영역 ******************/
-/* 모달창 시작 css */
-#modal {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: none;
-}
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-/* 모달창 끝 css */
 
 
 #banner {
@@ -354,6 +332,52 @@ a {
   /* 박스비율 - 4:3 */
   aspect-ratio: 16/9;
 }
+
+.scroll-down{
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  bottom: 35px;
+  border: 2px solid #d8d8d8;
+  width: 20px;
+  height: 40px;
+  border-radius: 30px;
+  z-index: 99999;
+  transform: translate(-50%, 0);
+  animation: scroll-ani .4s linear infinite ;
+}
+
+
+.scroll-down .scroll-ball{
+  position: absolute;
+  border: 2px solid #d8d8d8;
+  border-radius: 30px;
+  width: 1px;
+  height: 1px;
+  top: 10px;
+  left: 40%;
+}
+
+.scroll-down .scroll span{
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.1;
+  text-align: center;
+  color: #d8d8d8;
+  letter-spacing: 1px;
+
+}
+
+@keyframes scroll-ani {
+  to{
+    bottom:35px
+  }
+  form{
+    bottom:55px
+  }
+  
+}
+
 
 /*************** 3. 상영작 영역 ******************/
 #main {
@@ -448,6 +472,81 @@ nav.grmenu>ul>li:first-child {
   width: 100%;
   border-radius: 5px;
 }
+
+.nowmv >  li {
+  position: relative;
+  /* 부모자격 */
+
+  /* 앱솔루트 영화정보 부모자격요소를 숨길 수 있다! */
+  overflow: hidden;
+  /* 등분할 */
+  flex: 1;
+
+  /* 회전축 하단으로 변경 */
+  transform-origin: bottom;
+  /* 트랜지션 */
+  transition: all 0.4s;
+}
+
+
+
+/************** 영화정보박스 **************/
+.mv-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%; /* 아랫쪽 바깥에 위치! */
+  /* 부모는? 싸고있는 li */
+
+  text-align: center;
+  background-color: rgb(0 0 0 / 49%);
+
+  
+  font-size: 20px;
+  font-weight: normal;
+  color: #fff;
+  /* 줄바꿈방지! */
+  white-space: nowrap;
+
+  /* 트랜지션 */
+  transition: top 0.3s ease-out;
+
+}
+
+span.plus1 {
+  width: 20px;
+  border: 1px solid #fff;
+  transform: rotate(90deg);
+}
+span.plus2 {
+  width: 20px;
+  border: 1px solid #fff;
+  transform: rotate(0deg);
+}
+
+/* 영화정보박스 제목 */
+/* .mv-info li:first-child {
+  font-size: 18px;
+  color: aqua;
+} */
+/* 상위li에 오버시 영화정보박스 보이기 */
+.nowmv > li:hover .mv-info {
+  top: 0;
+}
+
+.mv-info ol {
+  display: flex;
+  /* gap: 7% 0; */
+  justify-content: flex-end;
+  line-height: 20vh;
+  /* height: 100%; */
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch;
+ }
+/****************** 영화정보박스  *********************/
+
 
 /* 컨텐츠간 간격 */
 .group-part.now_mv {
