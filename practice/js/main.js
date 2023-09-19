@@ -50,3 +50,33 @@ const closeModalBtn = document.getElementById("close-modal");
     */
 
 // 2. 대상선정
+
+
+const banner = domFn.qs("#banner");
+
+domFn.addEvt(banner,'click',()=>{
+  // console.log(33);
+  banner.innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/KI322kD7lNk?autoplay=1" title="그녀 메인 예고편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+
+
+}); ///////// click /////////
+
+// domFn.addEvt(banner,'wheel',()=>{
+//   event.preventDefault();
+//   console.log(22);
+  
+// })
+
+const spMenu = domFn.qsa('.sp_menu .partbox');
+
+let spNum = 0;
+setInterval(() => {
+  spMenu[spNum].classList.remove('on');
+
+  spNum++;
+  if(spNum>3)spNum=0;
+  
+    spMenu[spNum].classList.add('on');
+
+    // 아래 내용도 여기서 바꿔라명령!
+}, 4000);
