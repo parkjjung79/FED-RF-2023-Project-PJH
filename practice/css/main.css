@@ -3,7 +3,7 @@
 
 /* 웹폰트 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400&display=swap");
-:root{
+:root {
   --mover-size: 5vw;
   --font-size: 1.6rem;
 }
@@ -128,9 +128,8 @@ a {
   align-items: center;
 }
 
-
 /* 따라다니는 원 */
-.mover{
+.mover {
   position: absolute;
   /* position: fixed; -> js에서 clientY사용 */
   top: 0;
@@ -140,11 +139,11 @@ a {
   border-radius: 50%;
   background-color: #fff;
 
-      /* 자기자신요소는 이벤트가 무시되게 셋팅해야 아래쪽 요소를 만질 수 있음 */
-      pointer-events: none;
+  /* 자기자신요소는 이벤트가 무시되게 셋팅해야 아래쪽 요소를 만질 수 있음 */
+  pointer-events: none;
 
-      /* mix-blend-mode: difference; */
-      /* 
+  /* mix-blend-mode: difference; */
+  /* 
           [ mix-blend-mode 속성 ]
           - 겹치는 색상처리 블랜딩 모드 속성
           - 겹치는 요소의 색상을 섞어서 디스플레이 처리함
@@ -152,25 +151,23 @@ a {
           - 어두운 색 섞기 (darken계열)
   
       */
-  
-      /* 트랜지션 - 속시이지 : '이징'은 ease-out */
-      transition: 0.4s ease-out;
-  
-      /* 처음에 안보임 */
-      opacity: 0;
-  
-  }
 
-  /* 원 안에 플레이삼각형 */
-  .mover .mover-play{
-    width: 22rem;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: #000;
-  }
+  /* 트랜지션 - 속시이지 : '이징'은 ease-out */
+  transition: 0.4s ease-out;
 
+  /* 처음에 안보임 */
+  opacity: 0;
+}
+
+/* 원 안에 플레이삼각형 */
+.mover .mover-play {
+  width: 22rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+}
 
 /*************** 1. 상단영역 ******************/
 #header {
@@ -220,7 +217,7 @@ a {
   font-weight: 400;
 }
 
-.top-menu>ul>li>a::after{
+.top-menu > ul > li > a::after {
   content: "";
   display: block;
   width: 0%;
@@ -230,7 +227,6 @@ a {
   background-color: #fff;
   transition: all 0.3s;
 }
-
 
 /* 1-2-2. gnb영역 - bottom */
 .gnb {
@@ -252,22 +248,21 @@ a {
   display: block;
 }
 
-
 /* 가상요소로 밑줄만들기 -> 공통클래스로 독립! */
 .bottom-menu > li > a::after {
   content: "";
   display: block;
-  
+
   /* 변경요소 */
   width: 0%;
   margin-left: 100%;
-  
+
   /* 글자와의 간격 */
   margin-top: 4px;
-  
+
   height: 2px;
   background-color: #fff;
-  
+
   /* 트랜지션 : 속시이지 */
   transition: all 0.3s;
 }
@@ -275,20 +270,19 @@ a {
 .bottom-menu > li:hover > a::after {
   width: 100%;
   margin-left: 0%;
-  
+
   /* 트랜지션 : 속시이지 : 오버시에 왼쪽마진값은 무애니!*/
   transition: width 0.3s;
 }
 
-.bottom-menu a{
+.bottom-menu a {
   /* 폰트사이즈 */
   font-size: 2.4rem;
 }
 
-.bottom-menu>ul>li:hover>a{
+.bottom-menu > ul > li:hover > a {
   color: #5abec8;
   font-weight: 400;
-  
 }
 /* 서브메뉴 */
 .smenu {
@@ -299,7 +293,6 @@ a {
   text-align: right;
   /* padding: 3px; */
   display: none;
-
 }
 
 .smenu > ul {
@@ -311,7 +304,6 @@ a {
 }
 
 .smenu ul {
-  
 }
 .smenu a {
   font-size: 1.7rem;
@@ -319,21 +311,20 @@ a {
   font-weight: normal;
 }
 
-.smenu li:hover a{
+.smenu li:hover a {
   color: #5abec8;
   font-weight: normal;
 }
 /*************** 2. 배너영역 ******************/
 
-
 #banner {
-  background: url(/images/main_1200.jpg) no-repeat center/auto 100%;
+  background: url(/images/main_venom.jpg) no-repeat center/auto 100%;
   /* height: 930px; */
-  /* 박스비율 - 4:3 */
-  aspect-ratio: 16/9;
+  /* 박스비율 - 16:8 */
+  aspect-ratio: 16/8;
 }
 
-.scroll-down{
+.scroll-down {
   position: absolute;
   display: inline-block;
   left: 50%;
@@ -344,11 +335,10 @@ a {
   border-radius: 30px;
   z-index: 99999;
   transform: translate(-50%, 0);
-  animation: scroll-ani .4s linear infinite ;
+  animation: scroll-ani 0.4s linear infinite;
 }
 
-
-.scroll-down .scroll-ball{
+.scroll-down .scroll-ball {
   position: absolute;
   border: 2px solid #d8d8d8;
   border-radius: 30px;
@@ -358,26 +348,23 @@ a {
   left: 40%;
 }
 
-.scroll-down .scroll span{
+.scroll-down .scroll span {
   font-weight: 700;
   font-size: 13px;
   line-height: 1.1;
   text-align: center;
   color: #d8d8d8;
   letter-spacing: 1px;
-
 }
 
 @keyframes scroll-ani {
-  to{
-    bottom:35px
+  to {
+    bottom: 35px;
   }
-  form{
-    bottom:55px
+  form {
+    bottom: 55px;
   }
-  
 }
-
 
 /*************** 3. 상영작 영역 ******************/
 #main {
@@ -414,7 +401,7 @@ span a {
   border-radius: 30px;
 }
 
-nav.grmenu>ul>li:first-child {
+nav.grmenu > ul > li:first-child {
   background-color: #5abec8;
   border: 1.5px solid #5abec8;
 }
@@ -473,7 +460,7 @@ nav.grmenu>ul>li:first-child {
   border-radius: 5px;
 }
 
-.nowmv >  li {
+.nowmv > li {
   position: relative;
   /* 부모자격 */
 
@@ -488,8 +475,6 @@ nav.grmenu>ul>li:first-child {
   transition: all 0.4s;
 }
 
-
-
 /************** 영화정보박스 **************/
 .mv-info {
   position: absolute;
@@ -501,7 +486,6 @@ nav.grmenu>ul>li:first-child {
   text-align: center;
   background-color: rgb(0 0 0 / 49%);
 
-  
   font-size: 20px;
   font-weight: normal;
   color: #fff;
@@ -510,7 +494,6 @@ nav.grmenu>ul>li:first-child {
 
   /* 트랜지션 */
   transition: top 0.3s ease-out;
-
 }
 
 span.plus1 {
@@ -518,12 +501,14 @@ span.plus1 {
   border: 1px solid #fff;
   transform: rotate(90deg);
   margin: 0 auto;
+  cursor: pointer;
 }
 span.plus2 {
   width: 20px;
   border: 1px solid #fff;
   transform: rotate(0deg);
   margin: -1.5px auto;
+  cursor: pointer;
 }
 
 /* 영화정보박스 제목 */
@@ -553,8 +538,7 @@ span.plus2 {
   align-content: space-around;
   flex-wrap: wrap;
   align-items: stretch;
- }
-
+}
 
 /* 컨텐츠간 간격 */
 .group-part.now_mv {
@@ -578,11 +562,30 @@ span.plus2 {
   padding-top: 25px;
 }
 
-.csmv li {
+.csmv > li {
+  position: relative;
+  /* 부모자격 */
+
+  /* 앱솔루트 영화정보 부모자격요소를 숨길 수 있다! */
+  overflow: hidden;
+  /* 등분할 */
   flex: 1;
+
+  /* 회전축 하단으로 변경 */
+  transform-origin: bottom;
+  /* 트랜지션 */
+  transition: all 0.4s;
+
   box-sizing: border-box;
   padding: 10px;
 }
+
+/* .csmv li {
+  position: relative;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
+} */
 
 .csmv img {
   width: 100%;
@@ -592,6 +595,12 @@ span.plus2 {
 .group-part.cs_mv {
   padding-bottom: 150px;
 }
+
+/* 상위li에 오버시 영화정보박스 보이기 */
+.csmv > li:hover .mv-info {
+  top: 0;
+}
+
 /*************** 4. 스페셜관 **************/
 .sp_cinema {
   min-height: 800px;
@@ -625,7 +634,7 @@ span.plus2 {
   background-color: #5abec8;
 }
 .sp_menu > .partbox > div > span::after {
-  content: '';
+  content: "";
   display: block;
   width: 0%;
   height: 1px;
@@ -639,7 +648,7 @@ span.plus2 {
   100% {
     transform: translateY(50%);
   }
-  }
+}
 
 .txt_box {
   width: 50%;
@@ -688,17 +697,63 @@ button:hover {
 }
 
 /* 시네마 line이랑 글씨 간격 */
-.partbox h2 a{
+.partbox h2 a {
   line-height: 2;
 }
 
 /*************** 5. 이벤트 **************/
 .event {
-  background-color: violet;
+  background-color: rgb(0, 0, 0);
 }
-.main .event .partbox {
-  height: auto;
+
+/* 그리드박스 */
+.grid-box {
+  display: grid;
+
+  /* 박스중앙 최대크기 지정 */
+  max-width: 1200px;
+  margin: 0 auto;
+  /* outline: 2px dashed lightcoral; */
+
+  /***************************************** 
+            [수평방향간격]
+            grid-column-gap
+        *****************************************/
+  grid-column-gap: min(1vw, 10px);
+
+  /***************************************** 
+            [수직방향간격]
+            grid-row-gap
+        *****************************************/
+  grid-row-gap: min(1.5vw, 15px);
 }
+
+/* 이미지셋팅 */
+.grid-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 찌그러짐 방지! */
+  object-position: top;
+  /* common.css -> 공통css에 꼭 해줘야함!
+    base-line 빼고 다 가능! */
+  vertical-align: middle;
+}
+
+.third{
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.last {
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+
+/* 바로가기아이콘과의 간격 */
+.group-part.event {
+  padding-bottom: 100px;
+}
+
 /*************** 6. 바로가기 아이콘 **************/
 
 div#dr_icon {
