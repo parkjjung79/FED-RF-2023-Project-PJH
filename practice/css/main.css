@@ -163,7 +163,7 @@ a {
 .mover .mover-play {
   width: 10px;
   height: 10px;
-  clip-path: polygon(0 0,100% 50%,0 100%);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -320,12 +320,17 @@ a {
 /*************** 2. 배너영역 ******************/
 
 #banner {
-  background: url(/images/main_venom.jpg) no-repeat center/auto 100%;
+  /* background: url(/images/main_venom.jpg) no-repeat center/auto 100%; */
   /* height: 930px; */
   /* 박스비율 - 16:8 */
-  aspect-ratio: 16/8;
+  /* aspect-ratio: 16/8; */
 }
 
+#banner .main__banner{
+  height: 900px;
+  aspect-ratio: 16/8;
+  background-color: pink;
+}
 .scroll-down {
   position: absolute;
   display: inline-block;
@@ -657,7 +662,6 @@ span.plus2 {
   /* animation: 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; */
 }
 .sp_menu > .partbox.on > div > span::after {
-  
   width: 100%;
   transition: 4s linear;
 }
@@ -738,13 +742,13 @@ button:hover {
   /***************************************** 
             [수평방향간격]
             grid-column-gap
-        *****************************************/
+  *****************************************/
   grid-column-gap: min(1vw, 10px);
 
   /***************************************** 
             [수직방향간격]
             grid-row-gap
-        *****************************************/
+  *****************************************/
   grid-row-gap: min(1.5vw, 15px);
 }
 
@@ -759,7 +763,7 @@ button:hover {
   vertical-align: middle;
 }
 
-.third{
+.third {
   grid-column: 1/3;
   grid-row: 2/3;
 }
