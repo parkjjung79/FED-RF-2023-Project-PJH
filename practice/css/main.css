@@ -15,6 +15,27 @@ body > div > * {
   outline-color: red;
 }
 
+/* 전체반투명 가림막 */
+body::before {
+  content: '';
+  display:none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 9999;
+  /* 보여줄 요소는 이것보다 숫자가 크면됨! */
+}
+/* body 클래스 on 하면 적용 */
+body.on::before {
+  display: block;
+}
+
+
+
 /************* 기본 초기화 셋팅 *************/
 
 /* 기본초기화 */
@@ -101,19 +122,7 @@ a {
   margin: 0 auto;
 }
 
-/* 전체반투명 가림막 */
-body.on::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  opacity: 0.7;
-  z-index: 9999;
-  /* 보여줄 요소는 이것보다 숫자가 크면됨! */
-}
+
 
 /* 클리어 설정 가상요소 - float에 의한 망가짐 방지! */
 .inbox::after,
