@@ -7,17 +7,18 @@
     <link rel="shortcut icon" href="https://www.megabox.co.kr/static/pc/images/favicon.ico"/>
     <!-- 링크 아이콘 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!-- 외부 CSS -->
+
+    <!-- 메인 CSS -->
     <link rel="stylesheet" href="../practice/css/main.css">
     <!-- 미디어쿼리 CSS -->
     <link rel="stylesheet" href="../practice/css/media.css">
 
-    <!-- 부드러운 스크롤 -->
-    <script src="./js/smoothScroll23.js"></script>
-    <!-- 외부 JS -->
-    <script src="./js/main.js" defer></script>
+    <!-- 부드러운 스크롤
+    <script src="./js/smoothScroll23.js"></script> -->
+    <!-- 메인 JS -->
+    <script src="./js/main.js" type="module"></script>
     <!-- 따라다니는 원 -->
-    <script src="./js/fllowing.js"></script>
+    <!-- <script src="./js/fllowing.js"></script> -->
 
 </head>
 
@@ -25,7 +26,6 @@
     <!-- 따라다니는 원 -->
     <div class="mover">
         <div class="mover-play">
-
         </div>
     </div>
     <!-- 확장형 레이아웃 -->
@@ -136,9 +136,50 @@
     </div>
     <!-- 2. 배너영역 -->
     <div id="banner">
-        <div class="main__banner">
-            <img src="../images/main_1200.jpg" alt="영화her">
-        </div>
+        <section class="banner_box">
+            <div class="main_banner">
+                <img src="../images/main_1200.jpg" alt="영화her">
+            </div>
+            <div class="main_banner">
+                <img src="../images/main_venom.jpg" alt="venom">
+            </div>
+            <div class="main_banner">
+                <img src="../images/main_minari.jpg" alt="미나리">
+            </div>
+
+             <!--블릿버튼-->
+             <ol class="indic">
+                <li class="on">
+                    <img src="../images/dot1.png" alt="흰색">
+                    <img src="../images/dot2.png" alt="회색">
+                </li>
+                <li>
+                    <img src="../images/dot1.png" alt="흰색">
+                    <img src="../images/dot2.png" alt="회색">
+                </li>
+                <li>
+                    <img src="../images/dot1.png" alt="흰색">
+                    <img src="../images/dot2.png" alt="회색">
+                </li>
+                <li>
+                    <img src="../images/dot1.png" alt="흰색">
+                    <img src="../images/dot2.png" alt="회색">
+                </li>
+                <li>
+                    <img src="../images/dot1.png" alt="흰색">
+                    <img src="../images/dot2.png" alt="회색">
+                </li>
+            </ol>
+
+
+        </section>
+        <!-- 이동버튼 -->
+        <a href="#" class="abtn ab1">
+            <img src="../images/left_btn.png" alt="왼쪽버튼">
+        </a>
+        <a href="#" class="abtn ab2">
+            <img src="../images/right_btn.png" alt="오른쪽버튼">
+        </a>
     </div>
         <div class="scroll-down">
             <div class="scroll">

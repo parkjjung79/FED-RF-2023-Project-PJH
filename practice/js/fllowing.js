@@ -92,7 +92,7 @@ function loadFn() {
 
   // [3] a요소에 오버시 원 크게 만들기! //////////
   // 대상: #banner
-  const mbanner = qsa("#banner");
+  const mbanner = qs("#banner");
   console.log("메인배너:", mbanner);
 
   // 한번에 셋팅하기!

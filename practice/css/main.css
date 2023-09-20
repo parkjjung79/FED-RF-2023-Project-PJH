@@ -4,7 +4,7 @@
 /* 웹폰트 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400&display=swap");
 :root {
-  --mover-size: 5vw;
+  --mover-size: 10vw;
   --font-size: 1.6rem;
 }
 /* 공사중표시 */
@@ -101,6 +101,20 @@ a {
   margin: 0 auto;
 }
 
+/* 전체반투명 가림막 */
+body.on::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 9999;
+  /* 보여줄 요소는 이것보다 숫자가 크면됨! */
+}
+
 /* 클리어 설정 가상요소 - float에 의한 망가짐 방지! */
 .inbox::after,
 .group-part::after {
@@ -161,8 +175,8 @@ a {
 
 /* 원 안에 플레이삼각형 */
 .mover .mover-play {
-  width: 10px;
-  height: 10px;
+  width: 18px;
+  height: 18px;
   clip-path: polygon(0 0, 100% 50%, 0 100%);
   position: absolute;
   top: 50%;
@@ -323,14 +337,70 @@ a {
   /* background: url(/images/main_venom.jpg) no-repeat center/auto 100%; */
   /* height: 930px; */
   /* 박스비율 - 16:8 */
-  /* aspect-ratio: 16/8; */
+  aspect-ratio: 16/8;
 }
 
-#banner .main__banner{
-  height: 900px;
+.main_banner{
+  display: flex;
   aspect-ratio: 16/8;
-  background-color: pink;
 }
+
+/* 이동버튼 공통 */
+.abtn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4%;
+  max-width: 55px;
+  /* 최대크기지정 */
+}
+.abtn img{
+  width: 100%;
+  /* 높이값은 자동조절 */
+}
+/* 오른쪽버튼 */
+.rb{
+  right: 10%;
+}
+/* 왼쪽버튼 */
+.lb{
+  left: 10%;
+}
+
+
+/* 블릿버튼 */
+.indic {
+  display: flex;
+  /* 플렉스박스 */
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+}
+
+.indic li {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.indic li img {
+  position: absolute;
+  /*이미지 겹치게*/
+}
+
+.indic li img:last-child {
+  /*회색이미지만 투명하게*/
+  opacity: 0;
+}
+
+/*회색블릿이미지가 보이게하는 class*/
+.indic li.on img:last-child {
+  /*회색이미지만 투명하게*/
+  opacity: 1;
+  /*우선적용!*/
+}
+
+
 .scroll-down {
   position: absolute;
   display: inline-block;
