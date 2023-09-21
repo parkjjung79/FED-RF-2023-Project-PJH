@@ -1,7 +1,7 @@
 // 따라다니는 원 JS - following.js
 
 // 1. 이벤트 등록 하기
-window.addEventListener("DOMContentLoaded", loadFn);
+// window.addEventListener("DOMContentLoaded", setFollow);
 
 // 2. 함수만들기 -> 할당함수 /////
 // DOM선택함수
@@ -9,21 +9,21 @@ const qs = (x) => document.querySelector(x);
 const qsa = (x) => document.querySelectorAll(x);
 
 // 2-1. 로드함수 ////
-function loadFn() {
+function setFollow() {
   // 호출확인
-  console.log("로딩완료!");
+  // console.log("로딩완료!");
 
   // [1] html 코드 넣기 //////////////////////////////////
   // 1. 대상선정
   // 변경대상: #banner
   const banner_box = qs("#banner");
-  console.log("대상:", banner_box);
+  // console.log("대상:", banner_box);
 
   // 2. html 태그 만들기
   let hcode = ""; // hcode 부분 이름 변경 가능!! // = ''; 스트링 리터럴이 됨!
 
   // 3. 대상에 html 넣기
-  banner_box.innerHTML = hcode;
+  banner_box.innerHTML += hcode;
 
   // [2] 따라다니는 원 셋팅하기
   // 1. 대상선정 : .mover
@@ -32,7 +32,7 @@ function loadFn() {
   // (2) 이벤트 대상 : document.body
   const myBody = document.body;
 
-  console.log("요소:", mover);
+  // console.log("요소:", mover);
 
   /******************************************
     
@@ -54,12 +54,11 @@ function loadFn() {
         -> 모니터 화면을 기준
 
     ******************************************/
-
   // 무버 크기의 절반계산
   let gap = mover.clientHeight / 2;
   // 선택요소의 크기 js
   // width는 clientWidth, height는 clientHeight
-  console.log("무버Height:", gap);
+  // console.log("무버Height:", gap);
 
   // 2. 이벤트 대상에 마우스 무드 이벤트가 적용될때
   // 무버가 따라다니게 기능구현!
@@ -77,15 +76,33 @@ function loadFn() {
     mover.style.left = posx + "px";
   };
   
+  const abtn = qsa('.abtn');
     // 이벤트 구역을 들어올때만 보이기 / 나가면 숨기기
     banner_box.onmouseover = () => {
       mover.style.opacity = 1;
-      console.log(33);
+      // console.log(33);
       banner_box.style.cursor = 'none';
+
+
+      console.log(abtn);
+      abtn.forEach(ele=>{
+        ele.onmouseover = ()=>{
+          mover.style.cursor = 'pointer';
+          mover.style.transform = 'scale(0)';
+
+        }
+        ele.onmouseout = ()=>{
+          mover.style.cursor = 'none';
+          mover.style.transform = 'scale(1)';
+
+        }
+
+      })
+
     }; ////////////// mouseenter //////////////////
     banner_box.onmouseout = () => {
       mover.style.opacity = 0;
-      console.log(44);
+      // console.log(44);
       
       banner_box.style.cursor = 'auto';
     }; ////////////// mouseleave //////////////////
@@ -93,14 +110,20 @@ function loadFn() {
   // [3] a요소에 오버시 원 크게 만들기! //////////
   // 대상: #banner
   const mbanner = qs("#banner");
-  console.log("메인배너:", mbanner);
+  // console.log("메인배너:", mbanner);
 
   // 한번에 셋팅하기!
-  mbanner.forEach((ele) => {
     // a 요소에 마우스 들어올때
-    ele.onmouseenter = () => (mover.style.transform = "scale(2)");
+    mbanner.onmouseenter = () => (mover.style.transform = "scale(1)");
 
     // a 요소에 마우스 나갈때
-    ele.onmouseleave = () => (mover.style.transform = "scale(1)");
-  });
+    mbanner.onmouseleave = () => (mover.style.transform = "scale(0)");
 } //////////// loadFn /////////////////
+
+
+
+
+
+
+// 모듈 내보내기
+export default setFollow;
