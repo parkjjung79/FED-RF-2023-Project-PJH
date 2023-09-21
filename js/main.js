@@ -41,7 +41,7 @@ dFn.addEvt(window, "keyup", () => setPos(window.scrollY));
 // event.stopPropagation()
 // 이벤트 객체의 이벤트 버블링 막아주는 메서드임!
 
-const mvId = ["NHA69lCd1ZM","KI322kD7lNk","Vw5euKuTJsE"];
+const mvId = ["NHA69lCd1ZM","KI322kD7lNk","A33AdB4u8GQ","tnyWkyDGWuM"];
 
 // 메인배너 클릭시 영상 재생 ///////////////////////////
 const banner = dFn.qsa(".banner_img");
@@ -94,8 +94,8 @@ const indicBox = dFn.qs('.indic');
 for(let i=0;i<CNT_SLIDE;i++){
   indicBox.innerHTML+=`
     <li${i==0?` class="on"`:``}>
-      <img src="../images/dot1.png" alt="흰색">
-      <img src="../images/dot2.png" alt="회색">
+      <img src="./images/dot3.png" alt="흰색">
+      <img src="./images/dot4.png" alt="회색">
     </li>
   `;
 } /////////// for ///////////////
@@ -325,20 +325,20 @@ function playMovie(mcode) {
   // style.cssText는
   // css를 직접 style속성값으로 넣음!
   cbtn.style.cssText = `
-      position : absolute;
-      top : 15%;
-      right : 15%;
-      width : 50px;
-      height : 50px;
-      border : none;
-      color : #fff;
-      background-color : blue;
-      font-size : 40px;
-      font-weight : bold;
-      border-radius: 50%;
-      cursor : pointer;
-      line-height : 36px;
-      text-indent: -10px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 80px;
+    height: 80px;
+    border: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid #fff;
+    font-size: 59px;
+    font-weight: 100;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 29px;
+    text-indent: -3px;
   `;
 
   // 아이프레임 보더 없앰
@@ -389,6 +389,9 @@ grmenu.forEach((ele)=>{
 }); //////// forEach /////////
 
 
+
+// 장르메뉴 클릭시 css 변경! ///////
+// 1. 대상선정
 
 
 
