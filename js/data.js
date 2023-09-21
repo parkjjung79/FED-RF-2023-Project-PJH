@@ -63,14 +63,14 @@ const mvList = {
     const spList = [
       {
         idx: 0,
-        title: "Dolby<span>CINEMA</span>",
+        title: "DOLBY<span>CINEMA</span>",
         story: `단지, 보고, 듣는 영화에 만족할 수 없는 당신을 위해! 드라마틱한 이미지, 입체적인 사운드, 몰입에 최적화 된 공간까지! 최상의 영화를 경험하는 단 하나의 시네마, Dolby Cinema 를 메가박스에서 만나보세요.
         `,
         spimg: "./images/cinema_710.png",
       },
       {
         idx: 1,
-        title: "The Boutique<span>PRIVATE</span>",
+        title: "The PRIVATE<span>CINEMA</span>",
         story: `당신의 특별한 순간을 빛나게 해줄 프리미엄 어메니티와 룸서비스를 메가박스에서 만나보세요.`,
         spimg: "./images/cinema2.png",
       },
@@ -82,7 +82,7 @@ const mvList = {
       },
       {
         idx: 3,
-        title: "MEGABOX KIDS<span>CINEMA</span>",
+        title: "KIDS<span>CINEMA</span>",
         story: `아이와 가족이 함께 머물며 삶의 소중한 가치를 배우는 더 행복한 놀이공간을 메가박스에서 만나보세요.`,
         spimg: "./images/cinema4.png",
       },
@@ -92,16 +92,16 @@ const mvList = {
     /* 
       스페셜관 이미지
       1. 돌비
-      "../images/cinema_710.png"
+      "./images/cinema_710.png"
 
       2. 더프라이빗
-      "../images/cinema2.png"
+      "./images/cinema2.png"
 
       3. 퍼피
-      "../images/cinema3.png"
+      "./images/cinema3.png"
 
       4. 키즈
-      "../images/cinema4.png"
+      "./images/cinema4.png"
     
     */
 
