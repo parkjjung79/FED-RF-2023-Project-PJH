@@ -76,6 +76,22 @@ const mvList = {
       
     ]; //////////////// spList ////////////////////////
     
+    /* 
+      스페셜관 이미지
+      1. 돌비
+      "../images/cinema_710.png"
+
+      2. 더프라이빗
+      "../images/cinema2.png"
+
+      3. 퍼피
+      "../images/cinema3.png"
+
+      4. 키즈
+      "../images/cinema4.png"
     
+    */
+
+
     // 모듈화 내보내기 ///////
     export {mvList, spList};
