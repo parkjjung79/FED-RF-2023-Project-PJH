@@ -431,7 +431,7 @@ a {
   border-radius: 30px;
   z-index: 99999;
   transform: translate(-50%, 0);
-  animation: scroll-ani 0.4s linear infinite;
+  /* animation: scroll-ani 0.4s linear infinite; */
 }
 
 .scroll-down .scroll-ball {
@@ -764,7 +764,7 @@ span.plus2 {
 }
 
 .txt_box {
-  width: 50%;
+  width: 45%;
   padding-top: 12vh;
 }
 
@@ -980,6 +980,7 @@ i.dri6 {
 .footer-section03 {
   display: flex;
   gap: 0 9.1vw;
+  flex-wrap: wrap;
 }
 .sns-box {
   margin-left: auto;

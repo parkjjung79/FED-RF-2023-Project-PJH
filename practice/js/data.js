@@ -40,7 +40,7 @@ const mvList = {
     "애니메이션":[
       {이미지:"../images/genre/animation/mv_ani1.jpg",제목:"토이스토리4"},
       {이미지:"../images/genre/animation/mv_ani2.jpg",제목:"코코"},
-      {이미지:"../images/genre/animation/mv_ani3.jpg",제목:"센과치히로의생방불명"},
+      {이미지:"../images/genre/animation/mv_ani3.jpg",제목:"센과치히로의행방불명"},
       {이미지:"../images/genre/animation/mv_ani4.jpg",제목:"빅히어로"},
       {이미지:"../images/genre/animation/mv_ani5.jpg",제목:"엘리멘탈"},]
     
@@ -57,28 +57,34 @@ const mvList = {
       [ 데이터 항목 : ]
       1. 순번(기본키) : idx
       2. 스페셜관이름 : title
-      3. 스페셜관정보 : info
+      3. 스페셜관정보 : story
+      4. 스페셜관이미지 : spimg
       ********************************************/
     const spList = [
       {
         idx: 0,
-        title: "Dolby <span> CINEMA</span>",
-        story: `단지, 보고, 듣는 영화에 만족할 수 없는 당신을 위해! 드라마틱한 이미지, 입체적인 사운드, 몰입에 최적화 된 공간까지! 최상의 영화를 경험하는 단 하나의 시네마, Dolby Cinema 를 메가박스에서 만나보세요.`,
+        title: "Dolby<span>CINEMA</span>",
+        story: `단지, 보고, 듣는 영화에 만족할 수 없는 당신을 위해! 드라마틱한 이미지, 입체적인 사운드, 몰입에 최적화 된 공간까지! 최상의 영화를 경험하는 단 하나의 시네마, Dolby Cinema 를 메가박스에서 만나보세요.
+        `,
+        spimg: "../images/cinema_710.png",
       },
       {
         idx: 1,
-        title: "The Boutique <span>Private</span>",
+        title: "The Boutique<span>PRIVATE</span>",
         story: `당신의 특별한 순간을 빛나게 해줄 프리미엄 어메니티와 룸서비스를 메가박스에서 만나보세요.`,
+        spimg: "../images/cinema2.png",
       },
       {
         idx: 2,
-        title: "퍼피시네마",
+        title: "PPUPY<span>CINEMA</span>",
         story: `세계 최초 반려동물 동반 멀티플렉스! 강아지와 영화는 물론 미용,목욕,보딩,식사까지 모든 것을 오롯이 함께 즐길 수 있는 우리들의 공간을 메가박스에서 만나보세요.`,
+        spimg: "../images/cinema3.png",
       },
       {
         idx: 3,
-        title: "키즈시네마",
+        title: "MEGABOX KIDS<span>CINEMA</span>",
         story: `아이와 가족이 함께 머물며 삶의 소중한 가치를 배우는 더 행복한 놀이공간을 메가박스에서 만나보세요.`,
+        spimg: "../images/cinema4.png",
       },
       
     ]; //////////////// spList ////////////////////////

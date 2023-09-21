@@ -57,6 +57,8 @@ banner.forEach((ele,idx)=>{
 // 스페셜관 라인/배경 움직임 /////////////////////////////////////
 const spMenu = dFn.qsa(".sp_menu .partbox");
 const spTxt = dFn.qsa('.sp-txt');
+const spImg = dFn.qsa('.sp_cinema');
+console.log('나야나!',spImg);
 
 let spNum = 0;
 setInterval(() => {
@@ -70,7 +72,9 @@ setInterval(() => {
   // 아래 내용도 여기서 바꿔라명령!
   spTxt[0].innerHTML = spList[spNum].title;
   spTxt[1].innerHTML = spList[spNum].story;
-}, 4000);
+
+  
+}, 5000);
 
 
 
