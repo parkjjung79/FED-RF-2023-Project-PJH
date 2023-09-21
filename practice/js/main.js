@@ -7,6 +7,8 @@ import dFn from "./dom.js";
 import { startSS, setPos } from "./smoothScroll23.js";
 // 따라다니는 원 모듈
 import setFollow from "./fllowing.js";
+// 데이터 가져오기
+import {mvList, spList} from "./data.js";
 
 // console.log(dFn);
 
@@ -51,14 +53,10 @@ banner.forEach((ele,idx)=>{
 
 })
 
-// 장르버튼 활성화하기 ///////////////////////////
-
-// 1. 대상선정: .grmenu>ul>li>a
-// let grbtn = dFn.qsaEl(".grmenu>ul>li>a");
-// console.log(grbtn);
 
 // 스페셜관 라인/배경 움직임 /////////////////////////////////////
 const spMenu = dFn.qsa(".sp_menu .partbox");
+const spTxt = dFn.qsa('.sp-txt');
 
 let spNum = 0;
 setInterval(() => {
@@ -70,6 +68,8 @@ setInterval(() => {
   spMenu[spNum].classList.add("on");
 
   // 아래 내용도 여기서 바꿔라명령!
+  spTxt[0].innerHTML = spList[spNum].title;
+  spTxt[1].innerHTML = spList[spNum].story;
 }, 4000);
 
 
@@ -355,6 +355,34 @@ function playMovie(mcode) {
   document.body.classList.add("on");
 } //////////////// playMovie 함수 ////////////
 //////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////
+
+// 장르버튼 활성화하기 ///////////////////////////
+
+// 1. 대상선정: .grmenu>ul>li>a
+const grmenu = dFn.qsa('.grmenu a');
+const nowmv = dFn.qsa('.nowmv li');
+// console.log(grmenu,nowmv);
+
+// 2. 이벤트 설정하기
+grmenu.forEach((ele)=>{
+  ele.onclick = ()=>{
+    event.preventDefault();
+    // 1. a텍스트 읽기
+    let atxt = ele.innerText;
+    console.log(atxt);
+    // 2. 이미지변경하기
+    nowmv.forEach((el,idx)=>{
+      // console.log(dFn.qsEl(el,'img'),mvList[atxt][idx].이미지)
+      dFn.qsEl(el,'img').src = mvList[atxt][idx].이미지;
+      dFn.qsEl(el,'img').alt = mvList[atxt][idx].제목;
+      dFn.qsEl(el,'.mv-tit').innerText = mvList[atxt][idx].제목;
+    })
+  }; ////// click /////
+}); //////// forEach /////////
 
 
 
