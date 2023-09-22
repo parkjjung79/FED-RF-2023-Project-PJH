@@ -70,7 +70,7 @@ const mvList = {
       },
       {
         idx: 1,
-        title: "The PRIVATE<span>CINEMA</span>",
+        title: "BOUTIQUE<span>CINEMA</span>",
         story: `당신의 특별한 순간을 빛나게 해줄 프리미엄 어메니티와 룸서비스를 메가박스에서 만나보세요.`,
         spimg: "./images/cinema2.png",
       },
