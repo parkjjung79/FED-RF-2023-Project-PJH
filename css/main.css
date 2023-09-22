@@ -879,25 +879,25 @@ i {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  background: url(./images/ico-main4-100.png) no-repeat;
+  background: url(images/ico-main4-100.png) no-repeat;
 }
 i.dri1 {
-  background: url(./images/ico-main4-100.png) no-repeat;
+  background: url(images/ico-main4-100.png) no-repeat;
 }
 i.dri2 {
-  background: url(./images/ico-main3-100.png) no-repeat;
+  background: url(images/ico-main3-100.png) no-repeat;
 }
 i.dri3 {
-  background: url(./images/ico-main5-100.png) no-repeat;
+  background: url(images/ico-main5-100.png) no-repeat;
 }
 i.dri4 {
-  background: url(./images/ico-main1-100.png) no-repeat;
+  background: url(images/ico-main1-100.png) no-repeat;
 }
 i.dri5 {
-  background: url(./images/ico-main2-100.png) no-repeat;
+  background: url(images/ico-main2-100.png) no-repeat;
 }
 i.dri6 {
-  background: url(./images/ico-main6-100.png) no-repeat;
+  background: url(images/ico-main6-100.png) no-repeat;
 }
 
 .dr_icon span {
