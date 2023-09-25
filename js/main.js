@@ -391,7 +391,16 @@ grmenu.forEach((ele)=>{
 
 
 // 장르메뉴 클릭시 css 변경! ///////
-// 1. 대상선정
-nowmv.onclick = () => {}
+// 1. 대상선정 
+const nmv_click = dFn.qsa('.nowmv li');
+// 2. 이벤트 설정 : on
+
+
+
+// 3. css  style 설정
+nmv_click.style.cssText = `
+background-color: #5abec8;
+border: 1.5px solid #5abec8;
+`;
 
 

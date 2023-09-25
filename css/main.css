@@ -482,7 +482,7 @@ span a {
   color: #999;
   font-weight: normal;
 }
-
+/* 장르버튼 */
 .grmenu ul {
   display: flex;
   font-size: 1.6rem;
@@ -496,6 +496,12 @@ span a {
   border: 1.5px solid #595959;
   border-radius: 30px;
 }
+/* 장르 버튼 클래스 on 추가 */
+.grmenu ul > li.on{
+  background-color: #5abec8;
+  border: 1.5px solid #5abec8;
+}
+
 
 nav.grmenu > ul > li:first-child {
   background-color: #5abec8;
@@ -507,6 +513,8 @@ nav.grmenu > ul > li:first-child {
   color: #fff;
   transition: 0.8s;
 }
+
+
 
 /* 영화장르 메뉴 li 오버시 a 가상요소로 영어 넣기! */
 /* .grmenu ul>li:hover a::after{
