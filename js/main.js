@@ -392,6 +392,6 @@ grmenu.forEach((ele)=>{
 
 // 장르메뉴 클릭시 css 변경! ///////
 // 1. 대상선정
-
+nowmv.onclick = () => {}
 
 
