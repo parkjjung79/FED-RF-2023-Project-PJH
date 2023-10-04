@@ -369,6 +369,7 @@ function playMovie(mcode) {
 // 1. 대상선정: .grmenu>ul>li>a
 const grmenu = dFn.qsa('.grmenu a');
 const nowmv = dFn.qsa('.nowmv li');
+const chgcss = dFn.qsa('.nowmv li');
 // console.log(grmenu,nowmv);
 
 // 2. 이벤트 설정하기
@@ -394,7 +395,9 @@ grmenu.forEach((ele)=>{
 // 1. 대상선정 
 const nmv_click = dFn.qsa('.nowmv li');
 // 2. 이벤트 설정 : on
-
+nmv_click.forEach(ele=>{
+  dFn.addEvt(ele,'click',goGame);
+}); /////////////// forEach /////////////
 
 
 // 3. css  style 설정
