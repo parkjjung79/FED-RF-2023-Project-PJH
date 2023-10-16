@@ -1,11 +1,31 @@
-[ 개인 포폴 1차 주제선정 ]
+[ 개인 포폴 2차 주제선정 ]
 -> 탐쌤이멜: tombap@naver.com
 -> 벤치마킹 분석을 많이 해봐야함~!
 
-1. 유형
-(1) 카피사이트
-(2) 크로스오버 사이트 (디자인<->내용)
-(3) 나의 구성 사이트
+
+정현 2차 프로젝트 
+유형 : 제품소개 페이지
+리액트 사용(검색(검색페이지)도 되고 데이터 활용해야함)
+
+
+1. 스페이스허브
+https://www.hanwhaspacehub.com/space-hub/
+
+2. 스튜디오 홈페이지
+https://www.depo.studio/
+
+3. 아이폰15프로 소개
+https://www.apple.com/kr/iphone-15-pro/?afid=p238%7CTdfqr6oe_mtid_209254jz40384&cid=wwa-kr-kwna-iphone-Brand-iPhone-Evergreen-
+
+4. 화장품 소개
+https://the-beautiful.jp/
+
+5. 복순도가
+https://boksoon.com/index.html
+
+6. 충전기
+https://www.sksignet.com/product/v2200
+
 
 2. 공통
 - 선정 사이트는 나름 구성을 변경한다

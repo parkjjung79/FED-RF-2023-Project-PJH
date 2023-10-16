@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>4. Icons/add-circle</title>
+    <g id="상세" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.-바디아로마테라피/BA---원료-Copy" transform="translate(-1188.000000, -263.000000)">
+            <g id="Group-18" transform="translate(460.000000, 120.000000)">
+                <g id="Group-17" transform="translate(500.000000, 0.000000)">
+                    <g id="원료-텍스트" transform="translate(40.000000, 140.000000)">
+                        <g id="Group" transform="translate(185.000000, 0.000000)">
+                            <circle id="Oval" stroke="#112B23" fill="#112B23" cx="12" cy="12" r="8.5"></circle>
+                            <g transform="translate(7.000000, 7.000000)" id="Line" stroke="#FFFFFF">
+                                <line x1="0" y1="5" x2="10" y2="5"></line>
+                                <line x1="3.28030393e-16" y1="5" x2="10" y2="5" transform="translate(5.000000, 5.000000) rotate(90.000000) translate(-5.000000, -5.000000) "></line>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
