@@ -1,0 +1,53 @@
+[ 개인 포폴 2차 주제선정 ]
+-> 탐쌤이멜: tombap@naver.com
+-> 벤치마킹 분석을 많이 해봐야함~!
+
+[1]유형 : 제품소개 페이지
+리액트 사용(검색(검색페이지)도 되고 데이터 활용해야함)
+
+
+1. 스페이스허브
+https://www.hanwhaspacehub.com/space-hub/
+
+2. 스튜디오 홈페이지
+https://www.depo.studio/
+
+3. 아이폰15프로 소개
+https://www.apple.com/kr/iphone-15-pro/?afid=p238%7CTdfqr6oe_mtid_209254jz40384&cid=wwa-kr-kwna-iphone-Brand-iPhone-Evergreen-
+
+4. 화장품 소개
+https://the-beautiful.jp/
+
+5. 복순도가
+https://boksoon.com/index.html
+
+6. 충전기
+https://www.sksignet.com/product/v2200
+
+
+2. 공통
+- 선정 사이트는 나름 구성을 변경한다
+- 필수 산출물 : 문서정의하기
+    (WBS:Work Breakdown Structure)
+    1) 와이어프레임 문서
+    2) 프로토타입 문서(구현) - 선택(실제화면처럼 만드는 것)
+    3) 구현소스
+    4) GUI 가이드문서(선택)
+    5) 일반 프로젝트 가이드문서(PDF) -> 자기프로젝트 설명
+
+
+
+[개별 프로젝트 폴더 구성]
+00.자료수집
+01.분석설계(와이어프레임)
+02.구현소스
+03.가이드문서
+    
+3. 진행
+(1) 주제선정 + 자료수집(수집방법 별도공지)
+(2) 분석/설계 
+    2-1) 와이어프레이밍
+    2-2) 프로토타이핑
+(3) 구현코딩
+(4) 테스트 + 수정
+(5) 서버배포(깃허브Page+닷홈서버)
