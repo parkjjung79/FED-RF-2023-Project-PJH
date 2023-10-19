@@ -1,6 +1,9 @@
 0. 기본정보
 주소
 https://www.aromatica.co.kr/product/detail.html?product_no=1079&cate_no=913&display_group=1
+영상 주소(15초)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OjfwexFtrPU?si=9H0RMTE1RCkp8VSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=OjfwexFtrPU 
 폰트패밀리
 font-family : 'minerva-modern',sans-serif;
 ____________________________________________________________________________________
