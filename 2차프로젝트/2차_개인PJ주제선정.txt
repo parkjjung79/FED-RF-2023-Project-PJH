@@ -8,26 +8,26 @@
 리액트 사용(검색(검색페이지)도 되고 데이터 활용해야함)
 
 
-1. 스페이스허브
+1. 스페이스허브 -> 메인 동적효과 카피
 https://www.hanwhaspacehub.com/space-hub/
 
-2. 스튜디오 홈페이지
-https://www.depo.studio/
-
-3. 아이폰15프로 소개
+2. 아이폰15프로 소개
 https://www.apple.com/kr/iphone-15-pro/?afid=p238%7CTdfqr6oe_mtid_209254jz40384&cid=wwa-kr-kwna-iphone-Brand-iPhone-Evergreen-
 
-4. 화장품 소개
+3. 화장품 소개
 https://the-beautiful.jp/
 
-5. 복순도가
+4. 복순도가
 https://boksoon.com/index.html
 
-6. 충전기
+5. 충전기
 https://www.sksignet.com/product/v2200
 
-7. alphamark.design
+6. alphamark.design
 https://alphamark.design/project/agache/
+
+7. 스튜디오 홈페이지
+https://www.depo.studio/
 
 8. 폴라로이드 -> 동적효과참고
 https://i2-camera.polaroid.com/
