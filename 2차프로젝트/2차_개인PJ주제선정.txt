@@ -41,6 +41,8 @@ https://bryhel.com/
 11. 구글검색 -> + 누르면 정보나오는 부분(오버시 내용 보이게)
 https://www.google.com/intl/en_us/search/howsearchworks/our-history/
 
+12. GSAP ->상단메뉴 디자인 참고
+https://www.gsap.com/
 
 [2] 공통
 - 선정 사이트는 나름 구성을 변경한다
