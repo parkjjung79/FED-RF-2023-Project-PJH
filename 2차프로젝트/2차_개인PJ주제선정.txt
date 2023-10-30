@@ -44,6 +44,9 @@ https://www.google.com/intl/en_us/search/howsearchworks/our-history/
 12. GSAP ->상단메뉴 디자인 참고
 https://www.gsap.com/
 
+13. 시계 컬렉션별 제품소개 -> 참고!
+https://www.tagheuer.com/fr/en/the-new-tag-heuer-carrera-skipper/skipper.html
+
 [2] 공통
 - 선정 사이트는 나름 구성을 변경한다
 - 필수 산출물 : 문서정의하기
