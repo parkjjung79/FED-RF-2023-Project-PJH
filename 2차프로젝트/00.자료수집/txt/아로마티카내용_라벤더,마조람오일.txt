@@ -6,6 +6,9 @@ https://www.aromatica.co.kr/product/detail.html?product_no=1079&cate_no=913&disp
 https://www.youtube.com/watch?v=OjfwexFtrPU 
 폰트패밀리
 font-family : 'minerva-modern',sans-serif;
+영문폰트
+https://mariedays.tistory.com/97
+'Manrope'
 ____________________________________________________________________________________
 ____________________________________________________________________________________
 
