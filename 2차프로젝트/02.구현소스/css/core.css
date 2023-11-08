@@ -15,8 +15,64 @@
   4. bgi - background image 관련 속성
 */
 
+/************************* 상단영역 *************************/
+#header{
+    display: flex;
+}
+
+#header .ham_menu span{
+    position: absolute;
+    width:20%;
+    height: 1px;
+    background-color: #fff;
+    top: 5%;
+}
+
+#header .ham_menu .one{
+    top: 5%;
+}
+
+#header .ham_menu .two{
+    top: 50%;
+}
+
+#header .ham_menu .three{
+    top: 96%;
+}
+
+#header .header_logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+/* .logo img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+} */
+/************************* 메인영역 *************************/
+
 /* 컨텐츠 박스 */
 .cbx{
     position: relative;
     /* 부모자격 */
 }
+
+/* 컨텐츠 박스 pt2 */
+.pt2 .cbx{
+    background-color: #bdae9e;
+    height: 100%;
+}
+
+/* 컨텐츠 박스 pt2 두번째 cbx bgi  */
+.pt2 .cbx .bgi {
+    background-image: url(../images/pt2_bgi.jpg);
+
+}
+
+
+
+/************************* 하단영역 *************************/
+
+
