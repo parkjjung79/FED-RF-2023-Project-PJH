@@ -22,34 +22,45 @@
 }
 /* 상단메뉴 */
 .tmenu{
-    position: fixed;
+    position: relative;
     display: flex;
-    gap: 37vw;
+    /* gap: 38vw; */
     height: 7vh;
     background-color: #112b23;
-    /* justify-content: space-around; */
+    justify-content: space-between;
 }
 
-/* 상단_왼쪽_햄버거메뉴 */
-#header .ham_menu span{
-    position: absolute;
-    width: 4%;
-    height: 1px;
+/******* 상단_왼쪽_햄버거메뉴 *******/
+.left_menu {
+    width: 10%;
+    height: 100%;
+}
+
+#header .ham_menu{
+    display: flex;
+    width: 100%;
+    height: 2px;
     background-color: #fff;
-    top: 5%;
+}
+
+#header .ham_menu span{
+    
 }
 
 /* 상단_왼쪽_햄버거메뉴 단 하나씩 */
+
 #header .ham_menu .one{
-    margin-bottom: 2vh;
+    
 }
 
 #header .ham_menu .two{
-    margin-bottom: 2vh;
+    position: relative;
+    top: 10%;
 }
 
 #header .ham_menu .three{
-    margin-bottom: 2vh;
+    position: relative;
+    top: 98%;
 }
 /* 상단_왼쪽_gnb */
 .side_menu{
@@ -57,11 +68,20 @@
     display: none;
 }
 
-/* 상단_로고 */
+/******* 상단_로고 *******/
 #header .logo{
-    top: 50%;
-    left: 50%;
+    /* position: static; */
+    /* top: 50%; */
+    /* left: 50%; */
+    
 }
+
+/******* 상단_오른쪽_아이콘 *******/
+.right_menu img{
+    position: flex;
+    width: 35px;
+}
+
 /************************* 메인영역 *************************/
 
 /* 배경영상 */
@@ -72,7 +92,7 @@
 }
 
 /* 컨텐츠 박스 */
-.cbx{
+.main-area{
     position: relative;
     /* 부모자격 */
 }
@@ -83,14 +103,22 @@
 }
 
 /* 컨텐츠 박스 pt2 */
-.pt2 .cbx{
+section.pt2 {
+    display: flex;
     background-color: #bdae9e;
-    height: 20vh;
+}
+
+.pt2 .cbx2-1{
+    
+}
+
+.pt2 .cbx2-2 img{
+    height: 930px;
 }
 
 /* 컨텐츠 박스 pt2 두번째 cbx bgi  */
-.pt2 .cbx .bgi {
-    background-image: url(../images/pt2_bgi.jpg);
+.pt2 .cbx2-2 .bgi {
+    height: 20px;
 
 }
 
