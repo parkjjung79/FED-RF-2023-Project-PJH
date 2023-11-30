@@ -3,9 +3,10 @@
 /* 웹폰트, 공용클래스 */
 
 /*********** 1. 웹폰트 ***********/
-@import url();
-
-
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url(../fonts/Pretendard-Regular.woff) format("woff");
+}
 
 /* 
   [ 공통 클래스 이름정의 ]
@@ -69,6 +70,13 @@
 }
 
 /******* 상단_로고 *******/
+h1.logo {
+    height: 100%;
+}
+.logo img{
+    height: 100%;
+}
+
 #header .logo{
     /* position: static; */
     /* top: 50%; */
@@ -106,22 +114,39 @@
 section.pt2 {
     display: flex;
     background-color: #bdae9e;
-    justify-content: space-between;
-}
-
-.pt2 .cbx2-1{
-    
-}
-
-.pt2 .cbx2-2 img{
     height: 930px;
 }
+/* pt2의 첫번째박스 */
+.pt2 .cbx2-1{
+    width: 50%;
+    padding: 20px;
+}
+/* pt2의 첫번째박스 - 텍스트박스 */
+.pt2.tbox {
+    padding-top: 10vh;
+}
 
-/* 컨텐츠 박스 pt2 두번째 cbx bgi  */
-.pt2 .cbx2-2 .bgi {
-    height: 20px;
+/* pt2 텍스트박스의 텍스트 */
+p {
+    font-family: "Pretendard-Regular";
+    font-size: 20px;
+    line-height: 50px;
+    color: #d9c8b6;
+}
+
+/* pt2의 두번째박스 : 이미지박스 */
+.pt2 .cbx2-2{
+    width: 50%;
+}
+
+/* pt2의 두번째박스 : 이미지 */
+.pt2.cbx2-2.bgi{
+    /* height: 100%; */
+    background-image: url(../images/pt2_bgi.jpg);
+    background-size: cover;
 
 }
+
 
 
 
