@@ -106,6 +106,7 @@
 section.pt2 {
     display: flex;
     background-color: #bdae9e;
+    justify-content: space-between;
 }
 
 .pt2 .cbx2-1{
