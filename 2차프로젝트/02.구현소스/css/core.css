@@ -25,7 +25,6 @@
 .tmenu{
     position: relative;
     display: flex;
-    /* gap: 38vw; */
     height: 7vh;
     background-color: #112b23;
     justify-content: space-between;
@@ -33,12 +32,24 @@
 
 /******* 상단_왼쪽_햄버거메뉴 *******/
 .left_menu {
+    position: relative;
     width: 10%;
     height: 100%;
 }
 
-#header .ham_menu{
+.ham_menu {
     display: flex;
+    height: 68%;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#header .ham_menu span{
+    /* display: flex; */
     width: 100%;
     height: 2px;
     background-color: #fff;
@@ -55,13 +66,9 @@
 }
 
 #header .ham_menu .two{
-    position: relative;
-    top: 10%;
 }
 
 #header .ham_menu .three{
-    position: relative;
-    top: 98%;
 }
 /* 상단_왼쪽_gnb */
 .side_menu{
@@ -86,10 +93,16 @@ h1.logo {
 
 /******* 상단_오른쪽_아이콘 *******/
 .right_menu img{
-    position: flex;
     width: 35px;
 }
-
+.right_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons {
+    display: flex;
+}
 /************************* 메인영역 *************************/
 
 /* 배경영상 */
@@ -107,7 +120,7 @@ h1.logo {
 
 .pt1 {
     aspect-ratio: 16/9;
-    padding-top: 7vh;
+    /* padding-top: 7vh; */
 }
 
 /* 컨텐츠 박스 pt2 */
