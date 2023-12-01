@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* 아로마티카 PJ 공통핵심 CSS - core.css */
+/* 웹폰트, 공용클래스 */
+
+/*********** 1. 웹폰트 ***********/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url(../fonts/Pretendard-Regular.woff) format("woff");
+}
+
+/* 
+  [ 공통 클래스 이름정의 ]
+  1. ibx - inside box 속박스
+  2. pt1, pt2 - part1, part2 각 부분박스(비율적용)
+  3. cbx - content box 내용박스
+  4. bgi - background image 관련 속성
+*/
+
+/************************* 상단영역 *************************/
+#header{
+    width: 100%;
+  
+}
+/* 상단메뉴 */
+.tmenu{
+    position: relative;
+    display: flex;
+    height: 7vh;
+    background-color: #112b23;
+    justify-content: space-between;
+}
+
+/******* 상단_왼쪽_햄버거메뉴 *******/
+.left_menu {
+    position: relative;
+    width: 10%;
+    height: 100%;
+}
+
+.ham_menu {
+    display: flex;
+    height: 68%;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#header .ham_menu span{
+    /* display: flex; */
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+#header .ham_menu span{
+    
+}
+
+/* 상단_왼쪽_햄버거메뉴 단 하나씩 */
+
+#header .ham_menu .one{
+    
+}
+
+#header .ham_menu .two{
+}
+
+#header .ham_menu .three{
+}
+/* 상단_왼쪽_gnb */
+.side_menu{
+    /* 안보이게 */
+    /* display: none; */
+}
+
+/******* 상단_로고 *******/
+h1.logo {
+    height: 100%;
+}
+.logo img{
+    height: 100%;
+}
+
+#header .logo{
+    /* position: static; */
+    /* top: 50%; */
+    /* left: 50%; */
+    
+}
+
+/******* 상단_오른쪽_아이콘 *******/
+.right_menu img{
+    width: 35px;
+}
+.right_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons {
+    display: flex;
+}
+/************************* 메인영역 *************************/
+
+/* 배경영상 */
+#myvid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 컨텐츠 박스 */
+.main-area{
+    position: relative;
+    /* 부모자격 */
+}
+
+.pt1 {
+    aspect-ratio: 16/9;
+    /* padding-top: 7vh; */
+}
+
+/* 컨텐츠 박스 pt2 */
+section.pt2 {
+    display: flex;
+    background-color: #bdae9e;
+    height: 930px;
+}
+/* pt2의 첫번째박스 */
+.pt2 .cbx2-1{
+    width: 50%;
+    padding: 20px;
+}
+/* pt2의 첫번째박스 - 텍스트박스 */
+.pt2.tbox {
+    padding-top: 10vh;
+}
+
+/* pt2 텍스트박스의 텍스트 */
+p {
+    font-family: "Pretendard-Regular";
+    font-size: 20px;
+    line-height: 50px;
+    color: #d9c8b6;
+}
+
+/* pt2의 두번째박스 : 이미지박스 */
+.pt2 .cbx2-2{
+    width: 50%;
+}
+
+/* pt2의 두번째박스 : 이미지 */
+.pt2.cbx2-2.bgi{
+    /* height: 100%; */
+    background-image: url(../../../public/images/pt2_bgi.jpg);
+    background-size: cover;
+}
+
+/* 컨텐츠박스 pt3-1 */
+.pt3{
+    background-color: #e2d9d2;
+}
+
+.cbx.info1{
+    position: relative;
+    top: 164px;
+    left: 111px;
+    width: 430px;
+    height: 250px;
+    overflow: hidden;
+}
+
+/* 컨텐츠박스 pt3-1 이미지 */
+.pt3-1 img{
+    height: 130%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+/* 컨텐츠박스 pt3-2 */
+.cbx.info2{
+    position: relative;
+    top: 110px;
+    left: 712px;
+    width: 398px;
+    height: 570px;
+    overflow: hidden;
+}
+
+/* 컨텐츠박스 pt3-2 이미지 */
+.pt3-2 img{
+    height: 130%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+/* 컨텐츠박스 pt3-2 */
+.cbx.info3{
+    position: relative;
+    top: 200px;
+    left: 150px;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+
+/* 컨텐츠박스 pt3-2 이미지 */
+.pt3-3 img{
+    height: 130%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+/************************* 하단영역 *************************/
+
+

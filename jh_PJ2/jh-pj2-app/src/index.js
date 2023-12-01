@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import './index.css';
+import './content/css/main.css';
 
-import { Layout } from '../public/content/layout/Layout.jsx';
-import { Main } from '../public/content/pages/Main.jsx';
+import { Layout } from '../src/content/layout/Layout';
+import { Main } from '../src/content/pages/Main.jsx';
+import { Introduce } from './content/pages/Introduce1';
+
 
 export default function App(){
   return(
@@ -13,6 +16,7 @@ export default function App(){
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Main />} />
+          <Route path='introduce' element={<Introduce />} />
         </Route>
       </Routes>
     </BrowserRouter>
