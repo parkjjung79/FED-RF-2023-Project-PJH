@@ -13,6 +13,11 @@
     src: url(../fonts/MinervaModern-Bold.woff) format("woff");
 }
 
+@font-face {
+    font-family: 'MinervaModern-Regular';
+    src: url(../fonts/MinervaModern-Regular.woff) format("woff");
+}
+
 /* 
   [ 공통 클래스 이름정의 ]
   1. ibx - inside box 속박스

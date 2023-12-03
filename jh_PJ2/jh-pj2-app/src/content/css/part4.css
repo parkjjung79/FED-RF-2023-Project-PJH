@@ -1,3 +1,25 @@
 /* 메인 part4 CSS - part4.css */
 
 /* part4 셋팅 */
+.pt4 {
+    padding: 300px 170px;
+    text-align: center;
+    font-family: 'Pretendard-Regular';
+    
+}
+
+/* 타이틀박스 셋팅 */
+.titlebox p {
+    font-size: 40px;
+    color: #fff;
+}
+
+.titlebox p:nth-child(1) {
+    font-family: 'MinervaModern-Regular';
+}
+
+/* 콘텐츠박스 - 설명박스 */
+.contbox {
+    font-size: 30px;
+    color: #1c4739;
+}
