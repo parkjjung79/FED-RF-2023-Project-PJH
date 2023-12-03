@@ -29,21 +29,23 @@ export function Main() {
             <div className="pt2 cbx2-2 bgi"></div>
           </section>
           {/* <!-- 2-3. 사용법, 성분 등 등장액션 주기 --> */}
-            <section className="pt3 pt3-1">
-              <div className="cbx info1">
-                <img src="./images/pt3-1.jpg" alt="사용법이미지" />
-              </div>
-            </section>
-            <section className="pt3 pt3-2">
-              <div className="cbx info2">
-                <img src="./images/pt3-2.jpg" alt="주요성분이미지" />
-              </div>
-            </section>
-            <section className="pt3 pt3-3">
-              <div className="cbx info3">
-                <img src="./images/pt3-3.jpg" alt="시너지이미지" />
-              </div>
-            </section>
+            <div className="pt3">
+              <section className="pt3-1">
+                  <img src="./images/pt3-1.jpg" alt="사용법이미지" />
+                <div className="cbx info1">
+                </div>
+              </section>
+              <section className="pt3-2">
+                <div className="cbx info2">
+                  <img src="./images/pt3-2.jpg" alt="주요성분이미지" />
+                </div>
+              </section>
+              <section className="pt3-3">
+                <div className="cbx info3">
+                  <img src="./images/pt3-3.jpg" alt="시너지이미지" />
+                </div>
+              </section>
+            </div>
           {/* <!-- 2-4. 지속가능성 파트 --> */}
           <section className="pt4">
             <div className="cbx"></div>

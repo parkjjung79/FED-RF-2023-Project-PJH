@@ -132,19 +132,23 @@ section.pt2 {
 /* pt2의 첫번째박스 */
 .pt2 .cbx2-1{
     width: 50%;
-    padding: 20px;
+    padding-left: 170px;
 }
 /* pt2의 첫번째박스 - 텍스트박스 */
 .pt2.tbox {
-    padding-top: 10vh;
+    padding-top: 330px;
 }
 
 /* pt2 텍스트박스의 텍스트 */
 p {
     font-family: "Pretendard-Regular";
-    font-size: 20px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 1.5;
     color: #d9c8b6;
+}
+
+p:nth-child(2) {
+    padding-bottom: 70px
 }
 
 /* pt2의 두번째박스 : 이미지박스 */
@@ -162,14 +166,16 @@ p {
 /* 컨텐츠박스 pt3-1 */
 .pt3{
     background-color: #e2d9d2;
+    padding: 350px 170px;
 }
 
-.cbx.info1{
+/* 컨텐츠박스 pt3-1 */
+.pt3-1{
     position: relative;
-    top: 164px;
-    left: 111px;
-    width: 430px;
-    height: 250px;
+    /* top: 350px; */
+    /* left: 170px; */
+    width: 720px;
+    height: 484px;
     overflow: hidden;
 }
 
@@ -180,14 +186,18 @@ p {
     object-fit: cover;
     
 }
+.cbx.info1{
+    
+}
+
 
 /* 컨텐츠박스 pt3-2 */
 .cbx.info2{
     position: relative;
     top: 110px;
     left: 712px;
-    width: 398px;
-    height: 570px;
+    width: 650px;
+    height: 1050px;
     overflow: hidden;
 }
 
