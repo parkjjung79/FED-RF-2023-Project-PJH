@@ -1,0 +1,172 @@
+/* 메인 part3 CSS - part3.css */
+
+/* part3 셋팅 */
+.pt3{
+    background-color: #e2d9d2;
+    padding: 350px 170px;
+}
+
+
+/************ 컨텐츠박스 pt3-1 ************/
+
+/* pt3-1 이미지 박스 */
+.pt3-1 .ibox{
+    width: 720px;
+    height: 484px;
+    overflow: hidden;
+}
+
+/* pt3-1 이미지 박스 속 이미지 */
+.pt3-1 .ibox img{
+    height: 130%;
+    width: 100%; 
+    object-fit: cover;
+    
+}
+
+/* pt3-1 타이틀박스 */
+.pt3-1 .titlebox{
+    display: flex;
+    width: 720px;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+/* pt3-1 타이틀박스 p*/
+.cbx.titlebox3-1-1 p{
+    font-size: 40px;
+    color: #222;
+}
+
+.cbx.titlebox3-1-1 p:nth-child(1){
+    font-family: 'MinervaModern-Bold';
+    color: #222;
+}
+.cbx.titlebox3-1-1 p:nth-child(2){
+    font-family: 'Pretendard-Regular';
+    color: #222;
+    letter-spacing: 0.1rem;
+}
+
+/* pt3-1 타이틀박스 더보기이미지 */
+.cbx.titlebox3-1-2 img{
+    width: 40px;
+}
+
+
+
+/************ 컨텐츠박스 pt3-2 ************/
+.pt3-2{
+    position: relative;
+    top: -88px;
+    left: 58.4%;
+
+}
+
+/* pt3-2 이미지 박스 */
+.pt3-2 .ibox{
+    width: 650px;
+    height: 1050px;
+    overflow: hidden;
+}
+
+/* pt3-1 이미지 박스 속 이미지 */
+.pt3-2 .ibox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* pt3-2 타이틀박스 */
+.pt3-2 .titlebox{
+    display: flex;
+    width: 650px;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+/* pt3-2 타이틀박스 더보기이미지 */
+.cbx.titlebox3-2-1 img{
+    width: 40px;
+}
+
+/* pt3-2 타이틀박스 p*/
+.cbx.titlebox3-2-2 p{
+    font-size: 40px;
+    color: #222;
+    text-align: right;
+}
+
+.cbx.titlebox3-2-2 p:nth-child(1){
+    font-family: 'MinervaModern-Bold';
+    color: #222;
+}
+.cbx.titlebox3-2-2 p:nth-child(2){
+    font-family: 'Pretendard-Regular';
+    letter-spacing: .1rem;
+    color: #222;
+}
+
+
+/* 컨텐츠박스 pt3-3 */
+.pt3-3{
+    position: relative;
+    left: 75px;
+    width: 777px;
+    height: auto;
+    
+}
+
+/* pt3-3 이미지 박스 */
+.pt3-3 .ibox{
+    width: 777px;
+    height: 518px;
+    overflow: hidden;
+    
+}
+
+/* pt3-3 이미지 박스 속 이미지 */
+.pt3-3 .ibox img{
+    position: relative;
+    top: -405px;
+    left: -74px;
+    width: 119%;
+    transform: rotate(4deg);
+}
+
+/* pt3-3 타이틀박스 */
+.pt3-3 .titlebox{
+    display: flex;
+    width: 777px;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+/* pt3-3 타이틀박스 더보기이미지 */
+.cbx.titlebox3-3-2 img{
+    width: 40px;
+}
+
+/* pt3-3 타이틀박스 */
+.cbx.titlebox3-3-1 {
+    width: 95%;
+}
+
+/* pt3-3 타이틀박스 p*/
+.cbx.titlebox3-3-1 p{
+    font-size: 40px;
+    color: #222;
+    text-align: center;
+}
+
+.cbx.titlebox3-3-1 p:nth-child(1){
+    font-family: 'MinervaModern-Bold';
+    color: #222;
+}
+.cbx.titlebox3-3-1 p:nth-child(2){
+    font-family: 'Pretendard-Regular';
+    letter-spacing: .1rem;
+    color: #222;
+}
+

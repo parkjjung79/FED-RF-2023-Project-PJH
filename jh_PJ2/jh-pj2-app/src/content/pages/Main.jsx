@@ -1,5 +1,8 @@
 // jh_PJ2 메인페이지 컴포넌트
 
+import { Part3 } from "../modules/Part3";
+import { Part4 } from "../modules/Part4";
+
 export function Main() {
   return (
     <>
@@ -32,26 +35,12 @@ export function Main() {
           </section>
           {/* <!-- 2-3. 사용법, 성분 등 등장액션 주기 --> */}
             <div className="pt3">
-              <section className="pt3-1">
-                  <img src="./images/pt3-1.jpg" alt="사용법이미지" />
-                <div className="cbx info1">
-                </div>
-              </section>
-              <section className="pt3-2">
-                <div className="cbx info2">
-                  <img src="./images/pt3-2.jpg" alt="주요성분이미지" />
-                </div>
-              </section>
-              <section className="pt3-3">
-                <div className="cbx info3">
-                  <img src="./images/pt3-3.jpg" alt="시너지이미지" />
-                </div>
-              </section>
+              <Part3 />
             </div>
           {/* <!-- 2-4. 지속가능성 파트 --> */}
-          <section className="pt4">
-            <div className="cbx"></div>
-          </section>
+            <div className="pt4">
+              <Part4 />
+            </div>
           {/* <!-- 2-5. 리뷰파트 --> */}
           <section className="pt5">
             <div className="cbx"></div>
