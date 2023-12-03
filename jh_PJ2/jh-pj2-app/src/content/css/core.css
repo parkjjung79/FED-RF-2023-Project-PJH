@@ -39,13 +39,14 @@
 
 .ham_menu {
     display: flex;
-    height: 68%;
-    align-content: space-between;
+    height: 55%;
+    width: 26%;
+    /* align-content: space-between; */
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
-    justify-content: space-between;
+    /* gap: 10px; */
+    padding: 20px;
+    justify-content: space-around;
 }
 
 #header .ham_menu span{
@@ -82,6 +83,7 @@ h1.logo {
 }
 .logo img{
     height: 100%;
+    cursor: pointer;
 }
 
 #header .logo{
@@ -187,7 +189,7 @@ p:nth-child(2) {
     
 }
 .cbx.info1{
-    
+
 }
 
 

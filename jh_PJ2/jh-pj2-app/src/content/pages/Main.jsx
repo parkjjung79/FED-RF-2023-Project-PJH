@@ -1,3 +1,5 @@
+// jh_PJ2 메인페이지 컴포넌트
+
 export function Main() {
   return (
     <>
@@ -58,4 +60,4 @@ export function Main() {
       </div>
     </>
   );
-}
+} //////////////////////// Main 컴포넌트 ////////////////////////

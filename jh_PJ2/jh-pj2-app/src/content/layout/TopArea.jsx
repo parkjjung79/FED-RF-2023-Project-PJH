@@ -1,3 +1,5 @@
+// jh_PJ2 상단영역 공통 컴포넌트
+
 import { Link } from "react-router-dom";
 
 // 컨텍스트 API

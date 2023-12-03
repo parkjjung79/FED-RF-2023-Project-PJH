@@ -1,3 +1,5 @@
+// jh_PJ2 서브페이지 소개 컴포넌트
+
 export function Introduce(){
     return(
         <>

@@ -1,4 +1,4 @@
-// jh_pj 레이아웃 컴포넌트 : 실제적인 최상위 컴포넌트
+// jh_PJ2 레이아웃 컴포넌트 : 실제적인 최상위 컴포넌트
 
 import { TopArea } from "../layout/TopArea.jsx";
 import { MainArea } from "../layout/MainArea.jsx";
