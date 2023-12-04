@@ -121,5 +121,7 @@ div#footer-area{
 /* 버튼링크 */
 ul.blink {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
