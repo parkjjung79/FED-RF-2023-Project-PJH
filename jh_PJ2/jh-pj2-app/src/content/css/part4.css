@@ -26,6 +26,10 @@
     padding-bottom: 30px;
 }
 
+.pt4 .contbox p.on {
+    color: #fff;
+}
+
 /* pt4 버튼 */
 button.pt4-1.btn {
     outline: 1px solid #fff;

@@ -19,7 +19,7 @@ export function Main() {
             <Part2 />
           </section>
           {/* <!-- 2-3. 사용법, 성분 등 등장액션 주기 --> */}
-            <div className="pt3 page">
+            <div className="pt3">
               <Part3 />
             </div>
           {/* <!-- 2-4. 지속가능성 파트 --> */}

@@ -38,6 +38,22 @@ export function Part1() {
       $(".pt2.tbox p").eq(1).addClass("on");
 
     } 
+    else if(scNum===8){
+      $(".pt4 .contbox p").first().addClass("on");
+    } 
+    else if(scNum===9){
+      $(".pt4 .contbox p").first().removeClass("on");
+      $(".pt4 .contbox p").eq(1).addClass("on");
+    } 
+    else if(scNum===10){
+      $(".pt4 .contbox p").eq(1).removeClass("on");
+      $(".pt4 .contbox p").eq(2).addClass("on");
+    } 
+    else if(scNum===11){
+      $(".pt4 .contbox p").eq(2).removeClass("on");
+      $(".pt4 .contbox p").eq(3).addClass("on");
+    } 
+    
     else {
       if (e.wheelDelta < 0) pgNum++;
       else pgNum--;

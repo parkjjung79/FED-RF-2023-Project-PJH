@@ -3,7 +3,7 @@
 /* part3 셋팅 */
 .pt3{
     background-color: #e2d9d2;
-    padding: 300px 170px;
+    padding: 150px 170px;
 }
 
 
@@ -55,15 +55,15 @@
 /************ 컨텐츠박스 pt3-2 ************/
 .pt3-2{
     position: relative;
-    top: -88px;
-    left: 58.4%;
+    top: 180px;
+    left: 66.9%;
 
 }
 
 /* pt3-2 이미지 박스 */
 .pt3-2 .ibox{
-    width: 650px;
-    height: 1050px;
+    width: 460px;
+    height: 630px;
     overflow: hidden;
 }
 
@@ -78,7 +78,7 @@
 /* pt3-2 타이틀박스 */
 .pt3-2 .titlebox{
     display: flex;
-    width: 650px;
+    width: 460px;
     padding-top: 50px;
     font-size: 35px;
     color: #222;
