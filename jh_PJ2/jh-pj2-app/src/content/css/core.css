@@ -26,9 +26,18 @@
   4. bgi - background image 관련 속성
 */
 
+main .page{
+    height: 100vh;
+    box-sizing: border-box;
+}
+
 /************************* 상단영역 *************************/
 #header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 9999;
   
 }
 /* 상단메뉴 */

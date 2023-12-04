@@ -1,9 +1,21 @@
 // jh_PJ2 메인페이지 Part3 컴포넌트
 
 // Part3 css 불러오기
+import { useEffect } from "react";
 import "../css/part3.css";
 
+
+import $ from "jquery";
+import "jquery-ui-dist/jquery-ui";
+
+
 export function Part3() {
+
+  useEffect(()=>{
+    $(".titlebox3-1-2").click(()=>{
+      alert(333);
+    })
+  },[]);
   return (
     <>
       <section className="pt3-1">

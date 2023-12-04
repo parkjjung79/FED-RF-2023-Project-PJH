@@ -4,7 +4,7 @@
 section.pt2 {
     display: flex;
     background-color: #bdae9e;
-    height: 930px;
+    /* height: 930px; */
 }
 /* pt2의 첫번째박스 */
 .pt2 .cbx2-1{
@@ -23,6 +23,10 @@ section.pt2 {
     line-height: 1.5;
     color: #d9c8b6;
 }
+.pt2.tbox p.on {
+    color: #fff;
+}
+
 
 .pt2.tbox p:nth-child(2) {
     padding-bottom: 70px
