@@ -9,9 +9,10 @@
 }
 
 /* 타이틀박스 셋팅 */
-.titlebox p {
-    font-size: 40px;
+.pt4 .titlebox{
+    font-size: 35px;
     color: #fff;
+    padding-bottom: 30px;
 }
 
 .titlebox p:nth-child(1) {
@@ -20,6 +21,45 @@
 
 /* 콘텐츠박스 - 설명박스 */
 .contbox {
-    font-size: 30px;
+    font-size: 24px;
+    color: #1c4739;
+    padding-bottom: 30px;
+}
+
+/* pt4 버튼 */
+button.pt4-1.btn {
+    outline: 1px solid #fff;
+    background: transparent;
+    padding: 10px 40px;
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.pt4-1.btn:hover {
+    outline: 1px solid #fff;
+    background: #0b1d17;
+    transition: .5s;
+}
+
+/* pt4-2 숨기기 */
+.pt4-2 {
+    display: none;
+    height: 0;
+    padding: 50px;
+}
+.pt4-2 img{
+    padding-bottom: 20px;
+}
+.on.pt4-2 {
+    display: block;
+    height: auto;
+}
+
+/* pt4-2 tbox 셋팅 */
+.pt4-2 .tbox{
+    font-family: 'Pretendard-regular';
+    font-size: 18px;
     color: #1c4739;
 }

@@ -1,0 +1,45 @@
+/* 메인 part2 CSS - part2.css */
+
+/* part2 셋팅 */
+section.pt2 {
+    display: flex;
+    background-color: #bdae9e;
+    height: 930px;
+}
+/* pt2의 첫번째박스 */
+.pt2 .cbx2-1{
+    width: 50%;
+    padding-left: 170px;
+}
+/* pt2의 첫번째박스 - 텍스트박스 */
+.pt2.tbox {
+    padding-top: 330px;
+}
+
+/* pt2 텍스트박스의 텍스트 */
+.pt2.tbox p {
+    font-family: "Pretendard-Regular";
+    font-size: 35px;
+    line-height: 1.5;
+    color: #d9c8b6;
+}
+
+.pt2.tbox p:nth-child(2) {
+    padding-bottom: 70px
+}
+.pt2.tbox p:nth-child(3) {
+    color: #fff;
+}
+
+/* pt2의 두번째박스 : 이미지박스 */
+.pt2 .cbx2-2{
+    width: 50%;
+}
+
+/* pt2의 두번째박스 : 이미지 */
+.pt2.cbx2-2.bgi{
+    /* height: 100%; */
+    background-image: url(../../../public/images/pt2_bgi.jpg);
+    background-size: cover;
+    background-position-y: -111px;
+}

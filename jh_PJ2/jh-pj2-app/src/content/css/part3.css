@@ -29,15 +29,12 @@
     display: flex;
     width: 720px;
     padding-top: 50px;
+    font-size: 35px;
+    color: #222;
     justify-content: space-between;
 }
 
 /* pt3-1 타이틀박스 p*/
-.cbx.titlebox3-1-1 p{
-    font-size: 40px;
-    color: #222;
-}
-
 .cbx.titlebox3-1-1 p:nth-child(1){
     font-family: 'MinervaModern-Bold';
     color: #222;
@@ -83,6 +80,9 @@
     display: flex;
     width: 650px;
     padding-top: 50px;
+    font-size: 35px;
+    color: #222;
+    text-align: right;
     justify-content: space-between;
 }
 
@@ -93,19 +93,15 @@
 
 /* pt3-2 타이틀박스 p*/
 .cbx.titlebox3-2-2 p{
-    font-size: 40px;
-    color: #222;
-    text-align: right;
+    /* text-align: right; */
 }
 
 .cbx.titlebox3-2-2 p:nth-child(1){
     font-family: 'MinervaModern-Bold';
-    color: #222;
 }
 .cbx.titlebox3-2-2 p:nth-child(2){
     font-family: 'Pretendard-Regular';
     letter-spacing: .1rem;
-    color: #222;
 }
 
 
@@ -140,6 +136,9 @@
     display: flex;
     width: 777px;
     padding-top: 50px;
+    font-size: 35px;
+    color: #222;
+    text-align: center;
     justify-content: space-between;
 }
 
@@ -155,18 +154,14 @@
 
 /* pt3-3 타이틀박스 p*/
 .cbx.titlebox3-3-1 p{
-    font-size: 40px;
-    color: #222;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .cbx.titlebox3-3-1 p:nth-child(1){
     font-family: 'MinervaModern-Bold';
-    color: #222;
 }
 .cbx.titlebox3-3-1 p:nth-child(2){
     font-family: 'Pretendard-Regular';
     letter-spacing: .1rem;
-    color: #222;
 }
 

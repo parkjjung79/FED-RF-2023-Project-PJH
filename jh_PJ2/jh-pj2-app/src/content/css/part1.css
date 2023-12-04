@@ -1,0 +1,36 @@
+/* 메인 part1 CSS - part1.css */
+
+/* 배경영상 */
+#myvid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 컨텐츠 박스 */
+.main-area{
+    position: relative;
+    /* 부모자격 */
+}
+
+.pt1 {
+    position: relative;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+    /* padding-top: 7vh; */
+}
+
+.pt1 .tbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+}
+
+.pt1 .tbox p:nth-child(1){
+    font-family: 'MinervaModern-Regular';
+}

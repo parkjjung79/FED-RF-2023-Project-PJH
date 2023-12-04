@@ -55,7 +55,7 @@
     flex-direction: column;
     align-items: center;
     /* gap: 10px; */
-    padding: 20px;
+    padding: 14px;
     justify-content: space-around;
 }
 
@@ -66,21 +66,6 @@
     background-color: #fff;
 }
 
-#header .ham_menu span{
-    
-}
-
-/* 상단_왼쪽_햄버거메뉴 단 하나씩 */
-
-#header .ham_menu .one{
-    
-}
-
-#header .ham_menu .two{
-}
-
-#header .ham_menu .three{
-}
 /* 상단_왼쪽_gnb */
 .side_menu{
     /* 안보이게 */
@@ -120,70 +105,5 @@ h1.logo {
     width: 100%;
 }
 
-/* 배경영상 */
-#myvid{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* 컨텐츠 박스 */
-.main-area{
-    position: relative;
-    /* 부모자격 */
-}
-
-.pt1 {
-    aspect-ratio: 16/9;
-    /* padding-top: 7vh; */
-}
-
-/*************** 메인 part2.css ***************/
-/* 컨텐츠 박스 pt2 */
-section.pt2 {
-    display: flex;
-    background-color: #bdae9e;
-    height: 930px;
-}
-/* pt2의 첫번째박스 */
-.pt2 .cbx2-1{
-    width: 50%;
-    padding-left: 170px;
-}
-/* pt2의 첫번째박스 - 텍스트박스 */
-.pt2.tbox {
-    padding-top: 330px;
-}
-
-/* pt2 텍스트박스의 텍스트 */
-.pt2.tbox p {
-    font-family: "Pretendard-Regular";
-    font-size: 40px;
-    line-height: 1.5;
-    color: #d9c8b6;
-}
-
-.pt2.tbox p:nth-child(2) {
-    padding-bottom: 70px
-}
-
-/* pt2의 두번째박스 : 이미지박스 */
-.pt2 .cbx2-2{
-    width: 50%;
-}
-
-/* pt2의 두번째박스 : 이미지 */
-.pt2.cbx2-2.bgi{
-    /* height: 100%; */
-    background-image: url(../../../public/images/pt2_bgi.jpg);
-    background-size: cover;
-    background-position-y: -120px;
-}
-
-
-/*************** 메인 part3.css ***************/
-
-
-/************************* 하단영역 *************************/
-
+/************************* 상단영역 *************************/
 
