@@ -52,34 +52,52 @@ main .page{
 
 /******* 상단_왼쪽_햄버거메뉴 *******/
 .left_menu {
-    position: relative;
+    /* position: relative; */
     width: 10%;
     height: 100%;
 }
 
-.ham_menu {
-    display: flex;
-    height: 55%;
-    width: 26%;
+.left_menu .ham_menu {
+    /* display: flex; */
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 60px;
     /* align-content: space-between; */
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
     /* gap: 10px; */
     padding: 14px;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 #header .ham_menu span{
+    display: block;
+    position: relative;
     /* display: flex; */
     width: 100%;
-    height: 1px;
+    height: 2px;
+    border-radius: 30px;
     background-color: #fff;
+    transition: all .35s;
 }
 
+#header .ham_menu span.one{
+    top: 0;
+}
+#header .ham_menu span.two{
+    top: 50%;
+    transform: translateY(-50%);
+}
+#header .ham_menu span.three{
+    bottom: 0;
+}
 
 
 /* 상단_왼쪽_gnb */
 .side_wrap.on{
+    display: none;
     top: 0;
     /* left: -500px; */
     opacity: 1;

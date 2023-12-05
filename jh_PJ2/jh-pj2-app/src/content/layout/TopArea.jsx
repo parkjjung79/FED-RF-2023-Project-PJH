@@ -23,6 +23,12 @@ export function TopArea() {
         {/* <!-- 1-1.상단메뉴 --> */}
         <div className="tmenu">
           {/* <!-- 1-2.왼쪽메뉴 --> */}
+          {/* <input type="checkbox" id="menuicon" />
+          <label for="menuicon">
+              <span></span>
+              <span></span>
+              <span></span>
+          </label> */}
           <div className="left_menu">
             <div className="ham_menu">
               <span className="one"></span>
