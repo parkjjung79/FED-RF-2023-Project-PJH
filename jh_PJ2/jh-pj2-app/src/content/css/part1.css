@@ -20,6 +20,7 @@
     height: 100%;
     /* padding-top: 7vh; */
 }
+/* 유튜브영상 안눌리게 투명막 형성 */
 .pt1::after{
     content: '';
     display: block;
@@ -32,14 +33,23 @@
 
 .pt1 .tbox{
     position: absolute;
-    top: 50%;
+    width: 684px;
+    height: 100px;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: #fff;
     text-align: center;
 }
 
 .pt1 .tbox p:nth-child(1){
+    position: relative;
     font-family: 'MinervaModern-Regular';
+    /* top: 74px; */
+}
+.pt1 .tbox p{
+    /* position: relative; */
+    font-family: 'Pretendard-regular';
+    font-weight: normal;
 }

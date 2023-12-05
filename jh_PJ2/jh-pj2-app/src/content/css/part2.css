@@ -9,11 +9,10 @@ section.pt2 {
 /* pt2의 첫번째박스 */
 .pt2 .cbx2-1{
     width: 50%;
-    padding-left: 170px;
 }
 /* pt2의 첫번째박스 - 텍스트박스 */
 .pt2.tbox {
-    padding-top: 330px;
+    padding: 330px 170px;
 }
 
 /* pt2 텍스트박스의 텍스트 */

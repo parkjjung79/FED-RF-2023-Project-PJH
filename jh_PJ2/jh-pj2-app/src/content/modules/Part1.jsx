@@ -71,38 +71,78 @@ export function Part1() {
     console.log('scNum스크롤순번:',scNum,'\npgNum페이지순번:',pgNum)
   }; ///////// wheelFn 함수 /////////////
 
-  useEffect(() => {
+  useEffect(()=>{
     $(".pt1 .tbox p")
-      .css({ position: "relative", top: "50px", opacity: 0 })
-      .first()
-      .delay(4000)
-      .animate({ top: "0px", opacity: 1 }, function () {
-        $(this)
-          .delay(1000)
-          .animate({ top: "-50px", opacity: 0 })
-          .next()
-          .delay(2000)
-          .animate({ top: "-50px", opacity: 1 }, function () {
+        .css({position: "relative", top: "74px", opacity: 0})
+        .first()
+        .delay(4000)
+        .animate({ top: "0px", opacity: 1 }, function () {
+          $(this)
+           .delay(1500)
+           .animate({ top: "-74px", opacity: 0 })
+           .next()
+           .delay(2500)
+           .animate({ top: "-41px", opacity: 1 }, function () {
+          $(this)
+            .delay(1500)
+            .animate({ top:"-41px", opacity: 0 })
+            .next()
+            .delay(2500)
+            .animate({ top: "-82px", opacity: 1}, function (){
             $(this)
-              .delay(1000)
-              .animate({ top: "-100px", opacity: 0 })
-              .next()
-              .delay(2000)
-              .animate({ top: "-100px", opacity: 1 }, function () {
-                $(this)
-                  .delay(1000)
-                  .animate({ top: "-150px", opacity: 0 })
-                  .next()
-                  .delay(2000)
-                  .animate({ top: "-100px", opacity: 1 }, function () {
-                    $(this).delay(1000).animate({ top: "-150px", opacity: 0 });
-                  });
-              });
-          });
-      });
+            .delay(1500)
+            .animate({ top: "-82px",
+            opacity: 0})
+            .next()
+            .delay(2500)
+            .animate({ top: "-124px",
+            opacity: 1}, function (){
+            $(this)
+            .delay(700)
+            .animate({ top: "-60px",
+            opacity: 0});
+            });
+            });
+            });
+        });
+        window.addEventListener("wheel", wheelFn, { passive: false });
+  },[]);
 
-    window.addEventListener("wheel", wheelFn, { passive: false });
-  }, []);
+
+  // 쌤코드
+  // useEffect(() => {
+  //   $(".pt1 .tbox p")
+  //     .css({ position: "relative", top: "50px", opacity: 0 })
+  //     .first()
+  //      지연시간 4초후 첫번째줄 등장
+  //     .delay(4000)
+  //     .animate({ top: "0px", opacity: 1 }, function () {
+  //       $(this)
+  //         .delay(1000)
+  //         .animate({ top: "-50px", opacity: 0 })
+  //         .next()
+  //         .delay(2000)
+  //         .animate({ top: "-50px", opacity: 1 }, function () {
+  //           $(this)
+  //             .delay(1000)
+  //             .animate({ top: "-100px", opacity: 0 })
+  //             .next()
+  //             .delay(2000)
+  //             .animate({ top: "-100px", opacity: 1 }, function () {
+  //               $(this)
+  //                 .delay(1000)
+  //                 .animate({ top: "-150px", opacity: 0 })
+  //                 .next()
+  //                 .delay(2000)
+  //                 .animate({ top: "-100px", opacity: 1 }, function () {
+  //                   $(this).delay(1000).animate({ top: "-150px", opacity: 0 });
+  //                 });
+  //             });
+  //         });
+  //     });
+
+  //   window.addEventListener("wheel", wheelFn, { passive: false });
+  // }, []);
 
   // 리턴 코드 //////////////
   return (
@@ -113,7 +153,7 @@ export function Part1() {
         <p>SERENE BODY OIL LAVENDER & MAJORAM</p>
         <p>지치고 긴장된 일상에서 벗어나</p>
         <p>몸과 마음을 평온하게 보듬는</p>
-        <p>아로마테라피 마사지로 온전한 휴식을 취해보세요.</p>
+        <p>아로마테라피 마사지로 온전한 휴식을 취해보세요</p>
       </div>
     </>
   );

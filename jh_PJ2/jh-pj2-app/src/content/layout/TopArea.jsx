@@ -1,6 +1,7 @@
 // jh_PJ2 상단영역 공통 컴포넌트
 
 import { Link } from "react-router-dom";
+import React, { useState } from 'react'
 
 // 컨텍스트 API
 import { shpCon } from "./shopContext";
@@ -9,7 +10,10 @@ import { Logo } from "../modules/Logo";
 
 export function TopArea() {
   // 컨텍스트 API사용
-//   const shpCon = useContext(shpCon);
+  //   const shpCon = useContext(shpCon);
+
+  //닫기버튼 on 넣고빼기
+  
 
   return (
     // <!-- 1. 상단영역 -->
@@ -26,7 +30,8 @@ export function TopArea() {
               <span className="three"></span>
             </div>
             {/* <!-- 1-2-1.GNB박스 --> */}
-            <nav className="side_menu">
+            <nav className="side_wrap on">
+              <button>+</button>
               <ul>
                 <li>
                   <a href="#">소개</a>
