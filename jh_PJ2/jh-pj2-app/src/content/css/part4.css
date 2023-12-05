@@ -49,7 +49,7 @@ button.pt4-1.btn:hover {
 
 /* pt4-2 숨기기 */
 .pt4-2 {
-    display: none;
+    /* display: none; */
     height: 0;
     padding: 50px;
 }
