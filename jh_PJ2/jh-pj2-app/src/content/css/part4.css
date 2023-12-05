@@ -50,7 +50,7 @@ button.pt4-1.btn:hover {
 /* pt4-2 숨기기 */
 .pt4-2 {
     /* display: none; */
-    height: 0;
+    height: auto;
     padding: 50px;
 }
 .pt4-2 img{

@@ -13,10 +13,6 @@ export function Part4() {
   useEffect(()=>{
     $(".pt4-2").hide();
     // pt4 button.pt4-1.btn
-    $(".pt4-2").css({
-      // width: "100%",
-      // hight: "100%",
-    });
     $(".pt4 button.pt4-1.btn").click((e) =>{
       e.preventDefault();
       $(".pt4-2").slideToggle();
