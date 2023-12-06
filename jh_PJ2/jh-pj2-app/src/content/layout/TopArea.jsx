@@ -26,7 +26,8 @@ export function TopArea() {
     // <!-- 1. 상단영역 -->
     <div id="header">
       <header className="header_menu fix">
-        <Link to="/introduce">소개</Link>
+        {/********************* 서브페이지 *********************/}
+        {/* <Link to="/introduce">소개</Link> */}
         {/* <!-- 1-1.상단메뉴 --> */}
         <div className="tmenu">
           {/* <!-- 1-2.왼쪽메뉴 --> */}
@@ -47,7 +48,8 @@ export function TopArea() {
             <nav className="side_wrap on">
               <ul>
                 <li>
-                  <a href="#">소개</a>
+                  {/* <a href="#">소개</a> */}
+                  <Link to="/Part2">소개</Link>
                 </li>
                 <li>
                   <a href="#">사용법</a>

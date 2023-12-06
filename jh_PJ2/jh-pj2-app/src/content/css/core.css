@@ -58,23 +58,27 @@ main .page{
 }
 
 #header .ham_menu {
+    position: fixed;
     display: flex;
-    height: 40px;
-    width: 40px;
+    height: 3.7vh;
+    width: 3.7vw;
     flex-direction: column;
-    padding: 14px;
+    padding: 18px 36px;
     cursor: pointer;
+    align-items: center;
+    z-index: 1001;
 }
 
 #header .ham_menu span{
     display: block;
     position: relative;
     /* display: flex; */
-    width: 100%;
+    width: 80%;
     height: 2px;
     border-radius: 30px;
     background-color: #fff;
     transition: all .35s;
+
 }
 
 /* #header .ham_menu span:hover{
@@ -85,10 +89,10 @@ main .page{
 #header .ham_menu span.one{
     top: 0;
 }
-.ham_menu span.one:hover{
+/* .ham_menu span.one:hover{
     top: 40%;
     transform: translateY(-50%) rotate(45deg);
-}
+} */
 #header .ham_menu span.two{
     top: 40%;
     /* transform: translateY(-50%); */
@@ -99,14 +103,15 @@ main .page{
 #header .ham_menu span.three{
     top: 80%;
 }
-/* .open .ham_menu span.three{
-    top: 40%;
+.open .ham_menu span.three{
+    top: 37%;
     transform: translateY(50%) rotate(-45deg);
-} */
+}
 
 
 /* 상단_왼쪽_gnb */
 .side_wrap.on{
+    position: fixed;
     display: none;
     top: 0;
     /* left: -500px; */
@@ -117,6 +122,7 @@ main .page{
     background-color: rgba(255,255,255,0.5);
     padding: 110px 40px 30px 40px;
     transition: all .4s linear;
+    z-index: 1000;
 }
 
 /* 사이드메뉴 닫기버튼 */
@@ -167,7 +173,7 @@ h1.logo {
 .icons {
     display: flex;
     gap: 10px;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 /************************* 메인영역 *************************/
 #main-area,.main-area{
