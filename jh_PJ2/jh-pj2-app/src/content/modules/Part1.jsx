@@ -10,7 +10,9 @@ import "jquery-ui-dist/jquery-ui";
 //// Part1 컴포넌트 /////////////
 export function Part1() {
   const winH = window.innerHeight;
+  // 페이지순번
   let pgNum = 0;
+  // 스크롤순번
   let scNum = 0;
 
   let protW = 0;

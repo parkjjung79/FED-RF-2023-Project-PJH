@@ -51,24 +51,18 @@ main .page{
 }
 
 /******* 상단_왼쪽_햄버거메뉴 *******/
-.left_menu {
+#header .left_menu {
     /* position: relative; */
     width: 10%;
     height: 100%;
 }
 
-.left_menu .ham_menu {
-    /* display: flex; */
-    position: relative;
-    display: block;
+#header .ham_menu {
+    display: flex;
     height: 40px;
-    width: 60px;
-    /* align-content: space-between; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* gap: 10px; */
+    width: 40px;
+    flex-direction: column;
     padding: 14px;
-    justify-content: space-around;
     cursor: pointer;
 }
 
@@ -83,16 +77,32 @@ main .page{
     transition: all .35s;
 }
 
+/* #header .ham_menu span:hover{
+    top: 40%;
+    transform: translateY(-50%) rotate(45deg);
+} */
+
 #header .ham_menu span.one{
     top: 0;
+}
+.ham_menu span.one:hover{
+    top: 40%;
+    transform: translateY(-50%) rotate(45deg);
 }
 #header .ham_menu span.two{
     top: 40%;
     /* transform: translateY(-50%); */
 }
+/* .open .ham_menu span.one.two{
+    opacity: 0;
+} */ 
 #header .ham_menu span.three{
     top: 80%;
 }
+/* .open .ham_menu span.three{
+    top: 40%;
+    transform: translateY(50%) rotate(-45deg);
+} */
 
 
 /* 상단_왼쪽_gnb */

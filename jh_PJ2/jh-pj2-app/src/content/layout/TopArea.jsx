@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import React, { useState } from 'react'
+import "../css/core.css";
 
 // 컨텍스트 API
 import { shpCon } from "./shopContext";
@@ -9,10 +10,16 @@ import { useContext } from "react";
 import { Logo } from "../modules/Logo";
 
 export function TopArea() {
-  // 컨텍스트 API사용
-  //   const shpCon = useContext(shpCon);
 
-  //닫기버튼 on 넣고빼기
+  // 햄버거 메뉴 움직이는 함수
+  // const HamMenu = () => {
+  //   const [isOpen, setIsOpen] = useState(false);
+    
+  //   const toggleMenu = () => {
+  //     setIsOpen(!isOpen);
+  //   };
+  // }; //////////// HamMenu함수 ////////////
+  // window.addEventListener("ham", HamMenu);
   
 
   return (
@@ -31,13 +38,13 @@ export function TopArea() {
           </label> */}
           <div className="left_menu">
             <div className="ham_menu">
+            {/* <div className={"ham_menu ${isOpen ? 'open' : ''}"} onClick={toggleMenu}> */}
               <span className="one"></span>
               <span className="two"></span>
               <span className="three"></span>
             </div>
             {/* <!-- 1-2-1.GNB박스 --> */}
             <nav className="side_wrap on">
-              <button>+</button>
               <ul>
                 <li>
                   <a href="#">소개</a>
@@ -91,3 +98,4 @@ export function TopArea() {
     </div>
   );
 }
+
