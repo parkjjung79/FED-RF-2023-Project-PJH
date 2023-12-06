@@ -13,34 +13,34 @@ export function Part5() {
   return(
     <>
     <h1>YOU MAY ALSO LIKE</h1>
-    <div classNameName="porduct">
-      <div classNameName="thumbnail">
+    <div className="porduct">
+      <div className="thumbnail">
         <img src="./images/product1.jpg" alt="제품1" />
       </div>`
-      <div classNameName="name">
+      <div className="name">
         제품명
       </div>
-      <div classNameName="price">
+      <div className="price">
         가격
       </div>
 
-      <div classNameName="thumbnail">
+      <div className="thumbnail">
         <img src="./images/product1.jpg" alt="제품1" />
       </div>
-      <div classNameName="name">
+      <div className="name">
         제품명
       </div>
-      <div classNameName="price">
+      <div className="price">
         가격
       </div>
 
-      <div classNameName="thumbnail">
+      <div className="thumbnail">
         <img src="./images/product1.jpg" alt="제품1" />
       </div>
-      <div classNameName="name">
+      <div className="name">
         제품명
       </div>
-      <div classNameName="price">
+      <div className="price">
         가격
       </div>
     </div>

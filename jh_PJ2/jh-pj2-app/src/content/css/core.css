@@ -60,7 +60,7 @@ main .page{
 #header .ham_menu {
     position: fixed;
     display: flex;
-    height: 3.7vh;
+    height: 4.1vh;
     width: 3.7vw;
     flex-direction: column;
     padding: 18px 36px;

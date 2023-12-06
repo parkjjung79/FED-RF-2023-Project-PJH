@@ -48,14 +48,64 @@
 /* pt3-1 타이틀박스 더보기이미지 */
 .cbx.titlebox3-1-2 img{
     width: 40px;
+    cursor: pointer;
+}
+
+.cbx.titlebox3-1-2 img:hover{
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+/* pt3-1 사용법 설명이미지 셋팅 */
+.pt3 .more3-1{
+    display: none;
+    position: absolute;
+    width: 1007px;
+    height: 781px;
+    top: 2012px;
+    left: 50%;
+    border-radius: 60px 0 0 0;
+    /* 배경넣기 : 한번에쓰기 */
+    background: url(../../../public/images/massage1.jpg) no-repeat center/cover;
+    /* 
+    background: 색이반고윙/크;
+    배경색 이미지 반복 고정 위치/크기
+    */
 }
 
 
 
+.pt3 .more3-1 .howtext p{
+    position: relative;
+    top: 200px;
+    left: 39px;
+    color: #fff;
+    font-family: 'Pretendard-regular';
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.pt3 .more3-1 .howtext p:nth-child(1){
+    font-family: 'MinervaModern-regular';
+    font-size: 30px;
+}
+
+.pt3 hr:nth-of-type(1) {
+    position: relative;
+    top: 200px;
+    width: 92%;
+}
+
+.pt3 hr:nth-of-type(2) {
+    position: relative;
+    top: 400px;
+    width: 92%;
+}
+
 /************ 컨텐츠박스 pt3-2 ************/
 section.pt3-2{
     position: relative;
-    top: 170px;
+    top: 276px;
     left: 66.9%;
     width: 460px;
 }
@@ -91,6 +141,92 @@ section.pt3-2{
     width: 40px;
 }
 
+.cbx.titlebox3-2-1 img:hover{
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+/* pt3-2 주요성분 설명이미지 셋팅 */
+.pt3 .more3-2{
+    display: none;
+    position: absolute;
+    width: 887px;
+    height: 756px;
+    top: 2897px;
+    left: 5.5%;
+    border: 1px solid #c2b8b7;
+    border-radius: 0 60px 0 0;
+    background-color: #fff;
+    padding: 20px 0;
+}
+    /* 배경넣기 : 한번에쓰기 */
+    /* 
+    background: 색이반고윙/크;
+    배경색 이미지 반복 고정 위치/크기
+    */
+
+/* 라벤더 part */
+.lavender{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lavender img{
+    width: 260px;
+}
+.laventxt p:nth-child(1){
+    font-family: 'MinervaModern-regular';
+    font-size: 25px;
+    padding: 10px 20px;
+}
+.laventxt p:nth-child(2){
+    font-family: 'Pretendard-regular';
+    font-size: 18px;
+    padding: 10px 20px;
+    line-height: 1.5;
+}
+
+/* 마조람 part */
+.majoram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.majoram img{
+    width: 260px;
+}
+.majoram p:nth-child(1){
+    font-family: 'MinervaModern-regular';
+    font-size: 25px;
+    padding: 10px 20px;
+}
+.majoram p:nth-child(2){
+    font-family: 'Pretendard-regular';
+    font-size: 18px;
+    padding: 10px 20px;
+    line-height: 1.5;
+}
+
+/* 호호바 part */
+.jojobar{
+    display: flex;
+    align-items: center;justify-content: center;
+}
+.jojobar img{
+    width: 260px;
+}
+.jojobar p:nth-child(1){
+    font-family: 'MinervaModern-regular';
+    font-size: 25px;
+    padding: 10px 20px;
+}
+.jojobar p:nth-child(2){
+    font-family: 'Pretendard-regular';
+    font-size: 18px;
+    padding: 10px 20px;
+    line-height: 1.5;
+}
+
 /* pt3-2 타이틀박스 p*/
 .cbx.titlebox3-2-2 p{
     /* text-align: right; */
@@ -111,7 +247,7 @@ section.pt3-3 {
     position: relative;
     top: 400px;
     left: 80px;
-    padding-bottom: 400px;
+    padding-bottom: 553px;
 }
 
 /* pt3-3 이미지 박스 */
@@ -146,6 +282,12 @@ section.pt3-3 {
 .cbx.titlebox3-3-2 img{
     width: 40px;
 }
+.cbx.titlebox3-3-2 img:hover{
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+
 
 /* pt3-3 타이틀박스 */
 .cbx.titlebox3-3-1 {
