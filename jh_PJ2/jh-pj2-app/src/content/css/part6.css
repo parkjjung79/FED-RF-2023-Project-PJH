@@ -1,22 +1,17 @@
-/* 메인 part5 CSS - part5.css */
+/* 메인 part5 CSS - part6.css */
 
-/* part5 셋팅 */
-.pt5 {
+/* part6 셋팅 */
+.pt6 {
     padding: 300px 170px;
     text-align: center;
     font-family: 'Pretendard-Regular';
     background-color: #f3f0eb;
-    
 }
 
-.pt5 h1{
+.pt6 h1{
     font-size: 35px;
     color: #222;
     text-align: center;
     font-family: 'MinervaModern-Regular';
     padding-bottom: 40px;
-}
-
-.thumbnail img{
-    width: 200px;
 }

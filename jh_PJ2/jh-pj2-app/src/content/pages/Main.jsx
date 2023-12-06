@@ -5,6 +5,7 @@ import { Part2 } from "../modules/Part2";
 import { Part3 } from "../modules/Part3";
 import { Part4 } from "../modules/Part4";
 import { Part5 } from "../modules/Part5";
+import { Part6 } from "../modules/Part6";
 
 export function Main() {
   return (
@@ -33,7 +34,7 @@ export function Main() {
           </section>
           {/* <!-- 2-6. 리뷰파트 --> */}
           <section className="pt6 page">
-            <Part5 />
+            <Part6 />
           </section>
         </main>
       </div>
