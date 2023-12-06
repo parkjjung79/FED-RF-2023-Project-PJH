@@ -45,7 +45,7 @@ main .page{
 .tmenu{
     position: relative;
     display: flex;
-    height: 7vh;
+    height: 7.9vh;
     background-color: #112b23;
     justify-content: space-between;
 }
@@ -87,11 +87,11 @@ main .page{
     top: 0;
 }
 #header .ham_menu span.two{
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    /* transform: translateY(-50%); */
 }
 #header .ham_menu span.three{
-    bottom: 0;
+    top: 80%;
 }
 
 

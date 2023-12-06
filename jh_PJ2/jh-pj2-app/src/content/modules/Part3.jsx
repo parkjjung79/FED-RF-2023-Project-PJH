@@ -30,6 +30,9 @@ export function Part3() {
           <div className="cbx titlebox3-1-2">
             <img src="./images/ico_add_circle.svg" alt="더보기이미지" />
           </div>
+          <div className="more3-1">
+            
+          </div>
         </div>
       </section>
 

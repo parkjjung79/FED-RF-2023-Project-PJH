@@ -28,7 +28,7 @@ export function Main() {
             </div>
           {/* <!-- 2-5. 리뷰파트 --> */}
           <section className="pt5 page">
-            <div className="cbx"></div>
+            
           </section>
         </main>
       </div>
