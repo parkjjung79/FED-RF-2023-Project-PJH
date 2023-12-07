@@ -13,37 +13,43 @@ export function Part5() {
   return(
     <>
     <h1>YOU MAY ALSO LIKE</h1>
-    <div className="porduct">
-      <div className="thumbnail">
-        <img src="./images/product1.jpg" alt="제품1" />
-      </div>`
-      <div className="name">
-        제품명
-      </div>
-      <div className="price">
-        가격
-      </div>
-
-      <div className="thumbnail">
-        <img src="./images/product1.jpg" alt="제품1" />
-      </div>
-      <div className="name">
-        제품명
-      </div>
-      <div className="price">
-        가격
+    <div className="product">
+      <div className="pro1">
+        <div className="thumbnail">
+          <img src="./images/product1.jpg" alt="제품1" />
+        </div>
+        <div className="name">
+          제품명
+        </div>
+        <div className="price">
+          가격
+        </div>
       </div>
 
-      <div className="thumbnail">
-        <img src="./images/product1.jpg" alt="제품1" />
+      <div className="pro2">
+        <div className="thumbnail">
+          <img src="./images/product1.jpg" alt="제품1" />
+        </div>
+        <div className="name">
+          제품명
+        </div>
+        <div className="price">
+          가격
+        </div>
       </div>
-      <div className="name">
-        제품명
+
+      <div className="pro3">
+        <div className="thumbnail">
+          <img src="./images/product1.jpg" alt="제품1" />
+        </div>
+        <div className="name">
+          제품명
+        </div>
+        <div className="price">
+          가격
+        </div>
+            </div>
       </div>
-      <div className="price">
-        가격
-      </div>
-    </div>
     </>
   )
 } /////////// Part5 컴포넌트 ///////////

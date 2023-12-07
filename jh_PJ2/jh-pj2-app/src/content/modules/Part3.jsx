@@ -22,29 +22,26 @@ export function Part3() {
   // },[]);
 
   useEffect(() => {
-    // 첫 번째 요구사항: .titlebox3-1-2 클릭하면 .more3-1 위에서 아래로 보이기 (2초 지연)
+    // 첫 번째, .titlebox3-1-2 클릭하면 .more3-1 위에서 아래로 보이기 (1초 지연)
     const handleClick1 = () => {
       const more3_1 = $('.more3-1');
 
-      // 현재 상태에 따라 토글(toggle)하고, 지연 시간을 설정합니다.
+      // 현재 상태에 따라 토글(toggle)하고, 지연 시간설정
       more3_1.slideToggle(1000);
     };
 
-    // .titlebox3-1-2에 클릭 이벤트 리스너를 추가합니다.
+    // .titlebox3-1-2에 클릭 이벤트 리스너를 추가
     $('.titlebox3-1-2').on('click', handleClick1);
 
-    // 두 번째 요구사항: .titlebox3-1-2 클릭하면 .more3-1 닫기
+    // 두 번째, .titlebox3-1-2 클릭하면 .more3-1 닫기
     const handleClose1 = () => {
       const more3_1 = $('.more3-1');
-
-      // 현재 상태에 따라 토글(toggle)합니다.
-      // more3_1.slideUp();
     };
 
-    // .titlebox3-1-2에 클릭 이벤트 리스너를 추가합니다.
+    // .titlebox3-1-2에 클릭 이벤트 리스너를 추가
     $('.titlebox3-1-2').on('click', handleClose1);
 
-    // 두 번째 요구사항: .titlebox3-2-1 클릭하면 .more3-2 위에서 아래로 보이기 (2초 지연)
+    // 첫 번째, .titlebox3-2-1 클릭하면 .more3-2 위에서 아래로 보이기 (1초 지연)
     const handleClick2 = () => {
       const more3_2 = $('.more3-2');
 
@@ -59,12 +56,30 @@ export function Part3() {
     const handleClose2 = () => {
       const more3_2 = $('.more3-2');
 
-      // 현재 상태에 따라 토글(toggle)합니다.
-      // more3_2.slideUp();
     };
 
     // .titlebox3-2-1에 클릭 이벤트 리스너를 추가합니다.
     $('.titlebox3-2-1').on('click', handleClose2);
+    
+    // 첫 번째, .titlebox3-3-2 클릭하면 .more3-3 위에서 아래로 보이기 (1초 지연)
+    const handleClick3 = () => {
+      const more3_3 = $('.more3-3');
+
+      // 현재 상태에 따라 토글(toggle)하고, 지연 시간을 설정합니다.
+      more3_3.slideToggle(1000);
+    };
+
+    // .titlebox3-3-2에 클릭 이벤트 리스너를 추가합니다.
+    $('.titlebox3-3-2').on('click', handleClick3);
+
+    // 두 번째 요구사항: .titlebox3-2-1 클릭하면 .more3-2 닫기
+    const handleClose3 = () => {
+      const more3_3 = $('.more3-3');
+
+    };
+
+    // .titlebox3-3-2에 클릭 이벤트 리스너를 추가합니다.
+    $('.titlebox3-3-2').on('click', handleClose3);
 
     // useEffect의 clean-up 함수에서 이벤트 리스너를 제거합니다.
     return () => {
@@ -72,6 +87,8 @@ export function Part3() {
       $('.titlebox3-1-2').off('click', handleClose1);
       $('.titlebox3-2-1').off('click', handleClick2);
       $('.titlebox3-2-1').off('click', handleClose2);
+      $('.titlebox3-3-2').off('click', handleClick3);
+      $('.titlebox3-3-2').off('click', handleClose3);
     };
   }, []); // useEffect의 두 번째 매개변수로 빈 배열을 전달하여, 컴포넌트가 마운트될 때만 실행되도록 합니다.
 

@@ -83,24 +83,24 @@ export function Part1() {
            .delay(1500)
            .animate({ top: "-74px", opacity: 0 })
            .next()
-           .delay(2500)
+           .delay(2000)
            .animate({ top: "-41px", opacity: 1 }, function () {
           $(this)
             .delay(1500)
             .animate({ top:"-41px", opacity: 0 })
             .next()
-            .delay(2500)
+            .delay(2000)
             .animate({ top: "-82px", opacity: 1}, function (){
             $(this)
             .delay(1500)
             .animate({ top: "-82px",
             opacity: 0})
             .next()
-            .delay(2500)
+            .delay(2000)
             .animate({ top: "-124px",
             opacity: 1}, function (){
             $(this)
-            .delay(700)
+            .delay(1500)
             .animate({ top: "-60px",
             opacity: 0});
             });

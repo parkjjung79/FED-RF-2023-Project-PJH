@@ -10,18 +10,28 @@ import { useContext } from "react";
 import { Logo } from "../modules/Logo";
 
 export function TopArea() {
+  const [isSideMenuOpen, setSideMenuOpen] = useState(false);
 
-  // 햄버거 메뉴 움직이는 함수
-  // const HamMenu = () => {
-  //   const [isOpen, setIsOpen] = useState(false);
-    
-  //   const toggleMenu = () => {
-  //     setIsOpen(!isOpen);
-  //   };
-  // }; //////////// HamMenu함수 ////////////
-  // window.addEventListener("ham", HamMenu);
+  const handleHamClick = () => {
+    setSideMenuOpen(!isSideMenuOpen);
+  };
+
+  const sideWrapStyle = {
+    left: isSideMenuOpen ? 0 : -500,
+  };
+
+  const oneStyle = {
+    transform: isSideMenuOpen ? 'translateY(-50%) rotate(45deg)' : '',
+  };
+
+  const twoStyle = {
+    opacity: isSideMenuOpen ? 0 : 1,
+  };
+
+  const threeStyle = {
+    transform: isSideMenuOpen ? 'translateY(50%) rotate(-45deg)' : '',
+  };
   
-
   return (
     // <!-- 1. 상단영역 -->
     <div id="header">
@@ -31,21 +41,14 @@ export function TopArea() {
         {/* <!-- 1-1.상단메뉴 --> */}
         <div className="tmenu">
           {/* <!-- 1-2.왼쪽메뉴 --> */}
-          {/* <input type="checkbox" id="menuicon" />
-          <label for="menuicon">
-              <span></span>
-              <span></span>
-              <span></span>
-          </label> */}
           <div className="left_menu">
-            <div className="ham_menu">
-            {/* <div className={"ham_menu ${isOpen ? 'open' : ''}"} onClick={toggleMenu}> */}
-              <span className="one"></span>
-              <span className="two"></span>
-              <span className="three"></span>
+            <div className="ham_menu" onClick={handleHamClick}>
+              <span className="one" style={oneStyle}  ></span>
+              <span className="two" style={twoStyle} ></span>
+              <span className="three" style={threeStyle} ></span>
             </div>
             {/* <!-- 1-2-1.GNB박스 --> */}
-            <nav className="side_wrap on">
+            <nav className="side_wrap" style={sideWrapStyle}>
               <ul>
                 <li>
                   {/* <a href="#">소개</a> */}

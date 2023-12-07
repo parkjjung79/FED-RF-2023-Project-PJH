@@ -245,9 +245,9 @@ section.pt3-2{
 
 section.pt3-3 {
     position: relative;
-    top: 520px;
-    left: 80px;
-    padding-bottom: 553px;
+    top: 428px;
+    left: 93px;
+    padding-bottom: 380px;
 }
 
 /* pt3-3 이미지 박스 */
@@ -277,6 +277,10 @@ section.pt3-3 {
     text-align: center;
     justify-content: space-between;
 }
+.cbx.titlebox3-3-2{
+    z-index: 1001;
+}
+
 
 /* pt3-3 타이틀박스 더보기이미지 */
 .cbx.titlebox3-3-2 img{
@@ -289,29 +293,45 @@ section.pt3-3 {
 
 /* pt3-3 시너지 설명이미지 셋팅 */
 
-.synergy{
+.more3-3{
+    display: none;
     position: absolute;
-    top: 3802px;
+    top: 3710px;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 76vh;
     /* 배경넣기 : 한번에쓰기 */
-    background: url(../../../public/images/pt3-3.jpg) no-repeat center/cover;
+    background: url(../../../public/images/pt3-4.jpg) no-repeat center/cover;
     /* 
     background: 색이반고윙/크;
     배경색 이미지 반복 고정 위치/크기
     */
     border-radius: 0 60px 0 0;
 }
+.more3-3::before{
+    position: absolute;
+    content: "";
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+    border-radius: 0 60px 0 0;
+}
+
 
 .synergy .sgtxt{
+    position: relative;
     text-align: center;
+    padding-top: 243px;
+    color: #fff;
 }
 
 .synergy .sgtxt p:nth-child(1){
     font-family: 'MinervaModern-regular';
     font-size: 30px;
-    padding: 100px 100px 20px 100px;
+    padding-bottom: 20px;
 }
 
 .synergy .sgtxt p:nth-child(2){

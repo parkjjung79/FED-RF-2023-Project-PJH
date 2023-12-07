@@ -1,8 +1,8 @@
-/* 메인 part5 CSS - part6.css */
+/* 메인 part6 리뷰 CSS - part6.css */
 
 /* part6 셋팅 */
 .pt6 {
-    padding: 300px 170px;
+    padding: 200px 170px;
     text-align: center;
     font-family: 'Pretendard-Regular';
     background-color: #f3f0eb;
@@ -15,3 +15,4 @@
     font-family: 'MinervaModern-Regular';
     padding-bottom: 40px;
 }
+
