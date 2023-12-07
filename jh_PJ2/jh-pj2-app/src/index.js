@@ -13,7 +13,11 @@ import { Introduce } from './content/pages/Introduce1';
 
 export default function App(){
   return(
-    <BrowserRouter>
+    /* basename속성은 package.json의 "homepage" 속성값을 읽어옴 */
+    /* 배포용 */
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    {/*  개발용 */}
+    {/* <BrowserRouter> */}
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Main />} />
