@@ -194,6 +194,24 @@ export function Part3() {
           </div>
         </div>
       </section>
+      <div className="more3-3">
+        <div className="synergy">
+          <div className="sgtxt">
+            <p>Synergy</p>
+            <p>
+            식물성 오일과 에센셜 오일의 시너지 효과
+            </p>
+            <p>
+            100% 식물성 오일에 에센셜 오일이 첨가되면 시너지 효과를 발휘할 수 있습니다.<br />
+            이때 사용되는 식물성 오일을 캐리어(Carrier)오일이라 부르며,<br />
+            피부를 보호하고 영양을 줄 뿐 아니라 에센셜 오일이<br />
+            피부로 더 잘 흡수될 수 있도록 전달하는 매개체 역할을 합니다.<br />
+            주로 사용되는 식물성 오일로는 호호바, 해바라기, 스위트 아몬드, 올리브 오일 등입니다.
+            </p>
+          </div>
+       
+        </div>
+      </div>
 
     </>
   );
