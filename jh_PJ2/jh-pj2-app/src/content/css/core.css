@@ -44,6 +44,8 @@ main .page{
 /* 상단메뉴 */
 .tmenu{
     position: relative;
+    max-width: 100%;
+    /* margin: 0 auto; */
     display: flex;
     height: 7vh;
     background-color: #112b23;
@@ -54,7 +56,7 @@ main .page{
 /******* 상단_왼쪽_햄버거메뉴 *******/
 #header .left_menu {
     position: relative;
-    width: 15%;
+    width: 8.5%;
     height: 100%;
 }
 
@@ -65,10 +67,10 @@ main .page{
     left: 0;
     width: 30%;
     height: 58.5%;
-    /* display: flex; */
+    display: flex;
     /* height: 4.1vh;
     width: 3.7vw; */
-    /* flex-direction: column; */
+    flex-direction: column;
     padding: 13px 30px;
     cursor: pointer;
     align-items: center;

@@ -29,7 +29,7 @@ export function TopArea() {
   };
 
   const threeStyle = {
-    transform: isSideMenuOpen ? 'translateY(-17px) rotate(-45deg)' : '',
+    transform: isSideMenuOpen ? 'translateY(-15px) rotate(-45deg)' : '',
   };
   
   return (
