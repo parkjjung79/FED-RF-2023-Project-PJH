@@ -191,9 +191,11 @@ h1.logo {
     background: #bdae9e;
     padding: 80px 30px 150px 30px ;
     text-align: left;
-    font-style: normal;
-    /* text-decoration: none; */
     color: #fff;
+}
+
+#footer-area address{
+    font-style: normal;
 }
 
 

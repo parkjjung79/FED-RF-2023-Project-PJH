@@ -43,3 +43,9 @@ img {
     /* 박스 이미지 하단간극 없애기(약4px)
     값으로 top, middle등 도 효과있음! */
 }
+
+/* 6. hr 리셋 */
+hr {
+    /* border: 1px;
+    height: 1px; */
+}
