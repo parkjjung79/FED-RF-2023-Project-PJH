@@ -187,11 +187,16 @@ h1.logo {
 
 /************************* 하단영역 *************************/
 /* 푸터 셋팅 */
-div#footer-area{
+#footer-area{
     background: #bdae9e;
     padding: 80px 30px 150px 30px ;
-    text-align: center;
+    text-align: left;
+    font-style: normal;
+    /* text-decoration: none; */
+    color: #fff;
 }
+
+
 
 /* 로고이미지 */
 .flogo img{
