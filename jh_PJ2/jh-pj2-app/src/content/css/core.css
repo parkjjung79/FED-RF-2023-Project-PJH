@@ -192,6 +192,40 @@ h1.logo {
     padding: 80px 30px 150px 30px ;
     text-align: left;
     color: #26282a;
+    font-family: 'Pretendard-regular';
+}
+
+#footer-area span{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Pretendard-regular';
+    color: #26282a;
+    line-height: 34px;
+    float: none;
+}
+.footer_part1{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#footer-area .csnum p{
+    font-size: 30px;
+    font-family: 'MinervaModern-regular';
+    color: #26282a;
+    line-height: 42px;
+    text-decoration: none;
+}
+
+
+#footer-area .cshours {
+    font-size: 15px;
+    color: #26282a;
+    line-height: 42px;
+}
+
+#footer-area a{
+    color: #26282a;
 }
 
 #footer-area address{

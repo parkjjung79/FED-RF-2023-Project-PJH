@@ -6,35 +6,39 @@ export function FooterArea() {
       {/* <!-- 3. 하단영역 --> */}
       <div id="footer-area">
         <footer className="footer-area">
-          <div className="csnum">
-            고객센터<br />
-            <p>
-              1600-3689
-            </p>
+          <div className="footer_part1">
+            <div className="csnum_hours">
+              <div className="csnum">
+                고객센터<br />
+                <p>
+                  1600-3689
+                </p>
+              </div>
+              <div className="cshours">
+                <p>
+                  월-금 / 10-17시(점심시간 13-14)
+                </p>
+              </div>
+            </div>
+            {/* <!-- 3-3.하단링크 --> */}
+            <ul className="blink">
+              <li>
+                <a href="#">고객센터</a>
+              </li>
+              <li>
+                <a href="#">주문 및 문의</a>
+              </li>
+              <li>
+                <a href="#">소셜미디어</a>
+              </li>
+              <li>
+                <a href="#">B2B</a>
+              </li>
+              <li>
+                <a href="#">인재채용</a>
+              </li>
+            </ul>
           </div>
-          <div className="hours">
-            <p>
-              월-금 / 10-17시(점심시간 13-14)
-            </p>
-          </div>
-          {/* <!-- 3-3.하단링크 --> */}
-          <ul className="blink">
-            <li>
-              <a href="#">고객센터</a>
-            </li>
-            <li>
-              <a href="#">주문 및 문의</a>
-            </li>
-            <li>
-              <a href="#">소셜미디어</a>
-            </li>
-            <li>
-              <a href="#">B2B</a>
-            </li>
-            <li>
-              <a href="#">인재채용</a>
-            </li>
-          </ul>
           <hr noshade />
           {/* <!-- 3-2.회사주소 --> */}
           <address className="addr">
