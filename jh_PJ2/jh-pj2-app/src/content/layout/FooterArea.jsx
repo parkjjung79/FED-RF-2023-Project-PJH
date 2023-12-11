@@ -35,7 +35,7 @@ export function FooterArea() {
               <a href="#">인재채용</a>
             </li>
           </ul>
-          <hr />
+          <hr noshade />
           {/* <!-- 3-2.회사주소 --> */}
           <address className="addr">
             서울 강남구 강남대로162길 41-4<br />

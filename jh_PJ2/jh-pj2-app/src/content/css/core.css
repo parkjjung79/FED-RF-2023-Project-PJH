@@ -188,10 +188,10 @@ h1.logo {
 /************************* 하단영역 *************************/
 /* 푸터 셋팅 */
 #footer-area{
-    background: #bdae9e;
+    background: #d6d2c9;
     padding: 80px 30px 150px 30px ;
     text-align: left;
-    color: #fff;
+    color: #26282a;
 }
 
 #footer-area address{
@@ -212,3 +212,8 @@ ul.blink {
     justify-content: space-between;
 }
 
+#footer-area hr{
+    height: 1px;
+    border: none;
+    background-color: #26282a;
+}

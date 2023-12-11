@@ -52,7 +52,7 @@ export function TopArea() {
               <ul>
                 <li>
                   {/* <a href="#">소개</a> */}
-                  <Link to="/Part2">소개</Link>
+                  <Link to="#">소개</Link>
                 </li>
                 <li>
                   <a href="#">사용법</a>
