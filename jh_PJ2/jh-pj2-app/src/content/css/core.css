@@ -244,10 +244,15 @@ ul.blink {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 15px;
 }
 
 #footer-area hr{
     height: 1px;
     border: none;
     background-color: #26282a;
+}
+
+#footer-area .company_info span{
+    font-size: 15px;
 }
