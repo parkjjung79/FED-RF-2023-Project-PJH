@@ -1,0 +1,13 @@
+/* 아로마티카 PJ 미디어쿼리 CSS - mediaquery.css */
+/* 웹폰트, 공용클래스 */
+
+/* 700px이하 미디어쿼리 */
+@media screen and (max-width:700px) {
+    section .pt2.tbox{
+        padding: 60px 0;
+        text-align: center;
+    }
+    section .pt2.tbox p {
+        font-size: 18px;
+    }
+}
