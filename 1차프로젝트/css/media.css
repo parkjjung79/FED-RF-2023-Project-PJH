@@ -140,6 +140,12 @@
     padding: 10vh 0;
   }
 
+  .grmenu ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+
   /* 푸터 */
   /* 푸터 플렉스박스 공통 */
   #footer flex-box {
