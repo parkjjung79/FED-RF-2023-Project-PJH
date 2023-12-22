@@ -382,8 +382,14 @@ grmenu.forEach((ele)=>{
       dFn.qsEl(el,'img').alt = mvList[atxt][idx].제목;
       dFn.qsEl(el,'.mv-tit').innerText = mvList[atxt][idx].제목;
     })
+
+    // 장르메뉴 클릭시 CSS변경
+    grmenu.style.cssText = `
+    background-color: #5abec8;
+    `
   }; ////// click /////
 }); //////// forEach /////////
+
 
 
 
@@ -392,7 +398,8 @@ grmenu.forEach((ele)=>{
 const nmv_click = dFn.qsa('.nowmv li');
 // 2. 이벤트 설정 : on
 nmv_click.forEach(ele=>{
-  dFn.addEvt(ele,'click',goGame);
+  dFn.addEvt(ele,'click');
+  // dFn.addEvt(ele,'click',goGame);
 }); /////////////// forEach /////////////
 
 
@@ -401,5 +408,8 @@ nmv_click.style.cssText = `
 background-color: #5abec8;
 border: 1.5px solid #5abec8;
 `;
+
+
+
 
 

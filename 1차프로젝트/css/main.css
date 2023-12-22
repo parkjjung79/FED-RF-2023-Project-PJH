@@ -510,6 +510,7 @@ nav.grmenu > ul > li .on {
 
 .grmenu ul > li:hover {
   border: 1.5px solid #5abec8;
+  background-color: #5abec8;
   color: #fff;
   transition: 0.8s;
 }
