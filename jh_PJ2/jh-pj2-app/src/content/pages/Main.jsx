@@ -30,11 +30,11 @@ export function Main() {
             </div>
           {/* <!-- 2-5. 제품추천파트 --> */}
           <section className="pt5 page">
-            <Part5 />
+              <Part5 />
           </section>
           {/* <!-- 2-6. 리뷰파트 --> */}
           <section className="pt6 page">
-            <Part6 />
+              <Part6 />
           </section>
         </main>
       </div>

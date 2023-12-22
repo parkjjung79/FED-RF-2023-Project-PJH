@@ -65,13 +65,15 @@ setInterval(() => {
   spMenu[spNum].classList.remove("on");
 
   spNum++;
-  if (spNum > 3) spNum = 0;
+  // if (spNum > 3) spNum = 0;
+  if (spNum >= spMenu.length) spNum = 0;
 
   spMenu[spNum].classList.add("on");
 
   // 아래 내용도 여기서 바꿔라명령!
   spTxt[0].innerHTML = spList[spNum].title;
   spTxt[1].innerHTML = spList[spNum].story;
+  spImg[0].src = spList[spNum].spimg;
 
   
 }, 5000);
