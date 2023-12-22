@@ -34,7 +34,7 @@ const mvList = {
     "판타지":[
       {이미지:"./images/genre/fantasy/mv_fantasy1.jpg",제목:"헝거게임"},
       {이미지:"./images/genre/fantasy/mv_fantasy2.jpg",제목:"해리포터"},
-      {이미지:"./images/genre/fantasy/mv_fantasy3.jpg",제목:"신비한동물들과덤블도어의비밀"},
+      {이미지:"./images/genre/fantasy/mv_fantasy3.jpg",제목:"신비한동물들과\n덤블도어의비밀"},
       {이미지:"./images/genre/fantasy/mv_fantasy4.jpg",제목:"트와일라잇"},
       {이미지:"./images/genre/fantasy/mv_fantasy5.jpg",제목:"헬보이"},],
     "애니메이션":[
