@@ -21,7 +21,7 @@ export function TopArea() {
   };
 
   const oneStyle = {
-    transform: isSideMenuOpen ? 'translateY(17px) rotate(45deg)' : '',
+    transform: isSideMenuOpen ? 'translateY(20px) rotate(45deg)' : '',
   };
 
   const twoStyle = {
