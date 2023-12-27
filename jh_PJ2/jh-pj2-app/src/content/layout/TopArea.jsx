@@ -1,15 +1,17 @@
 // jh_PJ2 상단영역 공통 컴포넌트
 
-import { Link } from "react-router-dom";
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "../css/core.css";
+
+import $ from "jquery";
 
 // 컨텍스트 API
 import { shpCon } from "./shopContext";
-import { useContext } from "react";
 import { Logo } from "../modules/Logo";
 
 export function TopArea() {
+  const myCon = useContext(shpCon);
+
   const [isSideMenuOpen, setSideMenuOpen] = useState(false);
 
   const handleHamClick = () => {
@@ -31,6 +33,24 @@ export function TopArea() {
   const threeStyle = {
     transform: isSideMenuOpen ? 'translateY(-15px) rotate(-45deg)' : '',
   };
+
+  const moveToSec = (e) => {
+    e.preventDefault();
+    const tg = $(e.currentTarget);
+      console.log(tg);
+      let pos = $(tg.attr('href')).offset().top;
+      let upNum = tg.attr('data-pos').split(',');
+      // pgNum 업데이트
+      myCon.pgNum.current = upNum[1];
+      // scNum 업데이트
+      myCon.scNum.current = upNum[0];
+
+      console.log('이동시 업데이트:',myCon.scNum.current,myCon.pgNum.current);
+
+      $('html,body').animate({
+        scrollTop:pos+"px"
+      },600)
+  }
   
   return (
     // <!-- 1. 상단영역 -->
@@ -51,20 +71,19 @@ export function TopArea() {
             <nav className="side_wrap" style={sideWrapStyle}>
               <ul>
                 <li>
-                  {/* <a href="#">소개</a> */}
-                  <Link to="#">소개</Link>
+                  <a href=".pt2" data-pos="1,1" onClick={moveToSec}>소개</a>
                 </li>
                 <li>
-                  <a href="#">사용법</a>
+                  <a href=".pt3" data-pos="4,2" onClick={moveToSec}>사용법</a>
                 </li>
                 <li>
-                  <a href="#">주요성분</a>
+                  <a href=".pt4" data-pos="5,3" onClick={moveToSec}>주요성분</a>
                 </li>
                 <li>
-                  <a href="#">지속가능성 뷰티</a>
+                  <a href=".pt5" data-pos="6,4" onClick={moveToSec}>지속가능성 뷰티</a>
                 </li>
                 <li>
-                  <a href="#">리뷰</a>
+                  <a href=".pt6" data-pos="7,5" onClick={moveToSec}>리뷰</a>
                 </li>
               </ul>
             </nav>

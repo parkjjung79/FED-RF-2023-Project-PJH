@@ -7,7 +7,7 @@ import { FooterArea } from "../layout/FooterArea.jsx";
 // Context API 불러오기
 import { shpCon } from "./shopContext";
 import { useNavigate } from "react-router-dom";
-import { useCallback, useLayoutEffect } from "react";
+import { useCallback, useLayoutEffect, useRef } from "react";
 
 
 
@@ -29,8 +29,13 @@ export function Layout() {
   // useCallback(기존익명함수,[의존성])
   // -> 의존성 변수가 없을때 비워놓아도 효과 있음!(단,형식은 맞출것!)
 
+  // 페이지순번
+  const pgNum = useRef(0);
+  // 스크롤순번
+  const scNum = useRef(0);
+
   return (
-    <shpCon.Provider value={{ chgPage }}>
+    <shpCon.Provider value={{ chgPage, pgNum, scNum }}>
       <TopArea />
       <MainArea />
       <FooterArea />

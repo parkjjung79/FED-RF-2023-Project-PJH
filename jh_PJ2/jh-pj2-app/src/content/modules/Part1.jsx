@@ -1,20 +1,25 @@
 // jh_PJ2 메인페이지 Part1 컴포넌트
 
 // Part1 css 불러오기
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import "../css/part1.css";
 
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
 
+import { shpCon } from "../layout/shopContext";
+
 //// Part1 컴포넌트 /////////////
 export function Part1() {
+  const myCon = useContext(shpCon);
+
   const winH = window.innerHeight;
   // 페이지순번
-  let pgNum = 0;
+  // let pgNum = myCon.pgNum.current;
   // 스크롤순번
-  let scNum = 0;
+  // let scNum = myCon.scNum.current;
 
+  // console.log(pgNum, scNum);
   let protW = 0;
 
   /// 마우스 휠 함수 ///////////
@@ -22,94 +27,83 @@ export function Part1() {
     e.preventDefault();
     console.log("훨~~~!");
 
+    // pgNum = myCon.pgNum.current;
+    // scNum = myCon.scNum.current;
+
     if (protW) return;
     protW = 1;
     setTimeout(() => (protW = 0), 800);
 
     if (e.wheelDelta < 0) {
-      scNum++;
+      myCon.scNum.current++;
     } else {
-      scNum--;
+      myCon.scNum.current--;
     }
 
-    if (scNum === 2) {
+    if (myCon.scNum.current === 2) {
       $(".pt2.tbox p").first().addClass("on");
-    }
-    else if(scNum===3){
+    } else if (myCon.scNum.current === 3) {
       $(".pt2.tbox p").first().removeClass("on");
       $(".pt2.tbox p").eq(1).addClass("on");
-
-    } 
-    else if(scNum===8){
+    } else if (myCon.scNum.current === 8) {
       $(".pt4 .contbox p").first().addClass("on");
-    } 
-    else if(scNum===9){
+    } else if (myCon.scNum.current === 9) {
       $(".pt4 .contbox p").first().removeClass("on");
       $(".pt4 .contbox p").eq(1).addClass("on");
-    } 
-    else if(scNum===10){
+    } else if (myCon.scNum.current === 10) {
       $(".pt4 .contbox p").eq(1).removeClass("on");
       $(".pt4 .contbox p").eq(2).addClass("on");
-    } 
-    else if(scNum===11){
+    } else if (myCon.scNum.current === 11) {
       $(".pt4 .contbox p").eq(2).removeClass("on");
       $(".pt4 .contbox p").eq(3).addClass("on");
-    } 
-    
-    else {
-      if (e.wheelDelta < 0) pgNum++;
-      else pgNum--;
+    } else {
+      if (e.wheelDelta < 0) myCon.pgNum.current++;
+      else myCon.pgNum.current--;
 
       $("html,body")
         .stop()
         .animate(
           {
-            scrollTop: winH * pgNum + "px",
+            scrollTop: winH * myCon.pgNum.current + "px",
           },
           800
         );
     }
 
-    console.log('scNum스크롤순번:',scNum,'\npgNum페이지순번:',pgNum)
+    console.log("휠scNum:", myCon.scNum.current, "\n휠pgNum:", myCon.pgNum.current);
   }; ///////// wheelFn 함수 /////////////
 
-  useEffect(()=>{
+  useEffect(() => {
     $(".pt1 .tbox p")
-        .css({position: "relative", top: "74px", opacity: 0})
-        .first()
-        .delay(4000)
-        .animate({ top: "0px", opacity: 1 }, function () {
-          $(this)
-           .delay(1500)
-           .animate({ top: "-74px", opacity: 0 })
-           .next()
-           .delay(2000)
-           .animate({ top: "-41px", opacity: 1 }, function () {
-          $(this)
-            .delay(1500)
-            .animate({ top:"-41px", opacity: 0 })
-            .next()
-            .delay(2000)
-            .animate({ top: "-82px", opacity: 1}, function (){
+      .css({ position: "relative", top: "74px", opacity: 0 })
+      .first()
+      .delay(4000)
+      .animate({ top: "0px", opacity: 1 }, function () {
+        $(this)
+          .delay(1500)
+          .animate({ top: "-74px", opacity: 0 })
+          .next()
+          .delay(2000)
+          .animate({ top: "-41px", opacity: 1 }, function () {
             $(this)
-            .delay(1500)
-            .animate({ top: "-82px",
-            opacity: 0})
-            .next()
-            .delay(2000)
-            .animate({ top: "-124px",
-            opacity: 1}, function (){
-            $(this)
-            .delay(1500)
-            .animate({ top: "-60px",
-            opacity: 0});
-            });
-            });
-            });
-        });
-        window.addEventListener("wheel", wheelFn, { passive: false });
-  },[]);
-
+              .delay(1500)
+              .animate({ top: "-41px", opacity: 0 })
+              .next()
+              .delay(2000)
+              .animate({ top: "-82px", opacity: 1 }, function () {
+                $(this)
+                  .delay(1500)
+                  .animate({ top: "-82px", opacity: 0 })
+                  .next()
+                  .delay(2000)
+                  .animate({ top: "-124px", opacity: 1 }, function () {
+                    $(this).delay(1500).animate({ top: "-60px", opacity: 0 });
+                  });
+              });
+          });
+      });
+    window.addEventListener("wheel", wheelFn, { passive: false });
+  }, []);
 
   // 쌤코드
   // useEffect(() => {

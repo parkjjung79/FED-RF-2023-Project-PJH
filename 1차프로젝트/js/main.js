@@ -73,7 +73,7 @@ setInterval(() => {
   // 아래 내용도 여기서 바꿔라명령!
   spTxt[0].innerHTML = spList[spNum].title;
   spTxt[1].innerHTML = spList[spNum].story;
-  spImg[0].src = spList[spNum].spimg;
+  spImg[0].style.background = `url(${spList[spNum].spimg}) no-repeat center/auto 100%`;
 
   
 }, 5000);
@@ -385,10 +385,14 @@ grmenu.forEach((ele)=>{
       dFn.qsEl(el,'.mv-tit').innerText = mvList[atxt][idx].제목;
     })
 
+    console.log(grmenu)
     // 장르메뉴 클릭시 CSS변경
-    grmenu.style.cssText = `
-    background-color: #5abec8;
-    `
+    // grmenu.style.cssText = `
+    // background-color: #5abec8;
+    // `
+
+    // 클릭시 클릭된 li만 'on'넣고 나머지는 빼기
+    $(ele).parent().addClass('on').siblings().removeClass('on');
   }; ////// click /////
 }); //////// forEach /////////
 
@@ -406,10 +410,10 @@ nmv_click.forEach(ele=>{
 
 
 // 3. css  style 설정
-nmv_click.style.cssText = `
-background-color: #5abec8;
-border: 1.5px solid #5abec8;
-`;
+// nmv_click.style.cssText = `
+// background-color: #5abec8;
+// border: 1.5px solid #5abec8;
+// `;
 
 
 
