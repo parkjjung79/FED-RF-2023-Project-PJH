@@ -96,7 +96,7 @@ export function Part3() {
 
   return (
     <>
-      <section className="pt3-1">
+      <div className="pt3-1">
         <div className="ibox">
         <img src="./images/pt3-1.jpg" alt="사용법이미지" />
         </div>
@@ -109,7 +109,7 @@ export function Part3() {
             <img src="./images/ico_add_circle.svg" alt="더보기이미지" />
           </div>
         </div>
-      </section>
+      </div>
       <div className="more3-1">
         <div className="howtext">
           <div className="htxt1">
@@ -139,7 +139,7 @@ export function Part3() {
         </div>
       </div>
 
-      <section className="pt3-2">
+      <div className="pt3-2">
         <div className="ibox">
           <img src="./images/pt3-2.jpg" alt="주요성분이미지" />
         </div>
@@ -152,7 +152,7 @@ export function Part3() {
             <p>주요성분</p>
           </div>
         </div>
-      </section>
+      </div>
       <div className="more3-2">
         <div className="igretext">
           <div className="igtxt1">
@@ -197,7 +197,7 @@ export function Part3() {
         </div>
       </div>
 
-      <section className="pt3-3">
+      <div className="pt3-3">
         <div className="ibox">
           <img src="./images/pt3-3.jpg" alt="시너지이미지" />
         </div>
@@ -210,7 +210,7 @@ export function Part3() {
             <img src="./images/ico_add_circle.svg" alt="더보기이미지" />
           </div>
         </div>
-      </section>
+      </div>
       <div className="more3-3">
         <div className="synergy">
           <div className="sgtxt">

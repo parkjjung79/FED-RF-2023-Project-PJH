@@ -56,13 +56,18 @@
     transition: .5s;
 }
 
+.pt3{
+    position: relative;
+   
+}
+
 /* pt3-1 사용법 설명이미지 셋팅 */
 .pt3 .more3-1{
     display: none;
     position: absolute;
-    width: 1007px;
-    height: 781px;
-    top: 1900px;
+    width: 50vw;
+    height: 93vh;
+    top: 7vh;
     left: 53%;
     border-radius: 60px 0 0 0;
     /* 배경넣기 : 한번에쓰기 */
@@ -72,7 +77,6 @@
     배경색 이미지 반복 고정 위치/크기
     */
 }
-
 
 
 .pt3 .more3-1 .howtext p{
@@ -105,7 +109,7 @@
 /************ 컨텐츠박스 pt3-2 ************/
 section.pt3-2{
     position: relative;
-    top: 193px;
+    top: 33vh;
     left: 66.9%;
     width: 460px;
 }
@@ -128,6 +132,7 @@ section.pt3-2{
 /* pt3-2 타이틀박스 */
 .pt3-2 .titlebox{
     display: flex;
+    position: relative;
     width: 460px;
     padding-top: 50px;
     font-size: 35px;
@@ -146,14 +151,20 @@ section.pt3-2{
     transition: .5s;
 }
 
+.pt3-2{
+    position: relative;
+    top: 32vh;
+    left: calc(100% - 465px);
+}
+
 /* pt3-2 주요성분 설명이미지 셋팅 */
 .pt3 .more3-2{
     display: none;
     position: absolute;
-    width: 887px;
-    height: 760px;
-    top: 2710px;
-    left: 5.5%;
+    width: 50vw;
+    height: 84vh;
+    top: 112vh;
+    left: 5%;
     border: 1px solid #c2b8b7;
     border-radius: 0 60px 0 0;
     background-color: #fff;
@@ -243,11 +254,11 @@ section.pt3-2{
 
 /************ 컨텐츠박스 pt3-3 ************/
 
-section.pt3-3 {
+.pt3 .pt3-3 {
     position: relative;
-    top: 428px;
-    left: 93px;
-    padding-bottom: 380px;
+    top: 50vh;
+    left: 5vw;
+    padding-bottom: 39rem;
 }
 
 /* pt3-3 이미지 박스 */
@@ -296,10 +307,10 @@ section.pt3-3 {
 .more3-3{
     display: none;
     position: absolute;
-    top: 3710px;
+    top: 210.6vh;
     left: 0;
     width: 100%;
-    height: 76vh;
+    height: 100vh;
     /* 배경넣기 : 한번에쓰기 */
     background: url(../../../public/images/pt3-4.jpg) no-repeat center/cover;
     /* 
@@ -324,7 +335,7 @@ section.pt3-3 {
 .synergy .sgtxt{
     position: relative;
     text-align: center;
-    padding-top: 243px;
+    padding-top: 15rem;
     color: #fff;
 }
 
