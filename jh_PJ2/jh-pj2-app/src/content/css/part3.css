@@ -47,8 +47,10 @@
 
 /* pt3-1 타이틀박스 더보기이미지 */
 .cbx.titlebox3-1-2 img{
+    position: relative;
     width: 40px;
     cursor: pointer;
+    z-index: 999;
 }
 
 .cbx.titlebox3-1-2 img:hover{
@@ -143,7 +145,10 @@ section.pt3-2{
 
 /* pt3-2 타이틀박스 더보기이미지 */
 .cbx.titlebox3-2-1 img{
+    position: relative;
     width: 40px;
+    cursor: pointer;
+    z-index: 999;
 }
 
 .cbx.titlebox3-2-1 img:hover{
@@ -295,7 +300,10 @@ section.pt3-2{
 
 /* pt3-3 타이틀박스 더보기이미지 */
 .cbx.titlebox3-3-2 img{
+    position: relative;
     width: 40px;
+    cursor: pointer;
+    z-index: 999;
 }
 .cbx.titlebox3-3-2 img:hover{
     transform: rotate(45deg);

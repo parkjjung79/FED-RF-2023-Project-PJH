@@ -16,6 +16,8 @@ export function Part4() {
     $(".pt4 button.pt4-1.btn").click((e) =>{
       e.preventDefault();
       $(".pt4-2").slideToggle();
+      // pt4-2가 나타날때, #main-area .pt4는 패딩 12rem 0이 된다.
+
     });
   });
 

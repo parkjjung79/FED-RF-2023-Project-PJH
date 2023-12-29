@@ -1,16 +1,17 @@
 /* 메인 part4 CSS - part4.css */
 
 /* part4 셋팅 */
-.pt4 {
-    padding: 300px 170px;
+#main-area .pt4 {
+    position: relative;
+    padding: 20rem 0;
     text-align: center;
+    height: auto;
     font-family: 'Pretendard-Regular';
-    
 }
 
 /* 타이틀박스 셋팅 */
 .pt4 .titlebox{
-    font-size: 35px;
+    font-size: 2.5rem;
     color: #fff;
     padding-bottom: 30px;
 }
@@ -27,6 +28,7 @@
 }
 
 .pt4 .contbox p.on {
+    
     color: #fff;
 }
 
@@ -35,6 +37,7 @@ button.pt4-1.btn {
     outline: 1px solid #fff;
     background: transparent;
     padding: 10px 40px;
+    margin-bottom: 20px;
     font-family: 'Pretendard-Regular';
     font-size: 18px;
     color: #fff;
@@ -49,9 +52,12 @@ button.pt4-1.btn:hover {
 
 /* pt4-2 숨기기 */
 .pt4-2 {
+    position: relative;
+    left: 0;
     /* display: none; */
-    height: auto;
-    padding: 397px 50px;
+    width: 100vw;
+    height: 80vh;
+    padding-top: 28rem;
     background-color: #112b23;
 }
 .pt4-2 img{
@@ -68,3 +74,4 @@ button.pt4-1.btn:hover {
     font-size: 18px;
     color: #1c4739;
 }
+

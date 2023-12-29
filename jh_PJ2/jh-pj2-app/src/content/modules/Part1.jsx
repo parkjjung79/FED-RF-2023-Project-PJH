@@ -15,9 +15,9 @@ export function Part1() {
 
   const winH = window.innerHeight;
   // 페이지순번
-  // let pgNum = myCon.pgNum.current;
+  let pgNum = myCon.pgNum.current;
   // 스크롤순번
-  // let scNum = myCon.scNum.current;
+  let scNum = myCon.scNum.current;
 
   // console.log(pgNum, scNum);
   let protW = 0;
@@ -40,23 +40,27 @@ export function Part1() {
       myCon.scNum.current--;
     }
 
-    if (myCon.scNum.current === 2) {
-      $(".pt2.tbox p").first().addClass("on");
-    } else if (myCon.scNum.current === 3) {
-      $(".pt2.tbox p").first().removeClass("on");
-      $(".pt2.tbox p").eq(1).addClass("on");
-    } else if (myCon.scNum.current === 8) {
-      $(".pt4 .contbox p").first().addClass("on");
-    } else if (myCon.scNum.current === 9) {
-      $(".pt4 .contbox p").first().removeClass("on");
-      $(".pt4 .contbox p").eq(1).addClass("on");
-    } else if (myCon.scNum.current === 10) {
-      $(".pt4 .contbox p").eq(1).removeClass("on");
-      $(".pt4 .contbox p").eq(2).addClass("on");
-    } else if (myCon.scNum.current === 11) {
-      $(".pt4 .contbox p").eq(2).removeClass("on");
-      $(".pt4 .contbox p").eq(3).addClass("on");
-    } else {
+    if (myCon.scNum.current === 1) {
+      $(".pt2.tbox p").first().animate({color:'#fff'},500,);
+    } 
+    //   else if (myCon.scNum.current === 3) {
+    //   $(".pt2.tbox p").first().removeClass("on");
+    //   $(".pt2.tbox p").eq(1).addClass("on");
+    // } else if (myCon.scNum.current === 8) {
+    //   $(".pt4 .contbox p").first().addClass("on");
+    // } else if (myCon.scNum.current === 9) {
+    //   $(".pt4 .contbox p").first().removeClass("on");
+    //   $(".pt4 .contbox p").eq(1).addClass("on");
+    // } 
+    //   else if (myCon.scNum.current === 10) {
+    //   $(".pt4 .contbox p").eq(1).removeClass("on");
+    //   $(".pt4 .contbox p").eq(2).addClass("on");
+    // } 
+    //   else if (myCon.scNum.current === 11) {
+    //   $(".pt4 .contbox p").eq(2).removeClass("on");
+    //   $(".pt4 .contbox p").eq(3).addClass("on");
+    // }
+      else {
       if (e.wheelDelta < 0) myCon.pgNum.current++;
       else myCon.pgNum.current--;
 
