@@ -9,7 +9,8 @@ body {
 }
 body {
     overflow-x: hidden;
-    background-image: linear-gradient(to bottom, orange, lightpink, lightgreen);
+    background: #f4f0ed;
+    /* background-image: linear-gradient(to bottom, orange, lightpink, lightgreen); */
 }
 
 /* GNB박스 */
