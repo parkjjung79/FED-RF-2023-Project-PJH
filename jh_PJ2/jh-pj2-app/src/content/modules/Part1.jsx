@@ -77,6 +77,8 @@ export function Part1() {
     console.log("휠scNum:", myCon.scNum.current, "\n휠pgNum:", myCon.pgNum.current);
   }; ///////// wheelFn 함수 /////////////
 
+ 
+  
   useEffect(() => {
     $(".pt1 .tbox p")
       .css({ position: "relative", top: "74px", opacity: 0 })
