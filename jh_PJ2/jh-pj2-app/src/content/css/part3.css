@@ -45,6 +45,14 @@
     letter-spacing: 0.1rem;
 }
 
+/* pt3-1 구분선 css */
+.pt3-hr {
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+}
+
+
 /* pt3-1 타이틀박스 더보기이미지 */
 .cbx.titlebox3-1-2 img{
     position: relative;

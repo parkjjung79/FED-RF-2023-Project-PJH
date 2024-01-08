@@ -3,7 +3,18 @@
 
 /************* 1370px 이하 사이즈 시작 *************/
 @media screen and (max-width: 1370px) {
+  .bottom-menu a {
+      /* font-size: 2.4rem; */
+      font-size: min(1.7vw,19px);
+  }
+  .inbox {
+    padding: 0 20px;
+  }
+
+
 }
+
+
 /************* 1370px 이하 사이즈 종료 *************/
 
 /************* 1050px 이하 사이즈 시작 *************/
@@ -12,6 +23,13 @@
   .inbox {
     padding: 0 20px;
   }
+
+  .bottom-menu a {
+    /* font-size: 2.4rem; */
+    font-size: 1.7vw;
+}
+
+
   .ft_info address {
     white-space: nowrap;
   }
@@ -111,6 +129,10 @@
   }
 
   /* gnb */
+  nav.gnb.bottom-menu {
+    position: relative;
+  }
+
   .gnb > ul > li {
     padding-left: 0;
   }
@@ -126,7 +148,22 @@
   /* 서브메뉴 안보이게 */
   .smenu>ul>li {
     display: none;
-    height: 0;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .smenu > ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(0 0 0 / 49%);
+    border-radius: 5%;
+    margin-top: 15px;
+    padding: 15px 10px;
+    backdrop-filter: blur(3px);
+    width: 100%;
   }
 
   /* 배너영역 */
@@ -145,6 +182,23 @@
     flex-wrap: wrap;
   }
   
+  .partbox h2 a {
+    line-height: 1.5;
+    font-size: max(1.5vw,20px);
+  }
+  
+  .third {
+    grid-column: 1/3;
+    grid-row: 3/3;
+    /* width: 82%; */
+  }
+
+
+  .last {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
 
   /* 푸터 */
   /* 푸터 플렉스박스 공통 */
@@ -160,11 +214,25 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    font-size: 1.2rem;
-    /* white-space: nowrap; */
+    font-size: 1.4rem;
+    white-space: nowrap;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-between;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: space-evenly;
   }
+
+  .footer .partbox {
+    height: auto;
+    text-align: center;
+  }
+
+  .footer-section03 {
+    display: flex;
+    gap: 0 6.8vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 }
 /************* 800px 이하 사이즈 종료 *************/

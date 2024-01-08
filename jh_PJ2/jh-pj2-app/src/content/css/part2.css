@@ -28,7 +28,7 @@ section.pt2 {
 
 
 .pt2.tbox p:nth-child(2) {
-    padding-bottom: 70px
+    padding-bottom: 1.5vh;
 }
 .pt2.tbox p:nth-child(3) {
     color: #fff;
@@ -37,11 +37,11 @@ section.pt2 {
 /* pt2의 두번째박스 : 이미지박스 */
 .pt2 .cbx2-2{
     width: 50%;
+    height: 100%;
 }
 
 /* pt2의 두번째박스 : 이미지 */
 .pt2.cbx2-2.bgi{
-    /* height: 100%; */
     background-image: url(../../../public/images/pt2_bgi.jpg);
     background-size: cover;
     background-position-y: -111px;

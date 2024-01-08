@@ -16,7 +16,7 @@ import {mvList, spList} from "./data.js";
 setFollow();
 
 // 부드러운 스크롤 호출
-startSS();
+// startSS();
 
 // 0. 새로고치면 스크롤바 위치 캐싱후 맨 위로 이동!
 setTimeout(() => {
@@ -73,7 +73,7 @@ setInterval(() => {
   // 아래 내용도 여기서 바꿔라명령!
   spTxt[0].innerHTML = spList[spNum].title;
   spTxt[1].innerHTML = spList[spNum].story;
-  spImg[0].style.background = `url(${spList[spNum].spimg}) no-repeat center/auto 100%`;
+  spImg[0].style.background = `url(${spList[spNum].spimg}) no-repeat center/cover`;
 
   
 }, 5000);
@@ -414,6 +414,7 @@ nmv_click.forEach(ele=>{
 // background-color: #5abec8;
 // border: 1.5px solid #5abec8;
 // `;
+
 
 
 

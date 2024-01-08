@@ -1,13 +1,44 @@
 /* 아로마티카 PJ 미디어쿼리 CSS - mediaquery.css */
 /* 웹폰트, 공용클래스 */
 
-/* 700px이하 미디어쿼리 */
-@media screen and (max-width:700px) {
+/* 1050px이하 미디어쿼리 */
+@media screen and (max-width:1050px) {
     section .pt2.tbox{
         padding: 60px 0;
         text-align: center;
     }
+    
     section .pt2.tbox p {
         font-size: 18px;
     }
-}
+} /************* 1050px 이하 사이즈 종료 *************/
+
+
+
+/* 800px이하 미디어쿼리 */
+@media screen and (max-width:800px) {
+    /* 두번째파트 css */
+    section .pt2.tbox{
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    section .pt2.tbox p {
+        font-size: 18px;
+    }
+
+    section.pt2 {
+        display: flex;
+        background-color: #bdae9e;
+        /* height: 930px; */
+        flex-direction: column;
+    }
+    .main-area .pt2 .cbx2-1 {
+        width: 100%;
+        height: auto;
+    }
+    .main-area .pt2 .cbx2-2 {
+        width: 100%;
+        height: 100%;
+    }
+} /************* 800px 이하 사이즈 종료 *************/

@@ -303,7 +303,8 @@ a {
 
 .bottom-menu a {
   /* 폰트사이즈 */
-  font-size: 2.4rem;
+  /* font-size: 2.4rem; */
+  font-size: 1.3vw;
 }
 
 .bottom-menu > ul > li:hover > a {
@@ -936,7 +937,7 @@ i.dri6 {
 }
 
 #footer .first-line {
-  padding-bottom: 20px;
+  padding: 20px;
 }
 .footer a {
   color: #b7b7b7;
