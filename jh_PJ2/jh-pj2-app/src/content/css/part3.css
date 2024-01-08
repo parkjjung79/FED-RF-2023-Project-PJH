@@ -15,6 +15,9 @@
     height: 484px;
     overflow: hidden;
 }
+.pt3-1 .ibox_mobile, .pt3-2 .ibox_mobile{
+    display: none;
+}
 
 /* pt3-1 이미지 박스 속 이미지 */
 .pt3-1 .ibox img{

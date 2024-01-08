@@ -109,6 +109,9 @@ export function Part3() {
             <img src="./images/ico_add_circle.svg" alt="더보기이미지" />
           </div>
         </div>
+        <div className="ibox_mobile">
+        <img src="./images/pt3-1.jpg" alt="사용법이미지" />
+        </div>
       </div>
       <div className="more3-1">
         <div className="howtext">
@@ -153,6 +156,9 @@ export function Part3() {
             <p>MAIN IGREDENTS</p>
             <p>주요성분</p>
           </div>
+        </div>
+        <div className="ibox_mobile">
+          <img src="./images/pt3-2.jpg" alt="주요성분이미지" />
         </div>
       </div>
       <div className="more3-2">

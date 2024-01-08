@@ -53,7 +53,7 @@
     }
     
     section .pt2.tbox p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     section.pt2 {
@@ -77,12 +77,142 @@
         padding: 5vh 0;
     }
 
-    .pt3-1 .titlebox {
-        font-size: 2rem;
+    .pt3 .pt3-1 .titlebox {
+        width: 100%;
+        padding-bottom: 2vh;
+        font-size: 1.7rem;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
     }
 
     .cbx.titlebox3-1-1 {
         text-align: center;
+        padding-bottom: 2vh;
     }
+
+    .pt3-1 .ibox{
+        display: none;
+    }
+
+    /* pt3-1 이미지박스_모바일 박스 */
+    .cont .pt3-1 .ibox_mobile{
+        position: relative;
+        width: 720px;
+        height: 484px;
+        overflow: hidden;
+    }
+
+    /* pt3-1 이미지 박스 속 이미지 */
+    .pt3-1 .ibox_mobile img{
+        height: 130%;
+        width: 100%; 
+        object-fit: cover;
+        filter: brightness(0.9);
+    }
+
+    .cont .pt3 .more3-1 {
+        position: absolute;
+        display: none;
+        width: 100%;
+        /* height: auto; */
+        top: 18vh;
+        left: -18.7px;
+        background: transparent;
+    }
+
+    .cont .pt3 .more3-1 .howtext p {
+        /* position: relative; */
+        /* top: 2vh; */
+        /* left: 5vw; */
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .cont .pt3-hr {
+        height: 1px;
+        margin: 1.7vh auto 2.2vh;
+    
+    }
+
+    .cont .pt3-2 {
+        position: relative;
+        top: 18vh;
+        left: 0;
+    }
+
+    /* pt3-2 이미지박스_모바일 박스 */
+    .cont .pt3-2 .ibox_mobile {
+        position: relative;
+        width: 800px;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .pt3-2 .ibox{
+        display: none;
+    }
+
+    .pt3 .pt3-2 .titlebox {
+        width: 100%;
+        padding-bottom: 2vh;
+        font-size: 1.7rem;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cbx.titlebox3-2-1 {
+        text-align: center;
+        padding-bottom: 2vh;
+    }
+    .cbx.titlebox3-2-2 img{
+        display: none;
+    }
+    .cbx.titlebox3-2-2{
+        text-align: center;
+    }
+
+    .pt3-2 .ibox_mobile img {
+        height: 130%;
+        width: 52.1%;
+        object-fit: cover;
+        filter: brightness(0.9);
+    }
+
+    .cont .pt3 .more3-2 {
+        position: absolute;
+        left: 0;
+        text-align: center;
+        line-height: 1.5;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        border: 0px
+    }
+
+    .lavender, .majoram, .jojobar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cont .laventxt p:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    /* .majoram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    } */
+    .cont .majotxt p:nth-child(2) {
+        font-size: 1rem;
+    }
+    .cont .jojotxt p:nth-child(2) {
+        font-size: 1rem;
+    }
+
 } /************* 800px 이하 사이즈 종료 *************/
