@@ -36,7 +36,7 @@ export function FooterArea() {
               </li>
             </ul>
           </div>
-          <hr noshade='true' />
+          <div className="footer-hr"></div> 
           {/* <!-- 3-2.회사주소 --> */}
           <div className="company_info">
             <h2 className="company_name">(주) 아로마티카</h2>

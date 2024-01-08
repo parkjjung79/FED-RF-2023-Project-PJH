@@ -17,14 +17,43 @@
 
 /* 800px이하 미디어쿼리 */
 @media screen and (max-width:800px) {
+    main .page{
+        height: auto;
+        /* box-sizing: border-box; */
+    }
+    /* 헤더 */
+    .right_menu img {
+        width: 6vw;
+    }
+
+    /* top menu */
+    #header .tmenu {
+        justify-content: space-around;
+    }
+
+    #header .tmenu .ham_menu {
+        padding: 0.7rem 0;
+        width: 8vw;
+    }
+
+    /* 오른쪽 메뉴 _ icon */
+    #header .right_menu img {
+        width: 7vw;
+    }
+    
+    .icons {
+        gap: 1vw;
+    }
+
+
     /* 두번째파트 css */
     section .pt2.tbox{
-        padding: 60px 0;
+        padding: 15vh 0;
         text-align: center;
     }
     
     section .pt2.tbox p {
-        font-size: 18px;
+        font-size: 1.3rem;
     }
 
     section.pt2 {
@@ -33,12 +62,27 @@
         /* height: 930px; */
         flex-direction: column;
     }
-    .main-area .pt2 .cbx2-1 {
+    #main-area .pt2 .cbx2-1 {
         width: 100%;
         height: auto;
     }
-    .main-area .pt2 .cbx2-2 {
+    #main-area .pt2 .cbx2-2 {
         width: 100%;
         height: 100%;
+    }
+
+    /* 세번째파트 css */
+    .cont #main-area .pt3 {
+        background-color: #e2d9d2;
+        padding: 5vh 0;
+    }
+
+    .pt3-1 .titlebox {
+        font-size: 2rem;
+        justify-content: space-around;
+    }
+
+    .cbx.titlebox3-1-1 {
+        text-align: center;
     }
 } /************* 800px 이하 사이즈 종료 *************/

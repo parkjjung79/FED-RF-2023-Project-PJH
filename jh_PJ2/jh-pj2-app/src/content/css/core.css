@@ -245,11 +245,11 @@ ul.blink {
     justify-content: space-between;
     gap: 15px;
 }
-
-#footer-area hr{
-    height: 1px;
+#footer-area .footer-hr{
+    height: 2px;
     border: none;
-    background-color: #26282a;
+    background-color: #fff9eb;
+    margin: 1rem 0;
 }
 
 #footer-area .company_info span{

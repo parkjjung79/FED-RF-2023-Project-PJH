@@ -118,7 +118,8 @@ export function Part3() {
               흐름이 필요한 곳에 바디오일로 부드럽게<br />
               마사지해줌으로 뭉쳐있는 기운을 풀어주고<br />
               릴랙싱에 도움을 줍니다.
-            <div className="pt3-hr"/>
+              <br />
+            <div className="pt3-hr"></div>
             </p>
           </div>
           <div className="htxt2">
@@ -126,7 +127,8 @@ export function Part3() {
             <p>샤워 후 물기가 살짝 남은 상태에서 사용하면<br />
               더욱 부드럽게 마사지가 가능한 동시에<br />
               유분 보습막을 만들어줍니다.
-            <div className="pt3-hr"/> 
+              <br />
+            <div className="pt3-hr"></div> 
             </p>
           </div>
           <div className="htxt3">
