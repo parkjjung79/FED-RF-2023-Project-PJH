@@ -121,11 +121,20 @@
         object-fit: cover;
         filter: brightness(0.9);
     }
+    
+    .howtext.mobile{
+        position: absolute;
+        display: block;
+        width: 100vw;
+        margin: 0 auto;
+        height: 100%;
+    }
+
 
     .cont .pt3 .more3-1 {
         position: absolute;
         display: none;
-        width: 100%;
+        width: 100vw;
         /* height: auto; */
         top: 18vh;
         left: -18.7px;
@@ -217,7 +226,7 @@
     .laventxt {
         padding-bottom: 20px;
     }
-    
+
     .cont .laventxt p:nth-child(1) {
         padding: 0
     }

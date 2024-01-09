@@ -114,7 +114,7 @@ export function Part3() {
         </div>
       </div>
       <div className="more3-1">
-        <div className="howtext">
+        <div className="howtext mobile">
           <div className="htxt1">
             <p>1</p>
             <p>겨드랑이, 사타구니와 같이 에너지의<br />
