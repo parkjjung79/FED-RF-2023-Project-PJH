@@ -49,6 +49,7 @@ ul{
 	z-index:999;/*메뉴이므로 맨위*/
 }
 #menu{
+	display: none;
 	position:absolute;
 	top:20px;
 	right:0;
@@ -86,6 +87,15 @@ ul{
 	display:none;
 }
 
+.intro_bottom{
+	position: relative;
+	top: 15vh;
+	padding: 0 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 /*********** top 버튼 *****************/
 #gobx{
 	position:fixed;
@@ -115,8 +125,17 @@ ul{
 }
 
 /****************section0 메인페이지****************/
-
+section#section0{
+    background-color: #000;
+}
+section#section0:hover{
+	background-color: #fff;
+}
+.intro_bottom{
+	color: #fff;
+}
 /***************** 메인 인트로페이지 *****************/
+
 .intro1_title_1stline{
 	position: relative;
 	font-family: 'Mohave', sans-serif;

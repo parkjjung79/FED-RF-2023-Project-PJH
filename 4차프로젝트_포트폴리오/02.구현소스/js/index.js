@@ -17,7 +17,7 @@ $(document).ready(function(e) {
 		menu:"#menu",//메뉴로 사용할 box아이디
 		anchors:["page1","page2","page3","page4","page5","page6","page7","page8","page9","page10","page11"],
 
-		//페이지가 이동 완료 후 설정코드 넣기
+		//페이지가 이동 완료 후 설정코드 넣기z
 		afterLoad:function(anchorLink, index){
 			//anchorLink 는 도착페이지 연결 번호
 			//index - 도착페이지의 인덱스번호 (1번부터)
