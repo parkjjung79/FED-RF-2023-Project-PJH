@@ -35,7 +35,16 @@ ul,li{
 	list-style:none;	
 }
 
+/***************** 헤더 ******************/
+header.top-area {
+    display: block;
+    width: 100%;
+    height: 10vh;
+}
+
+
 /***************** 메인 인트로페이지 *****************/
+
 
 section{
     position: relative;
