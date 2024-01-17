@@ -20,9 +20,11 @@ html, body{
 	font-family: 'Noto Sans KR', sans-serif;
 	
 }
+
 img{
 	border:none;/*이미지에 링크시 보더없앰*/
 }
+
 a{
 	display:block;/*a태그는 기본 inline이지만 block요소를 포함하기 위해 block으로 변경함.*/
 	text-decoration:none;
@@ -30,20 +32,23 @@ a{
 	height:100%;
 	color:#000;
 }
+
 ul,li{
 	margin:0;
 	padding:0;
 	list-style:none;	
 }
 
-
-
-
-
 body {
     overflow-x: hidden;
     background: #000000;
     /* background-image: linear-gradient(to bottom, orange, lightpink, lightgreen); */
+}
+
+.pg {
+    position: relative;
+    height: 100vh;
+    outline: 1px dashed blue;
 }
 
 /***************** 헤더 ******************/
@@ -54,9 +59,9 @@ header.top-area {
     height: 9.4vh;
 	border-bottom: 1px solid #fff;
 	background-color: #000;
+    z-index: 9999;
 
 }
-
 
 /* GNB박스 */
 .gnb {
@@ -126,14 +131,14 @@ header.top-area {
     content: '';
     display: block;
     width: 100%;
-    margin-top: 1.1rem;
+    margin-top: 0.7rem;
     height: 0.2rem;
     background-color: #fff;
     transition-delay: 0.2s;
     /* 오버시 지연시간 설정 */
 }
 
-/***************** 메인 인트로페이지 *****************/
+/***************** 메인 인트로 파트 *****************/
 
 section{
     position: relative;
@@ -143,7 +148,7 @@ section{
 
 section .introtxt{
 	position: relative;
-	top: 22vh;
+	top: 35vh;
 	text-align: center;
 	color: #fff;
 	margin: 0 auto; 
@@ -151,15 +156,15 @@ section .introtxt{
 
 .introtxt_1stline{
 	font-family: 'Mohave', sans-serif;
-	font-size: 50px;
+	font-size: 70px;
 	margin: 0 auto; 
 }
-.intro1txt_2ndline{
+.introtxt_2ndline{
 	font-family: 'Knewave', system-ui;
-	font-size: 85px;
+	font-size: 120px;
 	margin: 0 auto; 
 }
-
+ 
 .mouse_frame {
     position: relative;
 	top: 10vh;
@@ -178,16 +183,127 @@ section .introtxt{
     border-radius: 10%;
     margin: 3px auto;
 	background-color: #fff;
-
+    
 }
 
+/*************** 메인 about me 파트 ***************/
 
+#aboutme .abmtxt{
+	position: relative;
+	top: 35vh;
+	text-align: center;
+	color: #fff;
+	margin: 0; 
+    padding: 0 25vw;
+}
 
-.pg {
+.aboutme_1stline {
+    font-family: 'Mohave', sans-serif;
+    font-size: 70px;
+    text-align: left;
+    margin: 0;
+    /* padding: 0 25vw; */
+}
+
+.aboutme_2ndline {
+    font-family: 'Knewave', system-ui;
+    font-size: 85px;
+    text-align: right;
+    margin: 0;
+    /* padding: 0 25vw; */
+}
+
+.aboutme p {
+    font-size: 20px;
+}
+/******************* 메인 skills 파트 ****************/
+
+#skills{
+    padding: 0 5vw;
+}
+
+.skills{
     position: relative;
-    height: 100vh;
-    outline: 1px dashed blue;
+    top: 10vh;
 }
+
+#skills .skills_back{
+    font-family: 'Knewave', system-ui;
+    font-size: 85px;
+    text-align: left;
+    margin: 0;
+    color: #606060;
+}
+
+#skills .skills_front{
+    position: relative;
+    top: -165px;
+    font-family: 'Knewave', system-ui;
+    font-size: 85px;
+    text-align: left;
+    color: #fff;
+    margin: 0;
+}
+
+/* skill 박스 */
+.skills_box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1.5vh;
+}
+
+.skbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid #fff; */
+    border-radius: 60px;
+    background-color: #323232;
+}
+.skills_flex{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    top: 1vh;
+
+}
+
+/******************* 메인 contact 파트 ****************/
+.contact span{
+    font-family: 'Mohave', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+    margin: 0;
+    line-height: 36px;
+}
+
+#contact .contact_back{
+    font-family: 'Knewave', system-ui;
+    font-size: 85px;
+    text-align: left;
+    margin: 0;
+    color: #606060;
+}
+
+#contact .contact_front{
+    position: relative;
+    top: -165px;
+    font-family: 'Knewave', system-ui;
+    font-size: 85px;
+    text-align: left;
+    color: #fff;
+    margin: 0;
+}
+
+
+
+
+
+
 /* 타겟박스 */
 .tpg {
     height: calc(100vh + 3000px);
