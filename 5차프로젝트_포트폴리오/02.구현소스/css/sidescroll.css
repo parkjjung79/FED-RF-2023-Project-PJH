@@ -167,23 +167,35 @@ section .introtxt{
  
 .mouse_frame {
     position: relative;
-	top: 10vh;
+    top: 10vh;
     display: block;
-    width: 2vw;
-    height: 4vh;
+    width: 37px;
+    height: 87px;
     border: 1px solid #fff;
-    border-radius: 10%;
+    border-radius: 30px;
     margin: 0 auto;
 }
+
 .mouse_frame span{
+    position: absolute;
     display: block;
+    left: calc(100% - 20px);
     width: 1px;
-    height: 8px;
+    height: 20px;
     border: 1px solid #fff;
-    border-radius: 10%;
-    margin: 3px auto;
+    border-radius: 10px;
+    margin: 5px auto;
 	background-color: #fff;
-    
+    animation: mouse-control 1s;
+}
+
+@keyframes mouse-control {
+    form{
+        top: 100%;
+    }
+    to{
+        top: 0%
+    }
 }
 
 /*************** 메인 about me 파트 ***************/
@@ -260,7 +272,29 @@ section .introtxt{
     height: 50px;
     border: 1px solid #fff;
     border-radius: 60px;
+    /* background-color: #323232; */
+}
+
+.skbox.psd::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5%;
+    height: 50px;
+    /* border: 1px solid #fff; */
+    border-radius: 60px;
     background-color: #323232;
+    animation: skills-psd 2s ease-in-out linear;
+}
+
+
+@keyframes skills-psd {
+    form{
+        width: 5%;
+    }
+    to{
+        width: 90%;
+    }
 }
 
 .skbar {
@@ -281,7 +315,8 @@ section .introtxt{
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
-    top: 1vh;
+    padding: 0.6vh 0;
+    /* top: 1vh; */
 }
 
 .skills_flex span{
@@ -291,6 +326,12 @@ section .introtxt{
 }
 
 /******************* 메인 contact 파트 ****************/
+.contact{
+    position: relative;
+    top: 10vh;
+}
+
+
 .contact span{
     font-family: 'Mohave', sans-serif;
     font-weight: 400;
