@@ -45,6 +45,34 @@ const domFn = {
 
 //////////////////////////////
 
+// 이부분 다시 보기!
+// 1.대상선정:
+// (1)이벤트 대상: 축소 확대 메뉴 a요소들 -> .tit2 a
+const menu = $('.tit2 a');
+
+// 변경대상 : 태양계 전체를 싸고있는 부모요소 -> .scale-box
+const scaleBox = $('.scale-box');
+
+// 2. 이벤트 함수 셋팅하기
+menu.on('click',function(){
+    // 1. 배율 속성값 읽어오기 : data-num
+    let scaleNum = $(this).attr('data-num');
+
+    console.log('배율:',scaleNum);
+
+    // 2. 배율 적용하기
+    scaleBox.css({transform:`scale(${scaleNum})`});
+
+    // 3. 클릭된 메뉴에 클래스 'on'넣기
+    // 나머지는 빼기
+
+    $(this).addClass('on')
+    .siblings().removeClass('on');
+
+
+}); //////////////// click ////////////////
+
+
 // [ 3번째 영역에 도달한 경우 내용을 가로방향 이동하기! ]
 
 // 이벤트 대상 : window
