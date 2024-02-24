@@ -256,7 +256,7 @@ a {
 
 /* 1-2-2. gnb영역 - bottom */
 .gnb {
-  /* padding-bottom: 15px; */
+  padding-bottom: 1rem;
 }
 .gnb > ul {
   /* 플렉스 박스 */
